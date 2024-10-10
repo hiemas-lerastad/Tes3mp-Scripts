@@ -1,0 +1,5927 @@
+{
+  "gems": {
+    "misc_soulgem_petty": 30,
+    "misc_soulgem_lesser": 60,
+    "misc_soulgem_common": 120,
+    "misc_soulgem_greater": 180,
+    "misc_soulgem_grand": 600,
+    "misc_soulgem_azura": 15000
+  },
+  "items": {
+    "6th_bell_hammer": {
+      "refId": "6th bell hammer",
+      "name": "Sixth House Bell Hammer",
+      "enchant": 105,
+      "type": "Weapon",
+      "subType": "BluntTwoClose"
+    },
+    "azura_star_unique": {
+      "refId": "azura_star_unique",
+      "name": "Azura's Star",
+      "enchant": 100,
+      "type": "Weapon",
+      "subType": "MarksmanThrown"
+    },
+    "bonemold_arrow": {
+      "refId": "bonemold arrow",
+      "name": "Bonemold Arrow",
+      "enchant": 12,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "bonemold_bolt": {
+      "refId": "bonemold bolt",
+      "name": "Bonemold Bolt",
+      "enchant": 16,
+      "type": "Weapon",
+      "subType": "Bolt"
+    },
+    "bonemold_long_bow": {
+      "refId": "bonemold long bow",
+      "name": "Bonemold Long Bow",
+      "enchant": 400,
+      "type": "Weapon",
+      "subType": "MarksmanBow"
+    },
+    "chargen_dagger": {
+      "refId": "chargen dagger",
+      "name": "Iron Dagger",
+      "enchant": 20,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "chitin_arrow": {
+      "refId": "chitin arrow",
+      "name": "Chitin Arrow",
+      "enchant": 8,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "chitin_club": {
+      "refId": "chitin club",
+      "name": "Chitin Club",
+      "enchant": 20,
+      "type": "Weapon",
+      "subType": "BluntOneHand"
+    },
+    "chitin_dagger": {
+      "refId": "chitin dagger",
+      "name": "Chitin Dagger",
+      "enchant": 10,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "chitin_short_bow": {
+      "refId": "chitin short bow",
+      "name": "Chitin Short Bow",
+      "enchant": 10,
+      "type": "Weapon",
+      "subType": "MarksmanBow"
+    },
+    "chitin_shortsword": {
+      "refId": "chitin shortsword",
+      "name": "Chitin Shortsword",
+      "enchant": 20,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "chitin_spear": {
+      "refId": "chitin spear",
+      "name": "Chitin Spear",
+      "enchant": 25,
+      "type": "Weapon",
+      "subType": "SpearTwoWide"
+    },
+    "chitin_throwing_star": {
+      "refId": "chitin throwing star",
+      "name": "Chitin Throwing Star",
+      "enchant": 7,
+      "type": "Weapon",
+      "subType": "MarksmanThrown"
+    },
+    "chitin_war_axe": {
+      "refId": "chitin war axe",
+      "name": "Chitin War Axe",
+      "enchant": 25,
+      "type": "Weapon",
+      "subType": "AxeOneHand"
+    },
+    "corkbulb_arrow": {
+      "refId": "corkbulb arrow",
+      "name": "Corkbulb Arrow",
+      "enchant": 5,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "corkbulb_bolt": {
+      "refId": "corkbulb bolt",
+      "name": "Corkbulb Bolt",
+      "enchant": 6,
+      "type": "Weapon",
+      "subType": "Bolt"
+    },
+    "daedric_arrow": {
+      "refId": "daedric arrow",
+      "name": "Daedric Arrow",
+      "enchant": 45,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "daedric_battle_axe": {
+      "refId": "daedric battle axe",
+      "name": "Daedric Battle Axe",
+      "enchant": 165,
+      "type": "Weapon",
+      "subType": "AxeTwoHand"
+    },
+    "daedric_claymore": {
+      "refId": "daedric claymore",
+      "name": "Daedric Claymore",
+      "enchant": 210,
+      "type": "Weapon",
+      "subType": "LongBladeTwoClose"
+    },
+    "daedric_club": {
+      "refId": "daedric club",
+      "name": "Daedric Club",
+      "enchant": 120,
+      "type": "Weapon",
+      "subType": "BluntOneHand"
+    },
+    "daedric_dagger": {
+      "refId": "daedric dagger",
+      "name": "Daedric Dagger",
+      "enchant": 60,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "daedric_dai_katana": {
+      "refId": "daedric dai-katana",
+      "name": "Daedric Dai-katana",
+      "enchant": 210,
+      "type": "Weapon",
+      "subType": "LongBladeTwoClose"
+    },
+    "daedric_dart": {
+      "refId": "daedric dart",
+      "name": "Daedric Dart",
+      "enchant": 45,
+      "type": "Weapon",
+      "subType": "MarksmanThrown"
+    },
+    "daedric_katana": {
+      "refId": "daedric katana",
+      "name": "Daedric Katana",
+      "enchant": 180,
+      "type": "Weapon",
+      "subType": "LongBladeOneHand"
+    },
+    "daedric_long_bow": {
+      "refId": "daedric long bow",
+      "name": "Daedric Long Bow",
+      "enchant": 105,
+      "type": "Weapon",
+      "subType": "MarksmanBow"
+    },
+    "daedric_longsword": {
+      "refId": "daedric longsword",
+      "name": "Daedric Longsword",
+      "enchant": 180,
+      "type": "Weapon",
+      "subType": "LongBladeOneHand"
+    },
+    "daedric_mace": {
+      "refId": "daedric mace",
+      "name": "Daedric Mace",
+      "enchant": 150,
+      "type": "Weapon",
+      "subType": "BluntOneHand"
+    },
+    "daedric_shortsword": {
+      "refId": "daedric shortsword",
+      "name": "Daedric Shortsword",
+      "enchant": 120,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "daedric_spear": {
+      "refId": "daedric spear",
+      "name": "Daedric Spear",
+      "enchant": 150,
+      "type": "Weapon",
+      "subType": "SpearTwoWide"
+    },
+    "daedric_staff": {
+      "refId": "daedric staff",
+      "name": "Daedric Staff",
+      "enchant": 210,
+      "type": "Weapon",
+      "subType": "BluntTwoWide"
+    },
+    "daedric_tanto": {
+      "refId": "daedric tanto",
+      "name": "Daedric Tanto",
+      "enchant": 66,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "daedric_wakizashi": {
+      "refId": "daedric wakizashi",
+      "name": "Daedric Wakizashi",
+      "enchant": 135,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "daedric_wakizashi_hhst": {
+      "refId": "daedric wakizashi_hhst",
+      "name": "Daedric Wakizashi",
+      "enchant": 135,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "daedric_war_axe": {
+      "refId": "daedric war axe",
+      "name": "Daedric War Axe",
+      "enchant": 150,
+      "type": "Weapon",
+      "subType": "AxeOneHand"
+    },
+    "daedric_warhammer": {
+      "refId": "daedric warhammer",
+      "name": "Daedric Warhammer",
+      "enchant": 165,
+      "type": "Weapon",
+      "subType": "BluntTwoClose"
+    },
+    "daedric_club_tgdc": {
+      "refId": "daedric_club_tgdc",
+      "name": "Anora's Club",
+      "enchant": 120,
+      "type": "Weapon",
+      "subType": "BluntOneHand"
+    },
+    "dart_uniq_judgement": {
+      "refId": "dart_uniq_judgement",
+      "name": "Dart of Judgment",
+      "enchant": 0,
+      "type": "Weapon",
+      "subType": "MarksmanThrown"
+    },
+    "dire_viperarrow": {
+      "refId": "dire viperarrow",
+      "name": "Dire Viperarrow",
+      "enchant": 12,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "dreugh_club": {
+      "refId": "dreugh club",
+      "name": "Dreugh Club",
+      "enchant": 36,
+      "type": "Weapon",
+      "subType": "BluntOneHand"
+    },
+    "dreugh_staff": {
+      "refId": "dreugh staff",
+      "name": "Dreugh Staff",
+      "enchant": 63,
+      "type": "Weapon",
+      "subType": "BluntTwoWide"
+    },
+    "dwarven_battle_axe": {
+      "refId": "dwarven battle axe",
+      "name": "Dwarven Battle Axe",
+      "enchant": 55,
+      "type": "Weapon",
+      "subType": "AxeTwoHand"
+    },
+    "dwarven_claymore": {
+      "refId": "dwarven claymore",
+      "name": "Dwarven Claymore",
+      "enchant": 70,
+      "type": "Weapon",
+      "subType": "LongBladeTwoClose"
+    },
+    "dwarven_crossbow": {
+      "refId": "dwarven crossbow",
+      "name": "Dwarven Crossbow",
+      "enchant": 50,
+      "type": "Weapon",
+      "subType": "MarksmanCrossbow"
+    },
+    "dwarven_halberd": {
+      "refId": "dwarven halberd",
+      "name": "Dwarven Halberd",
+      "enchant": 70,
+      "type": "Weapon",
+      "subType": "SpearTwoWide"
+    },
+    "dwarven_mace": {
+      "refId": "dwarven mace",
+      "name": "Dwarven Mace",
+      "enchant": 50,
+      "type": "Weapon",
+      "subType": "BluntOneHand"
+    },
+    "dwarven_shortsword": {
+      "refId": "dwarven shortsword",
+      "name": "Dwarven Shortsword",
+      "enchant": 40,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "dwarven_spear": {
+      "refId": "dwarven spear",
+      "name": "Dwarven Spear",
+      "enchant": 50,
+      "type": "Weapon",
+      "subType": "SpearTwoWide"
+    },
+    "dwarven_war_axe": {
+      "refId": "dwarven war axe",
+      "name": "Dwarven War Axe",
+      "enchant": 50,
+      "type": "Weapon",
+      "subType": "AxeOneHand"
+    },
+    "dwarven_warhammer": {
+      "refId": "dwarven warhammer",
+      "name": "Dwarven Warhammer",
+      "enchant": 55,
+      "type": "Weapon",
+      "subType": "BluntTwoClose"
+    },
+    "dwarven_hammer_volendrung": {
+      "refId": "dwarven_hammer_volendrung",
+      "name": "Volendrung",
+      "enchant": 55,
+      "type": "Weapon",
+      "subType": "BluntTwoClose"
+    },
+    "ebony_arrow": {
+      "refId": "ebony arrow",
+      "name": "Ebony Arrow",
+      "enchant": 30,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "ebony_broadsword": {
+      "refId": "ebony broadsword",
+      "name": "Ebony Broadsword",
+      "enchant": 100,
+      "type": "Weapon",
+      "subType": "LongBladeOneHand"
+    },
+    "ebony_broadsword_dae_cursed": {
+      "refId": "ebony broadsword_dae_cursed",
+      "name": "Ebony Broadsword",
+      "enchant": 100,
+      "type": "Weapon",
+      "subType": "LongBladeOneHand"
+    },
+    "ebony_dart": {
+      "refId": "ebony dart",
+      "name": "Ebony Dart",
+      "enchant": 30,
+      "type": "Weapon",
+      "subType": "MarksmanThrown"
+    },
+    "ebony_longsword": {
+      "refId": "ebony longsword",
+      "name": "Ebony Longsword",
+      "enchant": 120,
+      "type": "Weapon",
+      "subType": "LongBladeOneHand"
+    },
+    "ebony_mace": {
+      "refId": "ebony mace",
+      "name": "Ebony Mace",
+      "enchant": 100,
+      "type": "Weapon",
+      "subType": "BluntOneHand"
+    },
+    "ebony_shortsword": {
+      "refId": "ebony shortsword",
+      "name": "Ebony Shortsword",
+      "enchant": 80,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "ebony_spear": {
+      "refId": "ebony spear",
+      "name": "Ebony Spear",
+      "enchant": 100,
+      "type": "Weapon",
+      "subType": "SpearTwoWide"
+    },
+    "ebony_staff": {
+      "refId": "ebony staff",
+      "name": "Ebony Staff",
+      "enchant": 900,
+      "type": "Weapon",
+      "subType": "BluntTwoWide"
+    },
+    "ebony_throwing_star": {
+      "refId": "ebony throwing star",
+      "name": "Ebony Throwing Star",
+      "enchant": 30,
+      "type": "Weapon",
+      "subType": "MarksmanThrown"
+    },
+    "ebony_war_axe": {
+      "refId": "ebony war axe",
+      "name": "Ebony War Axe",
+      "enchant": 100,
+      "type": "Weapon",
+      "subType": "AxeOneHand"
+    },
+    "ebony_bow_auriel": {
+      "refId": "ebony_bow_auriel",
+      "name": "Auriel's Bow",
+      "enchant": 70,
+      "type": "Weapon",
+      "subType": "MarksmanBow"
+    },
+    "ebony_dagger_mehrunes": {
+      "refId": "ebony_dagger_mehrunes",
+      "name": "Ebony Shortsword",
+      "enchant": 80,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "false_sunder": {
+      "refId": "false_sunder",
+      "name": "* Sunder *",
+      "enchant": 55,
+      "type": "Weapon",
+      "subType": "BluntTwoClose"
+    },
+    "foeburner": {
+      "refId": "foeburner",
+      "name": "Foeburner",
+      "enchant": 48,
+      "type": "Weapon",
+      "subType": "LongBladeTwoClose"
+    },
+    "glass_arrow": {
+      "refId": "glass arrow",
+      "name": "Glass Arrow",
+      "enchant": 9,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "glass_claymore": {
+      "refId": "glass claymore",
+      "name": "Glass Claymore",
+      "enchant": 42,
+      "type": "Weapon",
+      "subType": "LongBladeTwoClose"
+    },
+    "glass_dagger": {
+      "refId": "glass dagger",
+      "name": "Glass Dagger",
+      "enchant": 12,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "glass_dagger_dae_cursed": {
+      "refId": "glass dagger_dae_cursed",
+      "name": "Glass Dagger",
+      "enchant": 12,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "glass_halberd": {
+      "refId": "glass halberd",
+      "name": "Glass Halberd",
+      "enchant": 30,
+      "type": "Weapon",
+      "subType": "SpearTwoWide"
+    },
+    "glass_longsword": {
+      "refId": "glass longsword",
+      "name": "Glass Longsword",
+      "enchant": 36,
+      "type": "Weapon",
+      "subType": "LongBladeOneHand"
+    },
+    "glass_staff": {
+      "refId": "glass staff",
+      "name": "Glass Staff",
+      "enchant": 42,
+      "type": "Weapon",
+      "subType": "BluntTwoWide"
+    },
+    "glass_throwing_knife": {
+      "refId": "glass throwing knife",
+      "name": "Glass Throwing Knife",
+      "enchant": 9,
+      "type": "Weapon",
+      "subType": "MarksmanThrown"
+    },
+    "glass_throwing_star": {
+      "refId": "glass throwing star",
+      "name": "Glass Throwing Star",
+      "enchant": 9,
+      "type": "Weapon",
+      "subType": "MarksmanThrown"
+    },
+    "glass_war_axe": {
+      "refId": "glass war axe",
+      "name": "Glass War Axe",
+      "enchant": 30,
+      "type": "Weapon",
+      "subType": "AxeOneHand"
+    },
+    "glass_dagger_enamor": {
+      "refId": "glass_dagger_enamor",
+      "name": "Enamor",
+      "enchant": 12,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "imperial_broadsword": {
+      "refId": "imperial broadsword",
+      "name": "Imperial Broadsword",
+      "enchant": 70,
+      "type": "Weapon",
+      "subType": "LongBladeOneHand"
+    },
+    "imperial_shortsword": {
+      "refId": "imperial shortsword",
+      "name": "Imperial Shortsword",
+      "enchant": 50,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "iron_arrow": {
+      "refId": "iron arrow",
+      "name": "Iron Arrow",
+      "enchant": 0,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "iron_battle_axe": {
+      "refId": "iron battle axe",
+      "name": "Iron Battle Axe",
+      "enchant": 55,
+      "type": "Weapon",
+      "subType": "AxeTwoHand"
+    },
+    "iron_bolt": {
+      "refId": "iron bolt",
+      "name": "Iron Bolt",
+      "enchant": 20,
+      "type": "Weapon",
+      "subType": "Bolt"
+    },
+    "iron_broadsword": {
+      "refId": "iron broadsword",
+      "name": "Iron Broadsword",
+      "enchant": 50,
+      "type": "Weapon",
+      "subType": "LongBladeOneHand"
+    },
+    "iron_claymore": {
+      "refId": "iron claymore",
+      "name": "Iron Claymore",
+      "enchant": 70,
+      "type": "Weapon",
+      "subType": "LongBladeTwoClose"
+    },
+    "iron_club": {
+      "refId": "iron club",
+      "name": "Iron Club",
+      "enchant": 40,
+      "type": "Weapon",
+      "subType": "BluntOneHand"
+    },
+    "iron_dagger": {
+      "refId": "iron dagger",
+      "name": "Iron Dagger",
+      "enchant": 20,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "iron_dagger_telasero_unique": {
+      "refId": "iron dagger_telasero_unique",
+      "name": "Iron Dagger",
+      "enchant": 20,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "iron_fork": {
+      "refId": "iron fork",
+      "name": "Iron Fork",
+      "enchant": 100,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "iron_halberd": {
+      "refId": "iron halberd",
+      "name": "Iron Halberd",
+      "enchant": 50,
+      "type": "Weapon",
+      "subType": "SpearTwoWide"
+    },
+    "iron_long_spear": {
+      "refId": "iron long spear",
+      "name": "Iron Spear",
+      "enchant": 50,
+      "type": "Weapon",
+      "subType": "SpearTwoWide"
+    },
+    "iron_longsword": {
+      "refId": "iron longsword",
+      "name": "Iron Longsword",
+      "enchant": 60,
+      "type": "Weapon",
+      "subType": "LongBladeOneHand"
+    },
+    "iron_mace": {
+      "refId": "iron mace",
+      "name": "Iron Mace",
+      "enchant": 50,
+      "type": "Weapon",
+      "subType": "BluntOneHand"
+    },
+    "iron_saber": {
+      "refId": "iron saber",
+      "name": "Iron Saber",
+      "enchant": 55,
+      "type": "Weapon",
+      "subType": "LongBladeOneHand"
+    },
+    "iron_shortsword": {
+      "refId": "iron shortsword",
+      "name": "Iron Shortsword",
+      "enchant": 40,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "iron_spear": {
+      "refId": "iron spear",
+      "name": "Iron Spear",
+      "enchant": 50,
+      "type": "Weapon",
+      "subType": "SpearTwoWide"
+    },
+    "iron_tanto": {
+      "refId": "iron tanto",
+      "name": "Iron Tanto",
+      "enchant": 22,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "iron_throwing_knife": {
+      "refId": "iron throwing knife",
+      "name": "Iron Throwing Knife",
+      "enchant": 15,
+      "type": "Weapon",
+      "subType": "MarksmanThrown"
+    },
+    "iron_wakizashi": {
+      "refId": "iron wakizashi",
+      "name": "Iron Wakizashi",
+      "enchant": 45,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "iron_war_axe": {
+      "refId": "iron war axe",
+      "name": "Iron War Axe",
+      "enchant": 50,
+      "type": "Weapon",
+      "subType": "AxeOneHand"
+    },
+    "iron_warhammer": {
+      "refId": "iron warhammer",
+      "name": "Iron Warhammer",
+      "enchant": 55,
+      "type": "Weapon",
+      "subType": "BluntTwoClose"
+    },
+    "long_bow": {
+      "refId": "long bow",
+      "name": "Long Bow",
+      "enchant": 35,
+      "type": "Weapon",
+      "subType": "MarksmanBow"
+    },
+    "lugrub's_axe": {
+      "refId": "lugrub's axe",
+      "name": "Lugrub's Axe",
+      "enchant": 50,
+      "type": "Weapon",
+      "subType": "AxeOneHand"
+    },
+    "magic_bolt": {
+      "refId": "magic_bolt",
+      "name": "FOR SPELL CASTING",
+      "enchant": 1,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "miner's_pick": {
+      "refId": "miner's pick",
+      "name": "Miner's Pick",
+      "enchant": 10,
+      "type": "Weapon",
+      "subType": "AxeTwoHand"
+    },
+    "nordic_battle_axe": {
+      "refId": "nordic battle axe",
+      "name": "Nordic Battle Axe",
+      "enchant": 55,
+      "type": "Weapon",
+      "subType": "AxeTwoHand"
+    },
+    "nordic_broadsword": {
+      "refId": "nordic broadsword",
+      "name": "Nordic Broadsword",
+      "enchant": 60,
+      "type": "Weapon",
+      "subType": "LongBladeOneHand"
+    },
+    "nordic_claymore": {
+      "refId": "nordic claymore",
+      "name": "Nordic Claymore",
+      "enchant": 100,
+      "type": "Weapon",
+      "subType": "LongBladeTwoClose"
+    },
+    "orcish_battle_axe": {
+      "refId": "orcish battle axe",
+      "name": "Orcish Battle Axe",
+      "enchant": 80,
+      "type": "Weapon",
+      "subType": "AxeTwoHand"
+    },
+    "orcish_bolt": {
+      "refId": "orcish bolt",
+      "name": "Orcish Bolt",
+      "enchant": 24,
+      "type": "Weapon",
+      "subType": "Bolt"
+    },
+    "orcish_warhammer": {
+      "refId": "orcish warhammer",
+      "name": "Orc Warhammer",
+      "enchant": 66,
+      "type": "Weapon",
+      "subType": "BluntTwoClose"
+    },
+    "rusty_dagger_unique": {
+      "refId": "rusty_dagger_unique",
+      "name": "A Rusty Dagger",
+      "enchant": 20,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "shield_bolt": {
+      "refId": "shield_bolt",
+      "name": "FOR SPELL CASTING",
+      "enchant": 100,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "shock_bolt": {
+      "refId": "shock_bolt",
+      "name": "FOR SPELL CASTING",
+      "enchant": 100,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "short_bow": {
+      "refId": "short bow",
+      "name": "Short Bow",
+      "enchant": 20,
+      "type": "Weapon",
+      "subType": "MarksmanBow"
+    },
+    "silver_arrow": {
+      "refId": "silver arrow",
+      "name": "Silver Arrow",
+      "enchant": 12,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "silver_bolt": {
+      "refId": "silver bolt",
+      "name": "Silver Bolt",
+      "enchant": 16,
+      "type": "Weapon",
+      "subType": "Bolt"
+    },
+    "silver_claymore": {
+      "refId": "silver claymore",
+      "name": "Silver Claymore",
+      "enchant": 56,
+      "type": "Weapon",
+      "subType": "LongBladeTwoClose"
+    },
+    "silver_dagger": {
+      "refId": "silver dagger",
+      "name": "Silver Dagger",
+      "enchant": 16,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "silver_dart": {
+      "refId": "silver dart",
+      "name": "Silver Dart",
+      "enchant": 12,
+      "type": "Weapon",
+      "subType": "MarksmanThrown"
+    },
+    "silver_longsword": {
+      "refId": "silver longsword",
+      "name": "Silver Longsword",
+      "enchant": 48,
+      "type": "Weapon",
+      "subType": "LongBladeOneHand"
+    },
+    "silver_shortsword": {
+      "refId": "silver shortsword",
+      "name": "Silver Shortsword",
+      "enchant": 36,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "silver_spear": {
+      "refId": "silver spear",
+      "name": "Silver Spear",
+      "enchant": 40,
+      "type": "Weapon",
+      "subType": "SpearTwoWide"
+    },
+    "silver_staff": {
+      "refId": "silver staff",
+      "name": "Silver Staff",
+      "enchant": 56,
+      "type": "Weapon",
+      "subType": "BluntTwoWide"
+    },
+    "silver_throwing_star": {
+      "refId": "silver throwing star",
+      "name": "Silver Throwing Star",
+      "enchant": 12,
+      "type": "Weapon",
+      "subType": "MarksmanThrown"
+    },
+    "silver_war_axe": {
+      "refId": "silver war axe",
+      "name": "Silver War Axe",
+      "enchant": 40,
+      "type": "Weapon",
+      "subType": "AxeOneHand"
+    },
+    "spiked_club": {
+      "refId": "spiked club",
+      "name": "Spiked Club",
+      "enchant": 40,
+      "type": "Weapon",
+      "subType": "BluntOneHand"
+    },
+    "steel_arrow": {
+      "refId": "steel arrow",
+      "name": "Steel Arrow",
+      "enchant": 15,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "steel_axe": {
+      "refId": "steel axe",
+      "name": "Steel Axe",
+      "enchant": 45,
+      "type": "Weapon",
+      "subType": "AxeOneHand"
+    },
+    "steel_battle_axe": {
+      "refId": "steel battle axe",
+      "name": "Steel Battle Axe",
+      "enchant": 55,
+      "type": "Weapon",
+      "subType": "AxeTwoHand"
+    },
+    "steel_bolt": {
+      "refId": "steel bolt",
+      "name": "Steel Bolt",
+      "enchant": 20,
+      "type": "Weapon",
+      "subType": "Bolt"
+    },
+    "steel_broadsword": {
+      "refId": "steel broadsword",
+      "name": "Steel Broadsword",
+      "enchant": 50,
+      "type": "Weapon",
+      "subType": "LongBladeOneHand"
+    },
+    "steel_claymore": {
+      "refId": "steel claymore",
+      "name": "Steel Claymore",
+      "enchant": 70,
+      "type": "Weapon",
+      "subType": "LongBladeTwoClose"
+    },
+    "steel_club": {
+      "refId": "steel club",
+      "name": "Steel Club",
+      "enchant": 40,
+      "type": "Weapon",
+      "subType": "BluntOneHand"
+    },
+    "steel_crossbow": {
+      "refId": "steel crossbow",
+      "name": "Steel Crossbow",
+      "enchant": 50,
+      "type": "Weapon",
+      "subType": "MarksmanCrossbow"
+    },
+    "steel_dagger": {
+      "refId": "steel dagger",
+      "name": "Steel Dagger",
+      "enchant": 20,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "steel_dai_katana": {
+      "refId": "steel dai-katana",
+      "name": "Steel Dai-katana",
+      "enchant": 70,
+      "type": "Weapon",
+      "subType": "LongBladeTwoClose"
+    },
+    "steel_dart": {
+      "refId": "steel dart",
+      "name": "Steel Dart",
+      "enchant": 15,
+      "type": "Weapon",
+      "subType": "MarksmanThrown"
+    },
+    "steel_halberd": {
+      "refId": "steel halberd",
+      "name": "Steel Halberd",
+      "enchant": 50,
+      "type": "Weapon",
+      "subType": "SpearTwoWide"
+    },
+    "steel_katana": {
+      "refId": "steel katana",
+      "name": "Steel Katana",
+      "enchant": 60,
+      "type": "Weapon",
+      "subType": "LongBladeOneHand"
+    },
+    "steel_longbow": {
+      "refId": "steel longbow",
+      "name": "Steel Longbow",
+      "enchant": 35,
+      "type": "Weapon",
+      "subType": "MarksmanBow"
+    },
+    "steel_longsword": {
+      "refId": "steel longsword",
+      "name": "Steel Longsword",
+      "enchant": 60,
+      "type": "Weapon",
+      "subType": "LongBladeOneHand"
+    },
+    "steel_mace": {
+      "refId": "steel mace",
+      "name": "Steel Mace",
+      "enchant": 50,
+      "type": "Weapon",
+      "subType": "BluntOneHand"
+    },
+    "steel_saber": {
+      "refId": "steel saber",
+      "name": "Steel Saber",
+      "enchant": 55,
+      "type": "Weapon",
+      "subType": "LongBladeOneHand"
+    },
+    "steel_shortsword": {
+      "refId": "steel shortsword",
+      "name": "Steel Shortsword",
+      "enchant": 40,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "steel_spear": {
+      "refId": "steel spear",
+      "name": "Steel Spear",
+      "enchant": 50,
+      "type": "Weapon",
+      "subType": "SpearTwoWide"
+    },
+    "steel_staff": {
+      "refId": "steel staff",
+      "name": "Steel Staff",
+      "enchant": 70,
+      "type": "Weapon",
+      "subType": "BluntTwoWide"
+    },
+    "steel_tanto": {
+      "refId": "steel tanto",
+      "name": "Steel Tanto",
+      "enchant": 22,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "steel_throwing_knife": {
+      "refId": "steel throwing knife",
+      "name": "Steel Throwing Knife",
+      "enchant": 15,
+      "type": "Weapon",
+      "subType": "MarksmanThrown"
+    },
+    "steel_throwing_star": {
+      "refId": "steel throwing star",
+      "name": "Steel Throwing Star",
+      "enchant": 15,
+      "type": "Weapon",
+      "subType": "MarksmanThrown"
+    },
+    "steel_wakizashi": {
+      "refId": "steel wakizashi",
+      "name": "Steel Wakizashi",
+      "enchant": 45,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "steel_war_axe": {
+      "refId": "steel war axe",
+      "name": "Steel War Axe",
+      "enchant": 50,
+      "type": "Weapon",
+      "subType": "AxeOneHand"
+    },
+    "steel_warhammer": {
+      "refId": "steel warhammer",
+      "name": "Steel Warhammer",
+      "enchant": 55,
+      "type": "Weapon",
+      "subType": "BluntTwoClose"
+    },
+    "sunder_fake": {
+      "refId": "sunder_fake",
+      "name": "* Sunder *",
+      "enchant": 165,
+      "type": "Weapon",
+      "subType": "BluntOneHand"
+    },
+    "throwing_knife_of_sureflight": {
+      "refId": "throwing knife of sureflight",
+      "name": "Throwing Knife of Sureflight",
+      "enchant": 15,
+      "type": "Weapon",
+      "subType": "MarksmanThrown"
+    },
+    "vfx_alterationbolt": {
+      "refId": "vfx_alterationbolt",
+      "enchant": 0,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "vfx_conjurebolt": {
+      "refId": "vfx_conjurebolt",
+      "enchant": 0,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "vfx_defaultbolt": {
+      "refId": "vfx_defaultbolt",
+      "enchant": 0,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "vfx_destructbolt": {
+      "refId": "vfx_destructbolt",
+      "enchant": 0,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "vfx_frostbolt": {
+      "refId": "vfx_frostbolt",
+      "enchant": 0,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "vfx_illusionbolt": {
+      "refId": "vfx_illusionbolt",
+      "enchant": 0,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "vfx_multiple2": {
+      "refId": "vfx_multiple2",
+      "enchant": 0,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "vfx_multiple3": {
+      "refId": "vfx_multiple3",
+      "enchant": 0,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "vfx_multiple4": {
+      "refId": "vfx_multiple4",
+      "enchant": 0,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "vfx_multiple5": {
+      "refId": "vfx_multiple5",
+      "enchant": 0,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "vfx_multiple6": {
+      "refId": "vfx_multiple6",
+      "enchant": 0,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "vfx_multiple7": {
+      "refId": "vfx_multiple7",
+      "enchant": 0,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "vfx_multiple8": {
+      "refId": "vfx_multiple8",
+      "enchant": 0,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "vfx_mysticismbolt": {
+      "refId": "vfx_mysticismbolt",
+      "enchant": 0,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "vfx_poisonbolt": {
+      "refId": "vfx_poisonbolt",
+      "enchant": 0,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "vfx_restorebolt": {
+      "refId": "vfx_restorebolt",
+      "enchant": 0,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "wooden_staff": {
+      "refId": "wooden staff",
+      "name": "Wooden Staff",
+      "enchant": 70,
+      "type": "Weapon",
+      "subType": "BluntTwoWide"
+    },
+    "bonemold_armun_an_cuirass": {
+      "refId": "bonemold_armun-an_cuirass",
+      "name": "Armun-An Bonemold Cuirass",
+      "enchant": 160,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "bonemold_armun_an_helm": {
+      "refId": "bonemold_armun-an_helm",
+      "name": "Native Armun-An Bonemold Helm",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "bonemold_armun_an_pauldron_l": {
+      "refId": "bonemold_armun-an_pauldron_l",
+      "name": "Armun-An Bonemold L Pauldron",
+      "enchant": 16,
+      "type": "Armor",
+      "subType": "LeftPauldron"
+    },
+    "bonemold_armun_an_pauldron_r": {
+      "refId": "bonemold_armun-an_pauldron_r",
+      "name": "Armun-An Bonemold R Pauldron",
+      "enchant": 16,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "bonemold_boots": {
+      "refId": "bonemold_boots",
+      "name": "Bonemold Boots",
+      "enchant": 70,
+      "type": "Armor",
+      "subType": "Boots"
+    },
+    "bonemold_bracer_left": {
+      "refId": "bonemold_bracer_left",
+      "name": "Bonemold Left Bracer",
+      "enchant": 160,
+      "type": "Armor",
+      "subType": "LeftBracer"
+    },
+    "bonemold_bracer_right": {
+      "refId": "bonemold_bracer_right",
+      "name": "Bonemold Right Bracer",
+      "enchant": 160,
+      "type": "Armor",
+      "subType": "RightBracer"
+    },
+    "bonemold_chuzei_helm": {
+      "refId": "bonemold_chuzei_helm",
+      "name": "Native Chuzei Bonemold Helm",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "bonemold_cuirass": {
+      "refId": "bonemold_cuirass",
+      "name": "Bonemold Cuirass",
+      "enchant": 160,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "bonemold_founders_helm": {
+      "refId": "bonemold_founders_helm",
+      "name": "Redoran Founder's Helm",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "bonemold_gah_julan_cuirass": {
+      "refId": "bonemold_gah-julan_cuirass",
+      "name": "Gah-Julan Bonemold Cuirass",
+      "enchant": 160,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "bonemold_gah_julan_helm": {
+      "refId": "bonemold_gah-julan_helm",
+      "name": "Native Gah-Julan Bonemold Helm",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "bonemold_gah_julan_hhda": {
+      "refId": "bonemold_gah-julan_hhda",
+      "name": "Native Gah-Julan Bonemold Helm",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "bonemold_gah_julan_pauldron_l": {
+      "refId": "bonemold_gah-julan_pauldron_l",
+      "name": "Gah-Julan Bonemold L Pauldron",
+      "enchant": 16,
+      "type": "Armor",
+      "subType": "LeftPauldron"
+    },
+    "bonemold_gah_julan_pauldron_r": {
+      "refId": "bonemold_gah-julan_pauldron_r",
+      "name": "Gah-Julan Bonemold R Pauldron",
+      "enchant": 16,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "bonemold_greaves": {
+      "refId": "bonemold_greaves",
+      "name": "Bonemold Greaves",
+      "enchant": 20,
+      "type": "Armor",
+      "subType": "Greaves"
+    },
+    "bonemold_helm": {
+      "refId": "bonemold_helm",
+      "name": "Bonemold Helm",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "bonemold_pauldron_l": {
+      "refId": "bonemold_pauldron_l",
+      "name": "Bonemold L Pauldron",
+      "enchant": 16,
+      "type": "Armor",
+      "subType": "LeftPauldron"
+    },
+    "bonemold_pauldron_r": {
+      "refId": "bonemold_pauldron_r",
+      "name": "Bonemold R Pauldron",
+      "enchant": 16,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "bonemold_shield": {
+      "refId": "bonemold_shield",
+      "name": "Bonemold Shield",
+      "enchant": 400,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "bonemold_towershield": {
+      "refId": "bonemold_towershield",
+      "name": "Bonemold Tower Shield",
+      "enchant": 600,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "bonemold_tshield_hlaaluguard": {
+      "refId": "bonemold_tshield_hlaaluguard",
+      "name": "Hlaalu Guard Shield",
+      "enchant": 600,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "bonemold_tshield_hrlb": {
+      "refId": "bonemold_tshield_hrlb",
+      "name": "Redoran Banner Shield",
+      "enchant": 600,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "bonemold_tshield_redoranguard": {
+      "refId": "bonemold_tshield_redoranguard",
+      "name": "Redoran Guard Shield",
+      "enchant": 600,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "bonemold_tshield_telvanniguard": {
+      "refId": "bonemold_tshield_telvanniguard",
+      "name": "Telvanni Guard Shield",
+      "enchant": 600,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "cephalopod_helm": {
+      "refId": "cephalopod_helm",
+      "name": "Telvanni Cephalopod Helm",
+      "enchant": 1000,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "chitin_boots": {
+      "refId": "chitin boots",
+      "name": "Chitin Boots",
+      "enchant": 44,
+      "type": "Armor",
+      "subType": "Boots"
+    },
+    "chitin_cuirass": {
+      "refId": "chitin cuirass",
+      "name": "Chitin Cuirass",
+      "enchant": 100,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "chitin_greaves": {
+      "refId": "chitin greaves",
+      "name": "Chitin Greaves",
+      "enchant": 13,
+      "type": "Armor",
+      "subType": "Greaves"
+    },
+    "chitin_guantlet___left": {
+      "refId": "chitin guantlet - left",
+      "name": "Chitin Left Gauntlet",
+      "enchant": 100,
+      "type": "Armor",
+      "subType": "LeftGauntlet"
+    },
+    "chitin_guantlet___right": {
+      "refId": "chitin guantlet - right",
+      "name": "Chitin Right Gauntlet",
+      "enchant": 100,
+      "type": "Armor",
+      "subType": "RightGauntlet"
+    },
+    "chitin_helm": {
+      "refId": "chitin helm",
+      "name": "Chitin Helm",
+      "enchant": 125,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "chitin_pauldron___left": {
+      "refId": "chitin pauldron - left",
+      "name": "Chitin Left Pauldron",
+      "enchant": 10,
+      "type": "Armor",
+      "subType": "LeftPauldron"
+    },
+    "chitin_pauldron___right": {
+      "refId": "chitin pauldron - right",
+      "name": "Chitin Right Pauldron",
+      "enchant": 10,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "chitin_mask_helm": {
+      "refId": "chitin_mask_helm",
+      "name": "Chitin Mask Helm",
+      "enchant": 125,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "chitin_shield": {
+      "refId": "chitin_shield",
+      "name": "Chitin Shield",
+      "enchant": 250,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "chitin_towershield": {
+      "refId": "chitin_towershield",
+      "name": "Chitin Tower Shield",
+      "enchant": 375,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "chitin_watchman_helm": {
+      "refId": "chitin_watchman_helm",
+      "name": "Redoran Watchman's Helm",
+      "enchant": 125,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "cloth_bracer_left": {
+      "refId": "cloth bracer left",
+      "name": "Cloth Left Bracer",
+      "enchant": 60,
+      "type": "Armor",
+      "subType": "LeftBracer"
+    },
+    "cloth_bracer_right": {
+      "refId": "cloth bracer right",
+      "name": "Cloth Right Bracer",
+      "enchant": 60,
+      "type": "Armor",
+      "subType": "RightBracer"
+    },
+    "daedric_boots": {
+      "refId": "daedric_boots",
+      "name": "Daedric Boots",
+      "enchant": 263,
+      "type": "Armor",
+      "subType": "Boots"
+    },
+    "daedric_cuirass": {
+      "refId": "daedric_cuirass",
+      "name": "Daedric Cuirass",
+      "enchant": 600,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "daedric_fountain_helm": {
+      "refId": "daedric_fountain_helm",
+      "name": "Daedric Face of Inspiration",
+      "enchant": 750,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "daedric_gauntlet_left": {
+      "refId": "daedric_gauntlet_left",
+      "name": "Daedric Left Gauntlet",
+      "enchant": 600,
+      "type": "Armor",
+      "subType": "LeftGauntlet"
+    },
+    "daedric_gauntlet_right": {
+      "refId": "daedric_gauntlet_right",
+      "name": "Daedric Right Gauntlet",
+      "enchant": 600,
+      "type": "Armor",
+      "subType": "RightGauntlet"
+    },
+    "daedric_god_helm": {
+      "refId": "daedric_god_helm",
+      "name": "Daedric Face of God",
+      "enchant": 750,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "daedric_greaves": {
+      "refId": "daedric_greaves",
+      "name": "Daedric Greaves",
+      "enchant": 75,
+      "type": "Armor",
+      "subType": "Greaves"
+    },
+    "daedric_pauldron_left": {
+      "refId": "daedric_pauldron_left",
+      "name": "Daedric Left Pauldron",
+      "enchant": 60,
+      "type": "Armor",
+      "subType": "LeftPauldron"
+    },
+    "daedric_pauldron_right": {
+      "refId": "daedric_pauldron_right",
+      "name": "Daedric Right Pauldron",
+      "enchant": 60,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "daedric_shield": {
+      "refId": "daedric_shield",
+      "name": "Daedric Shield",
+      "enchant": 1500,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "daedric_terrifying_helm": {
+      "refId": "daedric_terrifying_helm",
+      "name": "Daedric Face of Terror",
+      "enchant": 750,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "daedric_towershield": {
+      "refId": "daedric_towershield",
+      "name": "Daedric Tower Shield",
+      "enchant": 2250,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "dragonscale_cuirass": {
+      "refId": "dragonscale_cuirass",
+      "name": "Imperial Dragonscale Cuirass",
+      "enchant": 160,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "dragonscale_helm": {
+      "refId": "dragonscale_helm",
+      "name": "Imperial Dragonscale Helm",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "dragonscale_towershield": {
+      "refId": "dragonscale_towershield",
+      "name": "Dragonscale Tower Shield",
+      "enchant": 600,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "dreugh_cuirass": {
+      "refId": "dreugh_cuirass",
+      "name": "Dreugh Cuirass",
+      "enchant": 180,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "dreugh_helm": {
+      "refId": "dreugh_helm",
+      "name": "Dreugh Helm",
+      "enchant": 225,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "dreugh_shield": {
+      "refId": "dreugh_shield",
+      "name": "Dreugh Shield",
+      "enchant": 450,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "dust_adept_helm": {
+      "refId": "dust_adept_helm",
+      "name": "Telvanni Dust Adept Helm",
+      "enchant": 250,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "dwemer_boots": {
+      "refId": "dwemer_boots",
+      "name": "Dwemer Boots",
+      "enchant": 88,
+      "type": "Armor",
+      "subType": "Boots"
+    },
+    "dwemer_bracer_left": {
+      "refId": "dwemer_bracer_left",
+      "name": "Dwemer Left Bracer",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "LeftBracer"
+    },
+    "dwemer_bracer_right": {
+      "refId": "dwemer_bracer_right",
+      "name": "Dwemer Right Bracer",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "RightBracer"
+    },
+    "dwemer_cuirass": {
+      "refId": "dwemer_cuirass",
+      "name": "Dwemer Cuirass",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "dwemer_greaves": {
+      "refId": "dwemer_greaves",
+      "name": "Dwemer Greaves",
+      "enchant": 25,
+      "type": "Armor",
+      "subType": "Greaves"
+    },
+    "dwemer_helm": {
+      "refId": "dwemer_helm",
+      "name": "Dwemer Helm",
+      "enchant": 250,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "dwemer_pauldron_left": {
+      "refId": "dwemer_pauldron_left",
+      "name": "Dwemer Left Pauldron",
+      "enchant": 20,
+      "type": "Armor",
+      "subType": "LeftPauldron"
+    },
+    "dwemer_pauldron_right": {
+      "refId": "dwemer_pauldron_right",
+      "name": "Dwemer Right Pauldron",
+      "enchant": 20,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "dwemer_shield": {
+      "refId": "dwemer_shield",
+      "name": "Dwemer Shield",
+      "enchant": 500,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "ebony_boots": {
+      "refId": "ebony_boots",
+      "name": "Ebony Boots",
+      "enchant": 175,
+      "type": "Armor",
+      "subType": "Boots"
+    },
+    "ebony_bracer_left": {
+      "refId": "ebony_bracer_left",
+      "name": "Ebony Left Bracer",
+      "enchant": 400,
+      "type": "Armor",
+      "subType": "LeftBracer"
+    },
+    "ebony_bracer_left_tgeb": {
+      "refId": "ebony_bracer_left_tgeb",
+      "name": "Ebony Left Bracer",
+      "enchant": 400,
+      "type": "Armor",
+      "subType": "LeftBracer"
+    },
+    "ebony_bracer_right": {
+      "refId": "ebony_bracer_right",
+      "name": "Ebony Right Bracer",
+      "enchant": 400,
+      "type": "Armor",
+      "subType": "RightBracer"
+    },
+    "ebony_bracer_right_tgeb": {
+      "refId": "ebony_bracer_right_tgeb",
+      "name": "Ebony Right Bracer",
+      "enchant": 400,
+      "type": "Armor",
+      "subType": "RightBracer"
+    },
+    "ebony_closed_helm": {
+      "refId": "ebony_closed_helm",
+      "name": "Ebony Closed Helm",
+      "enchant": 500,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "ebony_closed_helm_fghl": {
+      "refId": "ebony_closed_helm_fghl",
+      "name": "Sarano Ebony Helm",
+      "enchant": 500,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "ebony_cuirass": {
+      "refId": "ebony_cuirass",
+      "name": "Ebony Cuirass",
+      "enchant": 400,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "ebony_greaves": {
+      "refId": "ebony_greaves",
+      "name": "Ebony Greaves",
+      "enchant": 50,
+      "type": "Armor",
+      "subType": "Greaves"
+    },
+    "ebony_pauldron_left": {
+      "refId": "ebony_pauldron_left",
+      "name": "Ebony Left Pauldron",
+      "enchant": 40,
+      "type": "Armor",
+      "subType": "LeftPauldron"
+    },
+    "ebony_pauldron_right": {
+      "refId": "ebony_pauldron_right",
+      "name": "Ebony Right Pauldron",
+      "enchant": 40,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "ebony_shield": {
+      "refId": "ebony_shield",
+      "name": "Ebony Shield",
+      "enchant": 1000,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "ebony_shield_auriel": {
+      "refId": "ebony_shield_auriel",
+      "name": "Auriel's Shield",
+      "enchant": 1000,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "ebony_towershield": {
+      "refId": "ebony_towershield",
+      "name": "Ebony Tower Shield",
+      "enchant": 1500,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "fur_bearskin_cuirass": {
+      "refId": "fur_bearskin_cuirass",
+      "name": "Nordic Bearskin Cuirass",
+      "enchant": 60,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "fur_boots": {
+      "refId": "fur_boots",
+      "name": "Nordic Fur Boots",
+      "enchant": 26,
+      "type": "Armor",
+      "subType": "Boots"
+    },
+    "fur_bracer_left": {
+      "refId": "fur_bracer_left",
+      "name": "Nordic Fur Left Bracer",
+      "enchant": 60,
+      "type": "Armor",
+      "subType": "LeftBracer"
+    },
+    "fur_bracer_right": {
+      "refId": "fur_bracer_right",
+      "name": "Nordic Fur Right Bracer",
+      "enchant": 60,
+      "type": "Armor",
+      "subType": "RightBracer"
+    },
+    "fur_colovian_helm": {
+      "refId": "fur_colovian_helm",
+      "name": "Colovian Fur Helm",
+      "enchant": 75,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "fur_cuirass": {
+      "refId": "fur_cuirass",
+      "name": "Nordic Fur Cuirass",
+      "enchant": 60,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "fur_gauntlet_left": {
+      "refId": "fur_gauntlet_left",
+      "name": "Nordic Fur Left Gauntlet",
+      "enchant": 60,
+      "type": "Armor",
+      "subType": "LeftGauntlet"
+    },
+    "fur_gauntlet_right": {
+      "refId": "fur_gauntlet_right",
+      "name": "Nordic Fur Right Gauntlet",
+      "enchant": 60,
+      "type": "Armor",
+      "subType": "RightGauntlet"
+    },
+    "fur_greaves": {
+      "refId": "fur_greaves",
+      "name": "Nordic Fur Greaves",
+      "enchant": 10,
+      "type": "Armor",
+      "subType": "Greaves"
+    },
+    "fur_helm": {
+      "refId": "fur_helm",
+      "name": "Nordic Fur Helm",
+      "enchant": 75,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "fur_pauldron_left": {
+      "refId": "fur_pauldron_left",
+      "name": "Nordic Fur Left Pauldron",
+      "enchant": 10,
+      "type": "Armor",
+      "subType": "LeftPauldron"
+    },
+    "fur_pauldron_right": {
+      "refId": "fur_pauldron_right",
+      "name": "Nordic Fur Right Pauldron",
+      "enchant": 10,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "glass_boots": {
+      "refId": "glass_boots",
+      "name": "Glass Boots",
+      "enchant": 100,
+      "type": "Armor",
+      "subType": "Boots"
+    },
+    "glass_bracer_left": {
+      "refId": "glass_bracer_left",
+      "name": "Left Glass Bracer",
+      "enchant": 100,
+      "type": "Armor",
+      "subType": "LeftBracer"
+    },
+    "glass_bracer_right": {
+      "refId": "glass_bracer_right",
+      "name": "Right Glass Bracer",
+      "enchant": 100,
+      "type": "Armor",
+      "subType": "RightBracer"
+    },
+    "glass_cuirass": {
+      "refId": "glass_cuirass",
+      "name": "Glass Cuirass",
+      "enchant": 120,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "glass_greaves": {
+      "refId": "glass_greaves",
+      "name": "Glass Greaves",
+      "enchant": 100,
+      "type": "Armor",
+      "subType": "Greaves"
+    },
+    "glass_helm": {
+      "refId": "glass_helm",
+      "name": "Glass Helm",
+      "enchant": 150,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "glass_pauldron_left": {
+      "refId": "glass_pauldron_left",
+      "name": "Glass Left Pauldron",
+      "enchant": 15,
+      "type": "Armor",
+      "subType": "LeftPauldron"
+    },
+    "glass_pauldron_right": {
+      "refId": "glass_pauldron_right",
+      "name": "Glass Right Pauldron",
+      "enchant": 15,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "glass_shield": {
+      "refId": "glass_shield",
+      "name": "Glass Shield",
+      "enchant": 300,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "glass_towershield": {
+      "refId": "glass_towershield",
+      "name": "Glass Tower Shield",
+      "enchant": 450,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "gondolier_helm": {
+      "refId": "gondolier_helm",
+      "name": "Gondolier's Helm",
+      "enchant": 100,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "heavy_leather_boots": {
+      "refId": "heavy_leather_boots",
+      "name": "Heavy Leather Boots",
+      "enchant": 26,
+      "type": "Armor",
+      "subType": "Boots"
+    },
+    "imperial_boots": {
+      "refId": "imperial boots",
+      "name": "Imperial Steel Boots",
+      "enchant": 88,
+      "type": "Armor",
+      "subType": "Boots"
+    },
+    "imperial_cuirass_armor": {
+      "refId": "imperial cuirass_armor",
+      "name": "Imperial Steel Cuirass",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "imperial_helmet_armor": {
+      "refId": "imperial helmet armor",
+      "name": "Imperial Steel Helmet",
+      "enchant": 250,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "imperial_helmet_armor_dae_curse": {
+      "refId": "imperial helmet armor_dae_curse",
+      "name": "Imperial Steel Helmet",
+      "enchant": 250,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "imperial_left_gauntlet": {
+      "refId": "imperial left gauntlet",
+      "name": "Imperial Steel Left Gauntlet",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "LeftGauntlet"
+    },
+    "imperial_left_pauldron": {
+      "refId": "imperial left pauldron",
+      "name": "Imperial Steel Left Pauldron",
+      "enchant": 20,
+      "type": "Armor",
+      "subType": "LeftPauldron"
+    },
+    "imperial_right_gauntlet": {
+      "refId": "imperial right gauntlet",
+      "name": "Imperial Steel Right Gauntlet",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "RightGauntlet"
+    },
+    "imperial_right_pauldron": {
+      "refId": "imperial right pauldron",
+      "name": "Imperial Steel Right Pauldron",
+      "enchant": 20,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "imperial_shield": {
+      "refId": "imperial shield",
+      "name": "Imperial Shield",
+      "enchant": 500,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "imperial_chain_coif_helm": {
+      "refId": "imperial_chain_coif_helm",
+      "name": "Imperial Chain Coif",
+      "enchant": 175,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "imperial_chain_cuirass": {
+      "refId": "imperial_chain_cuirass",
+      "name": "Imperial Chain Cuirass",
+      "enchant": 140,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "imperial_chain_greaves": {
+      "refId": "imperial_chain_greaves",
+      "name": "Imperial Chain Greaves",
+      "enchant": 70,
+      "type": "Armor",
+      "subType": "Greaves"
+    },
+    "imperial_chain_pauldron_left": {
+      "refId": "imperial_chain_pauldron_left",
+      "name": "Imperial Chain Left Pauldron",
+      "enchant": 70,
+      "type": "Armor",
+      "subType": "LeftPauldron"
+    },
+    "imperial_chain_pauldron_right": {
+      "refId": "imperial_chain_pauldron_right",
+      "name": "Imperial Chain Right Pauldron",
+      "enchant": 70,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "imperial_greaves": {
+      "refId": "imperial_greaves",
+      "name": "Imperial Steel Greaves",
+      "enchant": 25,
+      "type": "Armor",
+      "subType": "Greaves"
+    },
+    "imperial_studded_cuirass": {
+      "refId": "imperial_studded_cuirass",
+      "name": "Imperial Studded Leather Cuiras",
+      "enchant": 60,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "indoril_boots": {
+      "refId": "indoril boots",
+      "name": "Indoril Boots",
+      "enchant": 26,
+      "type": "Armor",
+      "subType": "Boots"
+    },
+    "indoril_cuirass": {
+      "refId": "indoril cuirass",
+      "name": "Indoril Cuirass",
+      "enchant": 180,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "indoril_helmet": {
+      "refId": "indoril helmet",
+      "name": "Indoril Helmet",
+      "enchant": 225,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "indoril_left_gauntlet": {
+      "refId": "indoril left gauntlet",
+      "name": "Indoril Left Gauntlet",
+      "enchant": 60,
+      "type": "Armor",
+      "subType": "LeftGauntlet"
+    },
+    "indoril_pauldron_left": {
+      "refId": "indoril pauldron left",
+      "name": "Indoril Left Pauldron",
+      "enchant": 10,
+      "type": "Armor",
+      "subType": "LeftPauldron"
+    },
+    "indoril_pauldron_right": {
+      "refId": "indoril pauldron right",
+      "name": "Indoril Right Pauldron",
+      "enchant": 10,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "indoril_right_gauntlet": {
+      "refId": "indoril right gauntlet",
+      "name": "Indoril Right Gauntlet",
+      "enchant": 60,
+      "type": "Armor",
+      "subType": "RightGauntlet"
+    },
+    "indoril_shield": {
+      "refId": "indoril shield",
+      "name": "Indoril Shield",
+      "enchant": 450,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "iron_boots": {
+      "refId": "iron boots",
+      "name": "Iron Boots",
+      "enchant": 26,
+      "type": "Armor",
+      "subType": "Boots"
+    },
+    "iron_bracer_left": {
+      "refId": "iron_bracer_left",
+      "name": "Iron Left Bracer",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "LeftBracer"
+    },
+    "iron_bracer_right": {
+      "refId": "iron_bracer_right",
+      "name": "Iron Right Bracer",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "RightBracer"
+    },
+    "iron_cuirass": {
+      "refId": "iron_cuirass",
+      "name": "Iron Cuirass",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "iron_gauntlet_left": {
+      "refId": "iron_gauntlet_left",
+      "name": "Iron Left Gauntlet",
+      "enchant": 25,
+      "type": "Armor",
+      "subType": "LeftGauntlet"
+    },
+    "iron_gauntlet_right": {
+      "refId": "iron_gauntlet_right",
+      "name": "Iron Right Gauntlet",
+      "enchant": 10,
+      "type": "Armor",
+      "subType": "RightGauntlet"
+    },
+    "iron_greaves": {
+      "refId": "iron_greaves",
+      "name": "Iron Greaves",
+      "enchant": 25,
+      "type": "Armor",
+      "subType": "Greaves"
+    },
+    "iron_helmet": {
+      "refId": "iron_helmet",
+      "name": "Iron Helmet",
+      "enchant": 25,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "iron_pauldron_left": {
+      "refId": "iron_pauldron_left",
+      "name": "Iron Left Pauldron",
+      "enchant": 20,
+      "type": "Armor",
+      "subType": "LeftPauldron"
+    },
+    "iron_pauldron_right": {
+      "refId": "iron_pauldron_right",
+      "name": "Iron Right Pauldron",
+      "enchant": 20,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "iron_shield": {
+      "refId": "iron_shield",
+      "name": "Iron Shield",
+      "enchant": 500,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "iron_towershield": {
+      "refId": "iron_towershield",
+      "name": "Iron Tower Shield",
+      "enchant": 750,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "left_leather_bracer": {
+      "refId": "left leather bracer",
+      "name": "Left Leather Bracer",
+      "enchant": 60,
+      "type": "Armor",
+      "subType": "LeftBracer"
+    },
+    "mole_crab_helm": {
+      "refId": "mole_crab_helm",
+      "name": "Telvanni Mole Crab Helm",
+      "enchant": 500,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "morag_tong_helm": {
+      "refId": "morag_tong_helm",
+      "name": "Morag Tong Helm",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "netch_leather_boiled_cuirass": {
+      "refId": "netch_leather_boiled_cuirass",
+      "name": "Boiled Netch Leather Cuirass",
+      "enchant": 60,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "netch_leather_boiled_helm": {
+      "refId": "netch_leather_boiled_helm",
+      "name": "Boiled Netch Leather Helm",
+      "enchant": 75,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "netch_leather_boots": {
+      "refId": "netch_leather_boots",
+      "name": "Netch Leather Boots",
+      "enchant": 26,
+      "type": "Armor",
+      "subType": "Boots"
+    },
+    "netch_leather_cuirass": {
+      "refId": "netch_leather_cuirass",
+      "name": "Netch Leather Cuirass",
+      "enchant": 60,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "netch_leather_gauntlet_left": {
+      "refId": "netch_leather_gauntlet_left",
+      "name": "Netch Leather Left Gauntlet",
+      "enchant": 60,
+      "type": "Armor",
+      "subType": "LeftGauntlet"
+    },
+    "netch_leather_gauntlet_right": {
+      "refId": "netch_leather_gauntlet_right",
+      "name": "Netch Leather Right Gauntlet",
+      "enchant": 60,
+      "type": "Armor",
+      "subType": "RightGauntlet"
+    },
+    "netch_leather_greaves": {
+      "refId": "netch_leather_greaves",
+      "name": "Netch Leather Greaves",
+      "enchant": 10,
+      "type": "Armor",
+      "subType": "Greaves"
+    },
+    "netch_leather_helm": {
+      "refId": "netch_leather_helm",
+      "name": "Netch Leather Helm",
+      "enchant": 75,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "netch_leather_pauldron_left": {
+      "refId": "netch_leather_pauldron_left",
+      "name": "Netch Leather Left Pauldron",
+      "enchant": 10,
+      "type": "Armor",
+      "subType": "LeftPauldron"
+    },
+    "netch_leather_pauldron_right": {
+      "refId": "netch_leather_pauldron_right",
+      "name": "Netch Leather Right Pauldron",
+      "enchant": 10,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "netch_leather_shield": {
+      "refId": "netch_leather_shield",
+      "name": "Netch Leather Shield",
+      "enchant": 150,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "netch_leather_towershield": {
+      "refId": "netch_leather_towershield",
+      "name": "Netch Leather Tower Shield",
+      "enchant": 225,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "newtscale_cuirass": {
+      "refId": "newtscale_cuirass",
+      "name": "Imperial Newtscale Cuirass",
+      "enchant": 100,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "nordic_iron_cuirass": {
+      "refId": "nordic_iron_cuirass",
+      "name": "Nordic Iron Cuirass",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "nordic_iron_helm": {
+      "refId": "nordic_iron_helm",
+      "name": "Nordic Iron Helm",
+      "enchant": 250,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "nordic_leather_shield": {
+      "refId": "nordic_leather_shield",
+      "name": "Nordic Leather Shield",
+      "enchant": 150,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "nordic_ringmail_cuirass": {
+      "refId": "nordic_ringmail_cuirass",
+      "name": "Nordic Ringmail Cuirass",
+      "enchant": 140,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "orcish_boots": {
+      "refId": "orcish_boots",
+      "name": "Orcish Boots",
+      "enchant": 105,
+      "type": "Armor",
+      "subType": "Boots"
+    },
+    "orcish_bracer_left": {
+      "refId": "orcish_bracer_left",
+      "name": "Orcish Left Bracer",
+      "enchant": 240,
+      "type": "Armor",
+      "subType": "LeftBracer"
+    },
+    "orcish_bracer_right": {
+      "refId": "orcish_bracer_right",
+      "name": "Orcish Right Bracer",
+      "enchant": 240,
+      "type": "Armor",
+      "subType": "RightBracer"
+    },
+    "orcish_cuirass": {
+      "refId": "orcish_cuirass",
+      "name": "Orcish Cuirass",
+      "enchant": 240,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "orcish_greaves": {
+      "refId": "orcish_greaves",
+      "name": "Orcish Greaves",
+      "enchant": 30,
+      "type": "Armor",
+      "subType": "Greaves"
+    },
+    "orcish_helm": {
+      "refId": "orcish_helm",
+      "name": "Orcish Helm",
+      "enchant": 300,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "orcish_pauldron_left": {
+      "refId": "orcish_pauldron_left",
+      "name": "Orcish Left Pauldron",
+      "enchant": 24,
+      "type": "Armor",
+      "subType": "LeftPauldron"
+    },
+    "orcish_pauldron_right": {
+      "refId": "orcish_pauldron_right",
+      "name": "Orcish Right Pauldron",
+      "enchant": 24,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "orcish_towershield": {
+      "refId": "orcish_towershield",
+      "name": "Orcish Tower Shield",
+      "enchant": 900,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "redoran_master_helm": {
+      "refId": "redoran_master_helm",
+      "name": "Redoran Master Helm",
+      "enchant": 225,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "right_leather_bracer": {
+      "refId": "right leather bracer",
+      "name": "Right Leather Bracer",
+      "enchant": 60,
+      "type": "Armor",
+      "subType": "RightBracer"
+    },
+    "silver_cuirass": {
+      "refId": "silver_cuirass",
+      "name": "Imperial Silver Cuirass",
+      "enchant": 160,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "silver_dukesguard_cuirass": {
+      "refId": "silver_dukesguard_cuirass",
+      "name": "Duke's Guard Silver Cuirass",
+      "enchant": 160,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "silver_helm": {
+      "refId": "silver_helm",
+      "name": "Imperial Silver Helm",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "steel_boots": {
+      "refId": "steel_boots",
+      "name": "Steel Boots",
+      "enchant": 88,
+      "type": "Armor",
+      "subType": "Boots"
+    },
+    "steel_cuirass": {
+      "refId": "steel_cuirass",
+      "name": "Steel Cuirass",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "steel_gauntlet_left": {
+      "refId": "steel_gauntlet_left",
+      "name": "Steel Left Gauntlet",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "LeftGauntlet"
+    },
+    "steel_gauntlet_right": {
+      "refId": "steel_gauntlet_right",
+      "name": "Steel Right Gauntlet",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "RightGauntlet"
+    },
+    "steel_greaves": {
+      "refId": "steel_greaves",
+      "name": "Steel Greaves",
+      "enchant": 25,
+      "type": "Armor",
+      "subType": "Greaves"
+    },
+    "steel_helm": {
+      "refId": "steel_helm",
+      "name": "Steel Helm",
+      "enchant": 250,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "steel_pauldron_left": {
+      "refId": "steel_pauldron_left",
+      "name": "Steel Left Pauldron",
+      "enchant": 20,
+      "type": "Armor",
+      "subType": "LeftPauldron"
+    },
+    "steel_pauldron_right": {
+      "refId": "steel_pauldron_right",
+      "name": "Steel Right Pauldron",
+      "enchant": 20,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "steel_shield": {
+      "refId": "steel_shield",
+      "name": "Steel Shield",
+      "enchant": 500,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "steel_towershield": {
+      "refId": "steel_towershield",
+      "name": "Steel Tower Shield",
+      "enchant": 750,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "templar_boots": {
+      "refId": "templar boots",
+      "name": "Imperial Templar Boots",
+      "enchant": 88,
+      "type": "Armor",
+      "subType": "Boots"
+    },
+    "templar_bracer_left": {
+      "refId": "templar bracer left",
+      "name": "Imperial Templar Left Bracer",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "LeftBracer"
+    },
+    "templar_bracer_right": {
+      "refId": "templar bracer right",
+      "name": "Imperial Templar Right Bracer",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "RightBracer"
+    },
+    "templar_cuirass": {
+      "refId": "templar_cuirass",
+      "name": "Imperial Templar Knight Cuirass",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "templar_greaves": {
+      "refId": "templar_greaves",
+      "name": "Imperial Templar Greaves",
+      "enchant": 25,
+      "type": "Armor",
+      "subType": "Greaves"
+    },
+    "templar_helmet_armor": {
+      "refId": "templar_helmet_armor",
+      "name": "Imperial Templar Helmet",
+      "enchant": 250,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "templar_pauldron_left": {
+      "refId": "templar_pauldron_left",
+      "name": "Imperial Templar Left Pauldron",
+      "enchant": 20,
+      "type": "Armor",
+      "subType": "LeftPauldron"
+    },
+    "templar_pauldron_right": {
+      "refId": "templar_pauldron_right",
+      "name": "Imperial Templar Right Pauldron",
+      "enchant": 20,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "trollbone_cuirass": {
+      "refId": "trollbone_cuirass",
+      "name": "Nordic Trollbone Cuirass",
+      "enchant": 160,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "trollbone_helm": {
+      "refId": "trollbone_helm",
+      "name": "Nordic Trollbone Helm",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "trollbone_shield": {
+      "refId": "trollbone_shield",
+      "name": "Nordic Trollbone Shield",
+      "enchant": 400,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "amulet_aundae": {
+      "refId": "amulet_aundae",
+      "name": "Aundae Amulet",
+      "enchant": 600,
+      "type": "Clothing"
+    },
+    "amulet_berne": {
+      "refId": "amulet_berne",
+      "name": "Berne Amulet",
+      "enchant": 600,
+      "type": "Clothing"
+    },
+    "amulet_pop00": {
+      "refId": "amulet_pop00",
+      "name": "Pop's Amulet",
+      "enchant": 150,
+      "type": "Clothing"
+    },
+    "amulet_quarra": {
+      "refId": "amulet_quarra",
+      "name": "Quarra Amulet",
+      "enchant": 600,
+      "type": "Clothing"
+    },
+    "amulet_skink_unique": {
+      "refId": "amulet_skink_unique",
+      "name": "Skink's Amulet",
+      "enchant": 600,
+      "type": "Clothing"
+    },
+    "common_amulet_01": {
+      "refId": "common_amulet_01",
+      "name": "Common Amulet",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_amulet_02": {
+      "refId": "common_amulet_02",
+      "name": "Common Amulet",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_amulet_03": {
+      "refId": "common_amulet_03",
+      "name": "Common Amulet",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_amulet_04": {
+      "refId": "common_amulet_04",
+      "name": "Common Amulet",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_amulet_05": {
+      "refId": "common_amulet_05",
+      "name": "Common Amulet",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_belt_01": {
+      "refId": "common_belt_01",
+      "name": "Common Belt",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_belt_02": {
+      "refId": "common_belt_02",
+      "name": "Common Belt",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_belt_03": {
+      "refId": "common_belt_03",
+      "name": "Common Belt",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_belt_04": {
+      "refId": "common_belt_04",
+      "name": "Common Belt",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_belt_05": {
+      "refId": "common_belt_05",
+      "name": "Common Belt",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_glove_l_balmolagmer": {
+      "refId": "common_glove_l_balmolagmer",
+      "name": "Left Bal Molagmer Glove",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_glove_l_moragtong": {
+      "refId": "common_glove_l_moragtong",
+      "name": "Black Left Glove",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_glove_left_01": {
+      "refId": "common_glove_left_01",
+      "name": "Common Left Glove",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_glove_r_balmolagmer": {
+      "refId": "common_glove_r_balmolagmer",
+      "name": "Right Bal Molagmer Glove",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_glove_r_moragtong": {
+      "refId": "common_glove_r_moragtong",
+      "name": "Black Right Glove",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_glove_right_01": {
+      "refId": "common_glove_right_01",
+      "name": "Common Right Glove",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_pants_01": {
+      "refId": "common_pants_01",
+      "name": "Common Pants",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_pants_01_a": {
+      "refId": "common_pants_01_a",
+      "name": "Common Pants",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_pants_01_e": {
+      "refId": "common_pants_01_e",
+      "name": "Common Pants",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_pants_01_u": {
+      "refId": "common_pants_01_u",
+      "name": "Common Pants",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_pants_01_z": {
+      "refId": "common_pants_01_z",
+      "name": "Common Pants",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_pants_02": {
+      "refId": "common_pants_02",
+      "name": "Common Pants",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_pants_02_hentus": {
+      "refId": "common_pants_02_hentus",
+      "name": "Hentus Pants",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_pants_03": {
+      "refId": "common_pants_03",
+      "name": "Common Pants",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_pants_03_b": {
+      "refId": "common_pants_03_b",
+      "name": "Common Pants",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_pants_03_c": {
+      "refId": "common_pants_03_c",
+      "name": "Common Pants",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_pants_04": {
+      "refId": "common_pants_04",
+      "name": "Common Pants",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_pants_04_b": {
+      "refId": "common_pants_04_b",
+      "name": "Common Pants",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_pants_05": {
+      "refId": "common_pants_05",
+      "name": "Common Pants",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_ring_01": {
+      "refId": "common_ring_01",
+      "name": "Common Ring",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_ring_01_arena": {
+      "refId": "common_ring_01_arena",
+      "name": "Common Ring",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_ring_01_fg_corp01": {
+      "refId": "common_ring_01_fg_corp01",
+      "name": "Common Ring",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_ring_01_fg_nchur01": {
+      "refId": "common_ring_01_fg_nchur01",
+      "name": "Common Ring",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_ring_01_fg_nchur02": {
+      "refId": "common_ring_01_fg_nchur02",
+      "name": "Common Ring",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_ring_01_fg_nchur03": {
+      "refId": "common_ring_01_fg_nchur03",
+      "name": "Common Ring",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_ring_01_fg_nchur04": {
+      "refId": "common_ring_01_fg_nchur04",
+      "name": "Common Ring",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_ring_01_haunt_ken": {
+      "refId": "common_ring_01_haunt_ken",
+      "name": "Common Ring",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_ring_01_mgbwg": {
+      "refId": "common_ring_01_mgbwg",
+      "name": "Common Ring",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_ring_01_mge": {
+      "refId": "common_ring_01_mge",
+      "name": "Common Ring",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_ring_01_tt_mountkand": {
+      "refId": "common_ring_01_tt_mountkand",
+      "name": "Common Ring",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_ring_02": {
+      "refId": "common_ring_02",
+      "name": "Common Ring",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_ring_03": {
+      "refId": "common_ring_03",
+      "name": "Common Ring",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_ring_04": {
+      "refId": "common_ring_04",
+      "name": "Common Ring",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_ring_05": {
+      "refId": "common_ring_05",
+      "name": "Common Ring",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_ring_danar": {
+      "refId": "common_ring_danar",
+      "name": "Danar's Ring",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_ring_tsiya": {
+      "refId": "common_ring_tsiya",
+      "name": "Tsiya's Ring",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_robe_01": {
+      "refId": "common_robe_01",
+      "name": "Common Robe",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_robe_02": {
+      "refId": "common_robe_02",
+      "name": "Common Robe",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_robe_02_h": {
+      "refId": "common_robe_02_h",
+      "name": "Common Robe",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_robe_02_hh": {
+      "refId": "common_robe_02_hh",
+      "name": "Common Robe",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_robe_02_r": {
+      "refId": "common_robe_02_r",
+      "name": "Common Robe",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_robe_02_rr": {
+      "refId": "common_robe_02_rr",
+      "name": "Common Robe",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_robe_02_t": {
+      "refId": "common_robe_02_t",
+      "name": "Common Robe",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_robe_02_tt": {
+      "refId": "common_robe_02_tt",
+      "name": "Common Robe",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_robe_03": {
+      "refId": "common_robe_03",
+      "name": "Common Robe",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_robe_03_a": {
+      "refId": "common_robe_03_a",
+      "name": "Common Robe",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_robe_03_b": {
+      "refId": "common_robe_03_b",
+      "name": "Common Robe",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_robe_04": {
+      "refId": "common_robe_04",
+      "name": "Common Robe",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_robe_05": {
+      "refId": "common_robe_05",
+      "name": "Common Robe",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_robe_05_a": {
+      "refId": "common_robe_05_a",
+      "name": "Common Robe",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_robe_05_b": {
+      "refId": "common_robe_05_b",
+      "name": "Common Robe",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_robe_05_c": {
+      "refId": "common_robe_05_c",
+      "name": "Common Robe",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_shirt_01": {
+      "refId": "common_shirt_01",
+      "name": "Common Shirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_shirt_01_a": {
+      "refId": "common_shirt_01_a",
+      "name": "Common Shirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_shirt_01_e": {
+      "refId": "common_shirt_01_e",
+      "name": "Common Shirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_shirt_01_u": {
+      "refId": "common_shirt_01_u",
+      "name": "Common Shirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_shirt_01_z": {
+      "refId": "common_shirt_01_z",
+      "name": "Common Shirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_shirt_02": {
+      "refId": "common_shirt_02",
+      "name": "Common Shirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_shirt_02_h": {
+      "refId": "common_shirt_02_h",
+      "name": "Common Shirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_shirt_02_hh": {
+      "refId": "common_shirt_02_hh",
+      "name": "Common Shirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_shirt_02_r": {
+      "refId": "common_shirt_02_r",
+      "name": "Common Shirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_shirt_02_rr": {
+      "refId": "common_shirt_02_rr",
+      "name": "Common Shirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_shirt_02_t": {
+      "refId": "common_shirt_02_t",
+      "name": "Common Shirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_shirt_02_tt": {
+      "refId": "common_shirt_02_tt",
+      "name": "Common Shirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_shirt_03": {
+      "refId": "common_shirt_03",
+      "name": "Common Shirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_shirt_03_b": {
+      "refId": "common_shirt_03_b",
+      "name": "Common Shirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_shirt_03_c": {
+      "refId": "common_shirt_03_c",
+      "name": "Common Shirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_shirt_04": {
+      "refId": "common_shirt_04",
+      "name": "Common Shirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_shirt_04_a": {
+      "refId": "common_shirt_04_a",
+      "name": "Common Shirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_shirt_04_b": {
+      "refId": "common_shirt_04_b",
+      "name": "Common Shirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_shirt_04_c": {
+      "refId": "common_shirt_04_c",
+      "name": "Common Shirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_shirt_05": {
+      "refId": "common_shirt_05",
+      "name": "Common Shirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_shirt_gondolier": {
+      "refId": "common_shirt_gondolier",
+      "name": "Gondolier Shirt",
+      "enchant": 100,
+      "type": "Clothing"
+    },
+    "common_shoes_01": {
+      "refId": "common_shoes_01",
+      "name": "Common Shoes",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_shoes_02": {
+      "refId": "common_shoes_02",
+      "name": "Common Shoes",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_shoes_03": {
+      "refId": "common_shoes_03",
+      "name": "Common Shoes",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_shoes_04": {
+      "refId": "common_shoes_04",
+      "name": "Common Shoes",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_shoes_05": {
+      "refId": "common_shoes_05",
+      "name": "Common Shoes",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_skirt_01": {
+      "refId": "common_skirt_01",
+      "name": "Common Skirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_skirt_02": {
+      "refId": "common_skirt_02",
+      "name": "Common Skirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_skirt_03": {
+      "refId": "common_skirt_03",
+      "name": "Common Skirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_skirt_04": {
+      "refId": "common_skirt_04",
+      "name": "Common Skirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_skirt_04_c": {
+      "refId": "common_skirt_04_c",
+      "name": "Common Skirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_skirt_05": {
+      "refId": "common_skirt_05",
+      "name": "Common Skirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "daedric_special": {
+      "refId": "daedric_special",
+      "name": "Daedric Sanctuary Amulet",
+      "enchant": 150,
+      "type": "Clothing"
+    },
+    "daedric_special01": {
+      "refId": "daedric_special01",
+      "name": "Tel Fyr amulet",
+      "enchant": 150,
+      "type": "Clothing"
+    },
+    "expensive_amulet_01": {
+      "refId": "expensive_amulet_01",
+      "name": "Expensive Amulet",
+      "enchant": 150,
+      "type": "Clothing"
+    },
+    "expensive_amulet_02": {
+      "refId": "expensive_amulet_02",
+      "name": "Expensive Amulet",
+      "enchant": 150,
+      "type": "Clothing"
+    },
+    "expensive_amulet_03": {
+      "refId": "expensive_amulet_03",
+      "name": "Expensive Amulet",
+      "enchant": 150,
+      "type": "Clothing"
+    },
+    "expensive_amulet_aeta": {
+      "refId": "expensive_amulet_aeta",
+      "name": "Expensive Amulet",
+      "enchant": 150,
+      "type": "Clothing"
+    },
+    "expensive_amulet_delyna": {
+      "refId": "expensive_amulet_delyna",
+      "name": "Delyna's Locket",
+      "enchant": 150,
+      "type": "Clothing"
+    },
+    "expensive_amulet_methas": {
+      "refId": "expensive_amulet_methas",
+      "name": "Methas Hlaalu's Amulet",
+      "enchant": 150,
+      "type": "Clothing"
+    },
+    "expensive_belt_01": {
+      "refId": "expensive_belt_01",
+      "name": "Expensive Belt",
+      "enchant": 50,
+      "type": "Clothing"
+    },
+    "expensive_belt_02": {
+      "refId": "expensive_belt_02",
+      "name": "Expensive Belt",
+      "enchant": 50,
+      "type": "Clothing"
+    },
+    "expensive_belt_03": {
+      "refId": "expensive_belt_03",
+      "name": "Expensive Belt",
+      "enchant": 50,
+      "type": "Clothing"
+    },
+    "expensive_glove_left_01": {
+      "refId": "expensive_glove_left_01",
+      "name": "Expensive Left Glove",
+      "enchant": 50,
+      "type": "Clothing"
+    },
+    "expensive_glove_left_ilmeni": {
+      "refId": "expensive_glove_left_ilmeni",
+      "name": "Ilmeni's glove",
+      "enchant": 50,
+      "type": "Clothing"
+    },
+    "expensive_glove_right_01": {
+      "refId": "expensive_glove_right_01",
+      "name": "Expensive Right Glove",
+      "enchant": 50,
+      "type": "Clothing"
+    },
+    "expensive_pants_01": {
+      "refId": "expensive_pants_01",
+      "name": "Expensive Pants",
+      "enchant": 75,
+      "type": "Clothing"
+    },
+    "expensive_pants_01_a": {
+      "refId": "expensive_pants_01_a",
+      "name": "Expensive Pants",
+      "enchant": 75,
+      "type": "Clothing"
+    },
+    "expensive_pants_01_e": {
+      "refId": "expensive_pants_01_e",
+      "name": "Expensive Pants",
+      "enchant": 75,
+      "type": "Clothing"
+    },
+    "expensive_pants_01_u": {
+      "refId": "expensive_pants_01_u",
+      "name": "Expensive Pants",
+      "enchant": 75,
+      "type": "Clothing"
+    },
+    "expensive_pants_01_z": {
+      "refId": "expensive_pants_01_z",
+      "name": "Expensive Pants",
+      "enchant": 75,
+      "type": "Clothing"
+    },
+    "expensive_pants_02": {
+      "refId": "expensive_pants_02",
+      "name": "Expensive Pants",
+      "enchant": 75,
+      "type": "Clothing"
+    },
+    "expensive_pants_03": {
+      "refId": "expensive_pants_03",
+      "name": "Expensive Pants",
+      "enchant": 75,
+      "type": "Clothing"
+    },
+    "expensive_ring_01": {
+      "refId": "expensive_ring_01",
+      "name": "Expensive Ring",
+      "enchant": 150,
+      "type": "Clothing"
+    },
+    "expensive_ring_01_bill": {
+      "refId": "expensive_ring_01_bill",
+      "name": "Expensive Ring",
+      "enchant": 150,
+      "type": "Clothing"
+    },
+    "expensive_ring_02": {
+      "refId": "expensive_ring_02",
+      "name": "Expensive Ring",
+      "enchant": 150,
+      "type": "Clothing"
+    },
+    "expensive_ring_03": {
+      "refId": "expensive_ring_03",
+      "name": "Expensive Ring",
+      "enchant": 150,
+      "type": "Clothing"
+    },
+    "expensive_ring_aeta": {
+      "refId": "expensive_ring_aeta",
+      "name": "Expensive Ring",
+      "enchant": 150,
+      "type": "Clothing"
+    },
+    "expensive_robe_01": {
+      "refId": "expensive_robe_01",
+      "name": "Expensive Robe",
+      "enchant": 50,
+      "type": "Clothing"
+    },
+    "expensive_robe_02": {
+      "refId": "expensive_robe_02",
+      "name": "Expensive Robe",
+      "enchant": 50,
+      "type": "Clothing"
+    },
+    "expensive_robe_02_a": {
+      "refId": "expensive_robe_02_a",
+      "name": "Expensive Robe",
+      "enchant": 50,
+      "type": "Clothing"
+    },
+    "expensive_robe_03": {
+      "refId": "expensive_robe_03",
+      "name": "Expensive Robe",
+      "enchant": 50,
+      "type": "Clothing"
+    },
+    "expensive_shirt_01": {
+      "refId": "expensive_shirt_01",
+      "name": "Expensive Shirt",
+      "enchant": 75,
+      "type": "Clothing"
+    },
+    "expensive_shirt_01_a": {
+      "refId": "expensive_shirt_01_a",
+      "name": "Expensive Shirt",
+      "enchant": 75,
+      "type": "Clothing"
+    },
+    "expensive_shirt_01_e": {
+      "refId": "expensive_shirt_01_e",
+      "name": "Expensive Shirt",
+      "enchant": 75,
+      "type": "Clothing"
+    },
+    "expensive_shirt_01_u": {
+      "refId": "expensive_shirt_01_u",
+      "name": "Expensive Shirt",
+      "enchant": 75,
+      "type": "Clothing"
+    },
+    "expensive_shirt_01_z": {
+      "refId": "expensive_shirt_01_z",
+      "name": "Expensive Shirt",
+      "enchant": 75,
+      "type": "Clothing"
+    },
+    "expensive_shirt_02": {
+      "refId": "expensive_shirt_02",
+      "name": "Expensive Shirt",
+      "enchant": 75,
+      "type": "Clothing"
+    },
+    "expensive_shirt_03": {
+      "refId": "expensive_shirt_03",
+      "name": "Expensive Shirt",
+      "enchant": 75,
+      "type": "Clothing"
+    },
+    "expensive_shoes_01": {
+      "refId": "expensive_shoes_01",
+      "name": "Expensive Shoes",
+      "enchant": 50,
+      "type": "Clothing"
+    },
+    "expensive_shoes_02": {
+      "refId": "expensive_shoes_02",
+      "name": "Expensive Shoes",
+      "enchant": 50,
+      "type": "Clothing"
+    },
+    "expensive_shoes_03": {
+      "refId": "expensive_shoes_03",
+      "name": "Expensive Shoes",
+      "enchant": 50,
+      "type": "Clothing"
+    },
+    "expensive_skirt_01": {
+      "refId": "expensive_skirt_01",
+      "name": "Expensive Skirt",
+      "enchant": 75,
+      "type": "Clothing"
+    },
+    "expensive_skirt_02": {
+      "refId": "expensive_skirt_02",
+      "name": "Expensive Skirt",
+      "enchant": 75,
+      "type": "Clothing"
+    },
+    "expensive_skirt_03": {
+      "refId": "expensive_skirt_03",
+      "name": "Expensive Shirt",
+      "enchant": 75,
+      "type": "Clothing"
+    },
+    "exquisite_amulet_01": {
+      "refId": "exquisite_amulet_01",
+      "name": "Exquisite Amulet",
+      "enchant": 1200,
+      "type": "Clothing"
+    },
+    "exquisite_amulet_hlervu1": {
+      "refId": "exquisite_amulet_hlervu1",
+      "name": "Hlervu Locket",
+      "enchant": 1200,
+      "type": "Clothing"
+    },
+    "exquisite_belt_01": {
+      "refId": "exquisite_belt_01",
+      "name": "Exquisite Belt",
+      "enchant": 400,
+      "type": "Clothing"
+    },
+    "exquisite_pants_01": {
+      "refId": "exquisite_pants_01",
+      "name": "Exquisite Pants",
+      "enchant": 600,
+      "type": "Clothing"
+    },
+    "exquisite_ring_01": {
+      "refId": "exquisite_ring_01",
+      "name": "Exquisite Ring",
+      "enchant": 1200,
+      "type": "Clothing"
+    },
+    "exquisite_ring_02": {
+      "refId": "exquisite_ring_02",
+      "name": "Exquisite Ring",
+      "enchant": 1200,
+      "type": "Clothing"
+    },
+    "exquisite_ring_brallion": {
+      "refId": "exquisite_ring_brallion",
+      "name": "Brallion's Exquisite Ring",
+      "enchant": 1200,
+      "type": "Clothing"
+    },
+    "exquisite_ring_processus": {
+      "refId": "exquisite_ring_processus",
+      "name": "Processus Vitellius' Ring",
+      "enchant": 1200,
+      "type": "Clothing"
+    },
+    "exquisite_robe_01": {
+      "refId": "exquisite_robe_01",
+      "name": "Exquisite Robe",
+      "enchant": 400,
+      "type": "Clothing"
+    },
+    "exquisite_shirt_01": {
+      "refId": "exquisite_shirt_01",
+      "name": "Exquisite Shirt",
+      "enchant": 600,
+      "type": "Clothing"
+    },
+    "exquisite_shirt_01_rasha": {
+      "refId": "exquisite_shirt_01_rasha",
+      "name": "Exquisite Shirt",
+      "enchant": 600,
+      "type": "Clothing"
+    },
+    "exquisite_shirt_01_wedding": {
+      "refId": "exquisite_shirt_01_wedding",
+      "name": "Ashkhan's Wedding Gift",
+      "enchant": 600,
+      "type": "Clothing"
+    },
+    "exquisite_shoes_01": {
+      "refId": "exquisite_shoes_01",
+      "name": "Exquisite Shoes",
+      "enchant": 400,
+      "type": "Clothing"
+    },
+    "exquisite_skirt_01": {
+      "refId": "exquisite_skirt_01",
+      "name": "Exquisite Skirt",
+      "enchant": 600,
+      "type": "Clothing"
+    },
+    "extravagant_amulet_01": {
+      "refId": "extravagant_amulet_01",
+      "name": "Extravagant Sapphire Amulet",
+      "enchant": 600,
+      "type": "Clothing"
+    },
+    "extravagant_amulet_02": {
+      "refId": "extravagant_amulet_02",
+      "name": "Extravagant Ruby Amulet",
+      "enchant": 600,
+      "type": "Clothing"
+    },
+    "extravagant_belt_01": {
+      "refId": "extravagant_belt_01",
+      "name": "Extravagant Belt",
+      "enchant": 200,
+      "type": "Clothing"
+    },
+    "extravagant_belt_02": {
+      "refId": "extravagant_belt_02",
+      "name": "Extravagant Belt",
+      "enchant": 200,
+      "type": "Clothing"
+    },
+    "extravagant_glove_left_01": {
+      "refId": "extravagant_glove_left_01",
+      "name": "Extravagant Left Glove",
+      "enchant": 200,
+      "type": "Clothing"
+    },
+    "extravagant_glove_left_maur": {
+      "refId": "extravagant_glove_left_maur",
+      "name": "Maurrie's Left Glove",
+      "enchant": 200,
+      "type": "Clothing"
+    },
+    "extravagant_glove_right_01": {
+      "refId": "extravagant_glove_right_01",
+      "name": "Extravagant Right Glove",
+      "enchant": 200,
+      "type": "Clothing"
+    },
+    "extravagant_glove_right_maur": {
+      "refId": "extravagant_glove_right_maur",
+      "name": "Maurrie's Right Glove",
+      "enchant": 200,
+      "type": "Clothing"
+    },
+    "extravagant_pants_01": {
+      "refId": "extravagant_pants_01",
+      "name": "Extravagant Pants",
+      "enchant": 300,
+      "type": "Clothing"
+    },
+    "extravagant_pants_02": {
+      "refId": "extravagant_pants_02",
+      "name": "Extravagant Pants",
+      "enchant": 300,
+      "type": "Clothing"
+    },
+    "extravagant_ring_01": {
+      "refId": "extravagant_ring_01",
+      "name": "Extravagant Ring",
+      "enchant": 600,
+      "type": "Clothing"
+    },
+    "extravagant_ring_02": {
+      "refId": "extravagant_ring_02",
+      "name": "Extravagant Ring",
+      "enchant": 600,
+      "type": "Clothing"
+    },
+    "extravagant_ring_aund_uni": {
+      "refId": "extravagant_ring_aund_uni",
+      "name": "Aundae Signet Ring",
+      "enchant": 600,
+      "type": "Clothing"
+    },
+    "extravagant_robe_01": {
+      "refId": "extravagant_robe_01",
+      "name": "Extravagant Robe",
+      "enchant": 200,
+      "type": "Clothing"
+    },
+    "extravagant_robe_01_a": {
+      "refId": "extravagant_robe_01_a",
+      "name": "Extravagant Robe",
+      "enchant": 200,
+      "type": "Clothing"
+    },
+    "extravagant_robe_01_b": {
+      "refId": "extravagant_robe_01_b",
+      "name": "Extravagant Robe",
+      "enchant": 200,
+      "type": "Clothing"
+    },
+    "extravagant_robe_01_c": {
+      "refId": "extravagant_robe_01_c",
+      "name": "Extravagant Robe",
+      "enchant": 200,
+      "type": "Clothing"
+    },
+    "extravagant_robe_01_h": {
+      "refId": "extravagant_robe_01_h",
+      "name": "Extravagant Robe",
+      "enchant": 200,
+      "type": "Clothing"
+    },
+    "extravagant_robe_01_r": {
+      "refId": "extravagant_robe_01_r",
+      "name": "Extravagant Robe",
+      "enchant": 200,
+      "type": "Clothing"
+    },
+    "extravagant_robe_01_t": {
+      "refId": "extravagant_robe_01_t",
+      "name": "Extravagant Robe",
+      "enchant": 200,
+      "type": "Clothing"
+    },
+    "extravagant_robe_02": {
+      "refId": "extravagant_robe_02",
+      "name": "Extravagant Robe",
+      "enchant": 200,
+      "type": "Clothing"
+    },
+    "extravagant_shirt_01": {
+      "refId": "extravagant_shirt_01",
+      "name": "Extravagant Shirt",
+      "enchant": 300,
+      "type": "Clothing"
+    },
+    "extravagant_shirt_01_h": {
+      "refId": "extravagant_shirt_01_h",
+      "name": "Extravagant Shirt",
+      "enchant": 300,
+      "type": "Clothing"
+    },
+    "extravagant_shirt_01_r": {
+      "refId": "extravagant_shirt_01_r",
+      "name": "Extravagant Shirt",
+      "enchant": 300,
+      "type": "Clothing"
+    },
+    "extravagant_shirt_01_t": {
+      "refId": "extravagant_shirt_01_t",
+      "name": "Extravagant Shirt",
+      "enchant": 300,
+      "type": "Clothing"
+    },
+    "extravagant_shirt_02": {
+      "refId": "extravagant_shirt_02",
+      "name": "Extravagant Shirt",
+      "enchant": 300,
+      "type": "Clothing"
+    },
+    "extravagant_shoes_01": {
+      "refId": "extravagant_shoes_01",
+      "name": "Extravagant Shoes",
+      "enchant": 200,
+      "type": "Clothing"
+    },
+    "extravagant_shoes_02": {
+      "refId": "extravagant_shoes_02",
+      "name": "Extravagant Shoes",
+      "enchant": 200,
+      "type": "Clothing"
+    },
+    "extravagant_skirt_01": {
+      "refId": "extravagant_skirt_01",
+      "name": "Extravagant Skirt",
+      "enchant": 300,
+      "type": "Clothing"
+    },
+    "extravagant_skirt_02": {
+      "refId": "extravagant_skirt_02",
+      "name": "Extravagant Skirt",
+      "enchant": 300,
+      "type": "Clothing"
+    },
+    "imperial_belt": {
+      "refId": "imperial belt",
+      "name": "Imperial Belt",
+      "enchant": 5,
+      "type": "Clothing"
+    },
+    "imperial_skirt_clothing": {
+      "refId": "imperial skirt_clothing",
+      "name": "Imperial Skirt",
+      "enchant": 5,
+      "type": "Clothing"
+    },
+    "indoril_belt": {
+      "refId": "indoril_belt",
+      "name": "Indoril Belt",
+      "enchant": 5,
+      "type": "Clothing"
+    },
+    "julielle_aumines_amulet": {
+      "refId": "julielle_aumines_amulet",
+      "name": "Julielle Aumine's Amulet",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "mandas_locket": {
+      "refId": "mandas_locket",
+      "name": "Mandas Family Locket",
+      "enchant": 1200,
+      "type": "Clothing"
+    },
+    "othril_ring": {
+      "refId": "othril_ring",
+      "name": "Othril Ring",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "sarandas_amulet": {
+      "refId": "sarandas_amulet",
+      "name": "Firejade Amulet",
+      "enchant": 150,
+      "type": "Clothing"
+    },
+    "sarandas_belt": {
+      "refId": "sarandas_belt",
+      "name": "Racer Suede Belt",
+      "enchant": 50,
+      "type": "Clothing"
+    },
+    "sarandas_pants_2": {
+      "refId": "sarandas_pants_2",
+      "name": "Silk Pants",
+      "enchant": 600,
+      "type": "Clothing"
+    },
+    "sarandas_ring_1": {
+      "refId": "sarandas_ring_1",
+      "name": "Glass Ring",
+      "enchant": 150,
+      "type": "Clothing"
+    },
+    "sarandas_ring_2": {
+      "refId": "sarandas_ring_2",
+      "name": "Ebony Ring",
+      "enchant": 150,
+      "type": "Clothing"
+    },
+    "sarandas_shirt_2": {
+      "refId": "sarandas_shirt_2",
+      "name": "Brocade Shirt",
+      "enchant": 600,
+      "type": "Clothing"
+    },
+    "templar_belt": {
+      "refId": "templar belt",
+      "name": "Imperial Templar Belt",
+      "enchant": 100,
+      "type": "Clothing"
+    },
+    "templar_skirt_obj": {
+      "refId": "templar skirt obj",
+      "name": "Imperial Templar Skirt",
+      "enchant": 5,
+      "type": "Clothing"
+    },
+    "therana's_skirt": {
+      "refId": "therana's skirt",
+      "name": "Therana's Skirt",
+      "enchant": 600,
+      "type": "Clothing"
+    },
+    "bm_huntsman_axe": {
+      "refId": "bm huntsman axe",
+      "name": "Huntsman Axe",
+      "enchant": 50,
+      "type": "Weapon",
+      "subType": "AxeOneHand"
+    },
+    "bm_huntsman_crossbow": {
+      "refId": "bm huntsman crossbow",
+      "name": "Huntsman Crossbow",
+      "enchant": 100,
+      "type": "Weapon",
+      "subType": "MarksmanCrossbow"
+    },
+    "bm_huntsman_longsword": {
+      "refId": "bm huntsman longsword",
+      "name": "Huntsman Longsword",
+      "enchant": 50,
+      "type": "Weapon",
+      "subType": "LongBladeOneHand"
+    },
+    "bm_huntsman_spear": {
+      "refId": "bm huntsman spear",
+      "name": "Huntsman Spear",
+      "enchant": 85,
+      "type": "Weapon",
+      "subType": "SpearTwoWide"
+    },
+    "bm_huntsman_war_axe": {
+      "refId": "bm huntsman war axe",
+      "name": "Huntsman War Axe",
+      "enchant": 50,
+      "type": "Weapon",
+      "subType": "AxeOneHand"
+    },
+    "bm_huntsmanbolt": {
+      "refId": "bm huntsmanbolt",
+      "name": "Huntsman Bolt",
+      "enchant": 10,
+      "type": "Weapon",
+      "subType": "Bolt"
+    },
+    "bm_ice_dagger": {
+      "refId": "bm ice dagger",
+      "name": "Stalhrim Dagger",
+      "enchant": 65,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "bm_ice_longsword": {
+      "refId": "bm ice longsword",
+      "name": "Stalhrim Longsword",
+      "enchant": 80,
+      "type": "Weapon",
+      "subType": "LongBladeOneHand"
+    },
+    "bm_ice_mace": {
+      "refId": "bm ice mace",
+      "name": "Stalhrim Mace",
+      "enchant": 200,
+      "type": "Weapon",
+      "subType": "BluntOneHand"
+    },
+    "bm_ice_war_axe": {
+      "refId": "bm ice war axe",
+      "name": "Stalhrim War Axe",
+      "enchant": 250,
+      "type": "Weapon",
+      "subType": "AxeOneHand"
+    },
+    "bm_nord_leg": {
+      "refId": "bm nord leg",
+      "name": "Severed Nord Leg",
+      "enchant": 70,
+      "type": "Weapon",
+      "subType": "BluntOneHand"
+    },
+    "bm_nordic_pick": {
+      "refId": "bm nordic pick",
+      "name": "Ancient Nordic Pick Axe",
+      "enchant": 100,
+      "type": "Weapon",
+      "subType": "AxeOneHand"
+    },
+    "bm_nordic_silver_axe": {
+      "refId": "bm nordic silver axe",
+      "name": "Nordic Silver Axe",
+      "enchant": 65,
+      "type": "Weapon",
+      "subType": "AxeOneHand"
+    },
+    "bm_nordic_silver_battleaxe": {
+      "refId": "bm nordic silver battleaxe",
+      "name": "Nordic Silver Battleaxe",
+      "enchant": 100,
+      "type": "Weapon",
+      "subType": "AxeTwoHand"
+    },
+    "bm_nordic_silver_claymore": {
+      "refId": "bm nordic silver claymore",
+      "name": "Nordic Silver Claymore",
+      "enchant": 150,
+      "type": "Weapon",
+      "subType": "LongBladeTwoClose"
+    },
+    "bm_nordic_silver_dagger": {
+      "refId": "bm nordic silver dagger",
+      "name": "Nordic Silver Dagger",
+      "enchant": 70,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "bm_nordic_silver_longsword": {
+      "refId": "bm nordic silver longsword",
+      "name": "Nordic Silver Longsword",
+      "enchant": 80,
+      "type": "Weapon",
+      "subType": "LongBladeOneHand"
+    },
+    "bm_nordic_silver_mace": {
+      "refId": "bm nordic silver mace",
+      "name": "Nordic Silver Mace",
+      "enchant": 70,
+      "type": "Weapon",
+      "subType": "BluntOneHand"
+    },
+    "bm_nordic_silver_shortsword": {
+      "refId": "bm nordic silver shortsword",
+      "name": "Nordic Silver Shortsword",
+      "enchant": 70,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "bm_riekling_lance": {
+      "refId": "bm riekling lance",
+      "name": "Riekling Lance",
+      "enchant": 80,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "bm_riekling_sword": {
+      "refId": "bm riekling sword",
+      "name": "Riekling Blade",
+      "enchant": 35,
+      "type": "Weapon",
+      "subType": "LongBladeOneHand"
+    },
+    "bm_riekling_sword_rusted": {
+      "refId": "bm riekling sword_rusted",
+      "name": "Rusted Riekling Blade",
+      "enchant": 35,
+      "type": "Weapon",
+      "subType": "LongBladeOneHand"
+    },
+    "bm_silver_dagger_wolfender": {
+      "refId": "bm silver dagger wolfender",
+      "name": "Wolfender Silver Dagger",
+      "enchant": 100,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "bm_arrow_riekling_uni": {
+      "refId": "bm_arrow_riekling_uni",
+      "name": "Chitin Arrow",
+      "enchant": 8,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "bm_dagger_wolfgiver": {
+      "refId": "bm_dagger_wolfgiver",
+      "name": "Wolfgiver Silver Dagger",
+      "enchant": 100,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "bm_ice_minion_lance": {
+      "refId": "bm_ice_minion_lance",
+      "name": "Riekling Lance",
+      "enchant": 80,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "daedric_dagger": {
+      "refId": "daedric dagger",
+      "name": "Daedric Dagger",
+      "enchant": 60,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "daedric_mace": {
+      "refId": "daedric mace",
+      "name": "Daedric Mace",
+      "enchant": 150,
+      "type": "Weapon",
+      "subType": "BluntOneHand"
+    },
+    "miner's_pick": {
+      "refId": "miner's pick",
+      "name": "Miner's Pick",
+      "enchant": 10,
+      "type": "Weapon",
+      "subType": "AxeTwoHand"
+    },
+    "silver_arrow": {
+      "refId": "silver arrow",
+      "name": "Silver Arrow",
+      "enchant": 12,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "silver_arrow_thirsk_0": {
+      "refId": "silver arrow_thirsk_0",
+      "name": "Silver Arrow",
+      "enchant": 12,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "silver_arrow_thirsk_1": {
+      "refId": "silver arrow_thirsk_1",
+      "name": "Silver Arrow",
+      "enchant": 12,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "silver_arrow_thirsk_2": {
+      "refId": "silver arrow_thirsk_2",
+      "name": "Silver Arrow",
+      "enchant": 12,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "silver_arrow_thirsk_3": {
+      "refId": "silver arrow_thirsk_3",
+      "name": "Silver Arrow",
+      "enchant": 12,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "silver_arrow_thirsk_4": {
+      "refId": "silver arrow_thirsk_4",
+      "name": "Silver Arrow",
+      "enchant": 12,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "silver_arrow_thirsk_5": {
+      "refId": "silver arrow_thirsk_5",
+      "name": "Silver Arrow",
+      "enchant": 12,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "silver_arrow_thirsk_6": {
+      "refId": "silver arrow_thirsk_6",
+      "name": "Silver Arrow",
+      "enchant": 12,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "silver_arrow_thirsk_7": {
+      "refId": "silver arrow_thirsk_7",
+      "name": "Silver Arrow",
+      "enchant": 12,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "silver_arrow_thirsk_8": {
+      "refId": "silver arrow_thirsk_8",
+      "name": "Silver Arrow",
+      "enchant": 12,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "silver_arrow_thirsk_9": {
+      "refId": "silver arrow_thirsk_9",
+      "name": "Silver Arrow",
+      "enchant": 12,
+      "type": "Weapon",
+      "subType": "Arrow"
+    },
+    "silver_bolt": {
+      "refId": "silver bolt",
+      "name": "Silver Bolt",
+      "enchant": 16,
+      "type": "Weapon",
+      "subType": "Bolt"
+    },
+    "silver_claymore": {
+      "refId": "silver claymore",
+      "name": "Silver Claymore",
+      "enchant": 56,
+      "type": "Weapon",
+      "subType": "LongBladeTwoClose"
+    },
+    "silver_dagger": {
+      "refId": "silver dagger",
+      "name": "Silver Dagger",
+      "enchant": 16,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "silver_dart": {
+      "refId": "silver dart",
+      "name": "Silver Dart",
+      "enchant": 12,
+      "type": "Weapon",
+      "subType": "MarksmanThrown"
+    },
+    "silver_longsword": {
+      "refId": "silver longsword",
+      "name": "Silver Longsword",
+      "enchant": 48,
+      "type": "Weapon",
+      "subType": "LongBladeOneHand"
+    },
+    "silver_shortsword": {
+      "refId": "silver shortsword",
+      "name": "Silver Shortsword",
+      "enchant": 36,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "silver_spear": {
+      "refId": "silver spear",
+      "name": "Silver Spear",
+      "enchant": 40,
+      "type": "Weapon",
+      "subType": "SpearTwoWide"
+    },
+    "silver_staff": {
+      "refId": "silver staff",
+      "name": "Silver Staff",
+      "enchant": 56,
+      "type": "Weapon",
+      "subType": "BluntTwoWide"
+    },
+    "silver_throwing_star": {
+      "refId": "silver throwing star",
+      "name": "Silver Throwing Star",
+      "enchant": 12,
+      "type": "Weapon",
+      "subType": "MarksmanThrown"
+    },
+    "silver_war_axe": {
+      "refId": "silver war axe",
+      "name": "Silver War Axe",
+      "enchant": 40,
+      "type": "Weapon",
+      "subType": "AxeOneHand"
+    },
+    "steel_longbow_carnius": {
+      "refId": "steel longbow_carnius",
+      "name": "Steel Longbow",
+      "enchant": 35,
+      "type": "Weapon",
+      "subType": "MarksmanBow"
+    },
+    "steel_saber_elberoth": {
+      "refId": "steel saber_elberoth",
+      "name": "Elberoth's Saber",
+      "enchant": 55,
+      "type": "Weapon",
+      "subType": "LongBladeOneHand"
+    },
+    "bm_bear_boots": {
+      "refId": "bm bear boots",
+      "name": "Bear Boots",
+      "enchant": 20,
+      "type": "Armor",
+      "subType": "Boots"
+    },
+    "bm_bear_cuirass": {
+      "refId": "bm bear cuirass",
+      "name": "Bear Cuirass",
+      "enchant": 60,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "bm_bear_greaves": {
+      "refId": "bm bear greaves",
+      "name": "Bear Greaves",
+      "enchant": 45,
+      "type": "Armor",
+      "subType": "Greaves"
+    },
+    "bm_bear_helmet": {
+      "refId": "bm bear helmet",
+      "name": "Bear Helmet",
+      "enchant": 20,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "bm_bear_left_gauntlet": {
+      "refId": "bm bear left gauntlet",
+      "name": "Bear Left Gauntlet",
+      "enchant": 10,
+      "type": "Armor",
+      "subType": "LeftGauntlet"
+    },
+    "bm_bear_left_pauldron": {
+      "refId": "bm bear left pauldron",
+      "name": "Bear Left Pauldron",
+      "enchant": 16,
+      "type": "Armor",
+      "subType": "LeftPauldron"
+    },
+    "bm_bear_right_gauntlet": {
+      "refId": "bm bear right gauntlet",
+      "name": "Bear Right Gauntlet",
+      "enchant": 10,
+      "type": "Armor",
+      "subType": "RightGauntlet"
+    },
+    "bm_bear_right_pauldron": {
+      "refId": "bm bear right pauldron",
+      "name": "Bear Right Pauldron",
+      "enchant": 16,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "bm_bear_shield": {
+      "refId": "bm bear shield",
+      "name": "Bear Shield",
+      "enchant": 20,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "bm_wolf_boots": {
+      "refId": "bm wolf boots",
+      "name": "Wolf Boots",
+      "enchant": 20,
+      "type": "Armor",
+      "subType": "Boots"
+    },
+    "bm_wolf_cuirass": {
+      "refId": "bm wolf cuirass",
+      "name": "Wolf Cuirass",
+      "enchant": 60,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "bm_wolf_greaves": {
+      "refId": "bm wolf greaves",
+      "name": "Wolf Greaves",
+      "enchant": 45,
+      "type": "Armor",
+      "subType": "Greaves"
+    },
+    "bm_wolf_helmet": {
+      "refId": "bm wolf helmet",
+      "name": "Wolf Helmet",
+      "enchant": 20,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "bm_wolf_left_gauntlet": {
+      "refId": "bm wolf left gauntlet",
+      "name": "Wolf Left Gauntlet",
+      "enchant": 10,
+      "type": "Armor",
+      "subType": "LeftGauntlet"
+    },
+    "bm_wolf_left_pauldron": {
+      "refId": "bm wolf left pauldron",
+      "name": "Wolf Left Pauldron",
+      "enchant": 16,
+      "type": "Armor",
+      "subType": "LeftPauldron"
+    },
+    "bm_wolf_right_gauntlet": {
+      "refId": "bm wolf right gauntlet",
+      "name": "Wolf Right Gauntlet",
+      "enchant": 10,
+      "type": "Armor",
+      "subType": "RightGauntlet"
+    },
+    "bm_wolf_right_pauldron": {
+      "refId": "bm wolf right pauldron",
+      "name": "Wolf Right Pauldron",
+      "enchant": 16,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "bm_wolf_shield": {
+      "refId": "bm wolf shield",
+      "name": "Wolf Shield",
+      "enchant": 50,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "bm_ice_minion_shield1": {
+      "refId": "bm_ice minion_shield1",
+      "name": "Riekling Shield",
+      "enchant": 80,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "bm_ice_boots": {
+      "refId": "bm_ice_boots",
+      "name": "Ice Armor Boots",
+      "enchant": 100,
+      "type": "Armor",
+      "subType": "Boots"
+    },
+    "bm_ice_cuirass": {
+      "refId": "bm_ice_cuirass",
+      "name": "Ice Armor Cuirass",
+      "enchant": 180,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "bm_ice_gauntletl": {
+      "refId": "bm_ice_gauntletl",
+      "name": "Ice Armor Left Gauntlet",
+      "enchant": 100,
+      "type": "Armor",
+      "subType": "LeftGauntlet"
+    },
+    "bm_ice_gauntletr": {
+      "refId": "bm_ice_gauntletr",
+      "name": "Ice Armor Right Gauntlet",
+      "enchant": 100,
+      "type": "Armor",
+      "subType": "RightGauntlet"
+    },
+    "bm_ice_greaves": {
+      "refId": "bm_ice_greaves",
+      "name": "Ice Armor Greaves",
+      "enchant": 100,
+      "type": "Armor",
+      "subType": "Greaves"
+    },
+    "bm_ice_helmet": {
+      "refId": "bm_ice_helmet",
+      "name": "Ice Armor Helmet",
+      "enchant": 175,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "bm_ice_pauldronl": {
+      "refId": "bm_ice_pauldronl",
+      "name": "Ice Armor Left Pauldron",
+      "enchant": 18,
+      "type": "Armor",
+      "subType": "LeftPauldron"
+    },
+    "bm_ice_pauldronr": {
+      "refId": "bm_ice_pauldronr",
+      "name": "Ice Armor Right Pauldron",
+      "enchant": 18,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "bm_ice_shield": {
+      "refId": "bm_ice_shield",
+      "name": "Ice Shield",
+      "enchant": 400,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "bm_nordicmail_boots": {
+      "refId": "bm_nordicmail_boots",
+      "name": "Nordic Mail Boots",
+      "enchant": 85,
+      "type": "Armor",
+      "subType": "Boots"
+    },
+    "bm_nordicmail_cuirass": {
+      "refId": "bm_nordicmail_cuirass",
+      "name": "Nordic Mail Cuirass",
+      "enchant": 300,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "bm_nordicmail_gauntletl": {
+      "refId": "bm_nordicmail_gauntletl",
+      "name": "Nordic Mail Left Gauntlet",
+      "enchant": 100,
+      "type": "Armor",
+      "subType": "LeftGauntlet"
+    },
+    "bm_nordicmail_gauntletr": {
+      "refId": "bm_nordicmail_gauntletr",
+      "name": "Nordic Mail Right Gauntlet",
+      "enchant": 100,
+      "type": "Armor",
+      "subType": "RightGauntlet"
+    },
+    "bm_nordicmail_greaves": {
+      "refId": "bm_nordicmail_greaves",
+      "name": "Nordic Mail Greaves",
+      "enchant": 80,
+      "type": "Armor",
+      "subType": "Greaves"
+    },
+    "bm_nordicmail_helmet": {
+      "refId": "bm_nordicmail_helmet",
+      "name": "Nordic Mail Helmet",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "bm_nordicmail_pauldronl": {
+      "refId": "bm_nordicmail_pauldronl",
+      "name": "Nordic Mail Left Pauldron",
+      "enchant": 100,
+      "type": "Armor",
+      "subType": "LeftPauldron"
+    },
+    "bm_nordicmail_pauldronr": {
+      "refId": "bm_nordicmail_pauldronr",
+      "name": "Nordic Mail Right Pauldron",
+      "enchant": 100,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "bm_nordicmail_shield": {
+      "refId": "bm_nordicmail_shield",
+      "name": "Nordic Mail Shield",
+      "enchant": 100,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "fur_colovian_helm_red": {
+      "refId": "fur_colovian_helm_red",
+      "name": "Red Colovian Fur Helm",
+      "enchant": 75,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "fur_colovian_helm_white": {
+      "refId": "fur_colovian_helm_white",
+      "name": "White Colovian Fur Helm",
+      "enchant": 75,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "nordic_leather_shield": {
+      "refId": "nordic_leather_shield",
+      "name": "Nordic Leather Shield",
+      "enchant": 150,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "steel_boots": {
+      "refId": "steel_boots",
+      "name": "Steel Boots",
+      "enchant": 88,
+      "type": "Armor",
+      "subType": "Boots"
+    },
+    "steel_boots_ancient": {
+      "refId": "steel_boots_ancient",
+      "name": "Ancient Steel Boots",
+      "enchant": 88,
+      "type": "Armor",
+      "subType": "Boots"
+    },
+    "steel_cuirass": {
+      "refId": "steel_cuirass",
+      "name": "Steel Cuirass",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "steel_cuirass_ancient": {
+      "refId": "steel_cuirass_ancient",
+      "name": "Ancient Steel Cuirass",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "steel_gauntlet_left_ancient": {
+      "refId": "steel_gauntlet_left_ancient",
+      "name": "Ancient Steel Left Gauntlet",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "LeftGauntlet"
+    },
+    "steel_gauntlet_right_ancient": {
+      "refId": "steel_gauntlet_right_ancient",
+      "name": "Ancient Steel Right Gauntlet",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "RightGauntlet"
+    },
+    "steel_greaves": {
+      "refId": "steel_greaves",
+      "name": "Steel Greaves",
+      "enchant": 25,
+      "type": "Armor",
+      "subType": "Greaves"
+    },
+    "steel_greaves_ancient": {
+      "refId": "steel_greaves_ancient",
+      "name": "Ancient Steel Greaves",
+      "enchant": 25,
+      "type": "Armor",
+      "subType": "Greaves"
+    },
+    "steel_helm": {
+      "refId": "steel_helm",
+      "name": "Steel Helm",
+      "enchant": 250,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "steel_helm_ancient": {
+      "refId": "steel_helm_ancient",
+      "name": "Ancient Steel Helm",
+      "enchant": 250,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "steel_pauldron_left_ancient": {
+      "refId": "steel_pauldron_left_ancient",
+      "name": "Ancient Steel Left Pauldron",
+      "enchant": 20,
+      "type": "Armor",
+      "subType": "LeftPauldron"
+    },
+    "steel_pauldron_right": {
+      "refId": "steel_pauldron_right",
+      "name": "Steel Right Pauldron",
+      "enchant": 20,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "steel_pauldron_right_ancient": {
+      "refId": "steel_pauldron_right_ancient",
+      "name": "Ancient Steel Right Pauldron",
+      "enchant": 20,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "steel_shield": {
+      "refId": "steel_shield",
+      "name": "Steel Shield",
+      "enchant": 500,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "steel_towershield_ancient": {
+      "refId": "steel_towershield_ancient",
+      "name": "Ancient Steel Tower Shield",
+      "enchant": 750,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "templar_helmet_armor": {
+      "refId": "templar_helmet_armor",
+      "name": "Imperial Templar Helmet",
+      "enchant": 250,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "bm_nordic01_glovel": {
+      "refId": "bm_nordic01_glovel",
+      "name": "Left Glove",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "bm_nordic01_glover": {
+      "refId": "bm_nordic01_glover",
+      "name": "Right Glove",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "bm_nordic01_pants": {
+      "refId": "bm_nordic01_pants",
+      "name": "Common Pants",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "bm_nordic01_robe": {
+      "refId": "bm_nordic01_robe",
+      "name": "Common Robe",
+      "enchant": 50,
+      "type": "Clothing"
+    },
+    "bm_nordic01_shirt": {
+      "refId": "bm_nordic01_shirt",
+      "name": "Common Shirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "bm_nordic01_shoes": {
+      "refId": "bm_nordic01_shoes",
+      "name": "Common Shoes",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "bm_nordic02_glovel": {
+      "refId": "bm_nordic02_glovel",
+      "name": "Left Glove",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "bm_nordic02_glover": {
+      "refId": "bm_nordic02_glover",
+      "name": "Right Glove",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "bm_nordic02_pants": {
+      "refId": "bm_nordic02_pants",
+      "name": "Common Pants",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "bm_nordic02_shirt": {
+      "refId": "bm_nordic02_shirt",
+      "name": "Common Shirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "bm_nordic02_shoes": {
+      "refId": "bm_nordic02_shoes",
+      "name": "Common Shoes",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "bm_ring_hircine": {
+      "refId": "bm_ring_hircine",
+      "name": "Hircine's Ring",
+      "enchant": 1200,
+      "type": "Clothing"
+    },
+    "bm_ring_view": {
+      "refId": "bm_ring_view",
+      "name": "BlueDev's Ring of Viewing",
+      "enchant": 1200,
+      "type": "Clothing"
+    },
+    "bm_wool01_glovel": {
+      "refId": "bm_wool01_glovel",
+      "name": "Left Glove",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "bm_wool01_glover": {
+      "refId": "bm_wool01_glover",
+      "name": "Right Glove",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "bm_wool01_pants": {
+      "refId": "bm_wool01_pants",
+      "name": "Common Pants",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "bm_wool01_robe": {
+      "refId": "bm_wool01_robe",
+      "name": "Common Robe",
+      "enchant": 50,
+      "type": "Clothing"
+    },
+    "bm_wool01_shirt": {
+      "refId": "bm_wool01_shirt",
+      "name": "Common Shirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "bm_wool01_shoes": {
+      "refId": "bm_wool01_shoes",
+      "name": "Common Shoes",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "bm_wool02_glovel": {
+      "refId": "bm_wool02_glovel",
+      "name": "Left Glove",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "bm_wool02_glover": {
+      "refId": "bm_wool02_glover",
+      "name": "Right Glove",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "bm_wool02_pants": {
+      "refId": "bm_wool02_pants",
+      "name": "Common Pants",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "bm_wool02_shirt": {
+      "refId": "bm_wool02_shirt",
+      "name": "Common Shirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "bm_wool02_shoes": {
+      "refId": "bm_wool02_shoes",
+      "name": "Common Shoes",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_ring_05_bm_uni": {
+      "refId": "common_ring_05_bm_uni",
+      "name": "Common Ring",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_robe_unique": {
+      "refId": "common_robe_unique",
+      "name": "Glenmoril Witch Robe",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "expensive_ring_erna": {
+      "refId": "expensive_ring_erna",
+      "name": "Erna the Quiet's Ring",
+      "enchant": 150,
+      "type": "Clothing"
+    },
+    "extravagant_robe_01": {
+      "refId": "extravagant_robe_01",
+      "name": "Extravagant Robe",
+      "enchant": 200,
+      "type": "Clothing"
+    },
+    "glenmoril_ring_bm": {
+      "refId": "glenmoril_ring_bm",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "hroldar_ring": {
+      "refId": "hroldar_ring",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "ritual_ring": {
+      "refId": "ritual_ring",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "ulfgar_ring": {
+      "refId": "ulfgar_ring",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "werewolfrobe": {
+      "refId": "werewolfrobe",
+      "enchant": 100,
+      "type": "Clothing"
+    },
+    "adamantium_axe": {
+      "refId": "adamantium_axe",
+      "name": "Admantium Axe",
+      "enchant": 100,
+      "type": "Weapon",
+      "subType": "AxeTwoHand"
+    },
+    "adamantium_claymore": {
+      "refId": "adamantium_claymore",
+      "name": "Adamantium Claymore",
+      "enchant": 150,
+      "type": "Weapon",
+      "subType": "LongBladeTwoClose"
+    },
+    "adamantium_mace": {
+      "refId": "adamantium_mace",
+      "name": "Adamantium Mace",
+      "enchant": 100,
+      "type": "Weapon",
+      "subType": "BluntOneHand"
+    },
+    "adamantium_shortsword": {
+      "refId": "adamantium_shortsword",
+      "name": "Adamantium Shortsword",
+      "enchant": 60,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "adamantium_spear": {
+      "refId": "adamantium_spear",
+      "name": "Adamantium Spear",
+      "enchant": 80,
+      "type": "Weapon",
+      "subType": "SpearTwoWide"
+    },
+    "bladepiece_01": {
+      "refId": "bladepiece_01",
+      "name": "Odd Dwemer Weapon",
+      "enchant": 100,
+      "type": "Weapon",
+      "subType": "LongBladeOneHand"
+    },
+    "centurion_projectile_dart": {
+      "refId": "centurion_projectile_dart",
+      "name": "Dwarven Dart",
+      "enchant": 100,
+      "type": "Weapon",
+      "subType": "MarksmanThrown"
+    },
+    "ebony_dart_db_unique": {
+      "refId": "ebony dart_db_unique",
+      "name": "A Carved Ebony Dart",
+      "enchant": 30,
+      "type": "Weapon",
+      "subType": "MarksmanThrown"
+    },
+    "ebony_scimitar": {
+      "refId": "ebony scimitar",
+      "name": "Ebony Scimitar",
+      "enchant": 800,
+      "type": "Weapon",
+      "subType": "LongBladeOneHand"
+    },
+    "ebony_bow_auriel_x": {
+      "refId": "ebony_bow_auriel_x",
+      "name": "Auriel's Bow",
+      "enchant": 70,
+      "type": "Weapon",
+      "subType": "MarksmanBow"
+    },
+    "fine_spring_dart": {
+      "refId": "fine spring dart",
+      "name": "Fine Spring Dart",
+      "enchant": 15,
+      "type": "Weapon",
+      "subType": "MarksmanThrown"
+    },
+    "goblin_club": {
+      "refId": "goblin_club",
+      "name": "Goblin Club",
+      "enchant": 100,
+      "type": "Weapon",
+      "subType": "BluntOneHand"
+    },
+    "goblin_sword": {
+      "refId": "goblin_sword",
+      "name": "Goblin Sword",
+      "enchant": 50,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "imperial_shortsword": {
+      "refId": "imperial shortsword",
+      "name": "Imperial Shortsword",
+      "enchant": 50,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "iron_broadsword": {
+      "refId": "iron broadsword",
+      "name": "Iron Broadsword",
+      "enchant": 50,
+      "type": "Weapon",
+      "subType": "LongBladeOneHand"
+    },
+    "iron_mace": {
+      "refId": "iron mace",
+      "name": "Iron Mace",
+      "enchant": 50,
+      "type": "Weapon",
+      "subType": "BluntOneHand"
+    },
+    "nerevarblade_01": {
+      "refId": "nerevarblade_01",
+      "name": "Trueflame",
+      "enchant": 100,
+      "type": "Weapon",
+      "subType": "LongBladeOneHand"
+    },
+    "silver_dagger_droth_unique": {
+      "refId": "silver dagger_droth_unique",
+      "name": "Droth Dagger",
+      "enchant": 20,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "silver_dagger_droth_unique_a": {
+      "refId": "silver dagger_droth_unique_a",
+      "name": "Droth Dagger",
+      "enchant": 20,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "silver_dagger_iryon_unique": {
+      "refId": "silver dagger_iryon_unique",
+      "name": "Iryon Dagger",
+      "enchant": 20,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "silver_dagger_othril_unique": {
+      "refId": "silver dagger_othril_unique",
+      "name": "Othril Dagger",
+      "enchant": 20,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "silver_dagger_rathalas_unique": {
+      "refId": "silver dagger_rathalas_unique",
+      "name": "Rathalas Dagger",
+      "enchant": 20,
+      "type": "Weapon",
+      "subType": "ShortBladeOneHand"
+    },
+    "silver_staff": {
+      "refId": "silver staff",
+      "name": "Silver Staff",
+      "enchant": 56,
+      "type": "Weapon",
+      "subType": "BluntTwoWide"
+    },
+    "silver_war_axe": {
+      "refId": "silver war axe",
+      "name": "Silver War Axe",
+      "enchant": 40,
+      "type": "Weapon",
+      "subType": "AxeOneHand"
+    },
+    "spring_dart": {
+      "refId": "spring dart",
+      "name": "Spring Dart",
+      "enchant": 15,
+      "type": "Weapon",
+      "subType": "MarksmanThrown"
+    },
+    "steel_battle_axe": {
+      "refId": "steel battle axe",
+      "name": "Steel Battle Axe",
+      "enchant": 55,
+      "type": "Weapon",
+      "subType": "AxeTwoHand"
+    },
+    "steel_broadsword": {
+      "refId": "steel broadsword",
+      "name": "Steel Broadsword",
+      "enchant": 50,
+      "type": "Weapon",
+      "subType": "LongBladeOneHand"
+    },
+    "steel_mace": {
+      "refId": "steel mace",
+      "name": "Steel Mace",
+      "enchant": 50,
+      "type": "Weapon",
+      "subType": "BluntOneHand"
+    },
+    "steel_warhammer": {
+      "refId": "steel warhammer",
+      "name": "Steel Warhammer",
+      "enchant": 55,
+      "type": "Weapon",
+      "subType": "BluntTwoClose"
+    },
+    "adamantium_boots": {
+      "refId": "adamantium boots",
+      "name": "Adamantium Boots",
+      "enchant": 100,
+      "type": "Armor",
+      "subType": "Boots"
+    },
+    "adamantium_bracer_left": {
+      "refId": "adamantium_bracer_left",
+      "name": "Adamantium Left Bracer",
+      "enchant": 100,
+      "type": "Armor",
+      "subType": "LeftBracer"
+    },
+    "adamantium_bracer_right": {
+      "refId": "adamantium_bracer_right",
+      "name": "Adamantium Right Bracer",
+      "enchant": 100,
+      "type": "Armor",
+      "subType": "RightBracer"
+    },
+    "adamantium_cuirass": {
+      "refId": "adamantium_cuirass",
+      "name": "Adamantium Cuirass",
+      "enchant": 300,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "adamantium_greaves": {
+      "refId": "adamantium_greaves",
+      "name": "Adamantium Greaves",
+      "enchant": 30,
+      "type": "Armor",
+      "subType": "Greaves"
+    },
+    "adamantium_helm": {
+      "refId": "adamantium_helm",
+      "name": "Adamantium Helm",
+      "enchant": 500,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "adamantium_pauldron_left": {
+      "refId": "adamantium_pauldron_left",
+      "name": "Adamantium Left Pauldron",
+      "enchant": 30,
+      "type": "Armor",
+      "subType": "LeftPauldron"
+    },
+    "adamantium_pauldron_right": {
+      "refId": "adamantium_pauldron_right",
+      "name": "Adamantium Right Pauldron",
+      "enchant": 100,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "addamantium_helm": {
+      "refId": "addamantium_helm",
+      "name": "Adamantium Helm",
+      "enchant": 500,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "bonemold_boots": {
+      "refId": "bonemold_boots",
+      "name": "Bonemold Boots",
+      "enchant": 70,
+      "type": "Armor",
+      "subType": "Boots"
+    },
+    "bonemold_cuirass": {
+      "refId": "bonemold_cuirass",
+      "name": "Bonemold Cuirass",
+      "enchant": 160,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "bonemold_helm": {
+      "refId": "bonemold_helm",
+      "name": "Bonemold Helm",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "bonemold_pauldron_r": {
+      "refId": "bonemold_pauldron_r",
+      "name": "Bonemold R Pauldron",
+      "enchant": 16,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "bonemold_shield": {
+      "refId": "bonemold_shield",
+      "name": "Bonemold Shield",
+      "enchant": 400,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "chitin_boots": {
+      "refId": "chitin boots",
+      "name": "Chitin Boots",
+      "enchant": 44,
+      "type": "Armor",
+      "subType": "Boots"
+    },
+    "chitin_cuirass": {
+      "refId": "chitin cuirass",
+      "name": "Chitin Cuirass",
+      "enchant": 100,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "chitin_greaves": {
+      "refId": "chitin greaves",
+      "name": "Chitin Greaves",
+      "enchant": 13,
+      "type": "Armor",
+      "subType": "Greaves"
+    },
+    "chitin_guantlet___left": {
+      "refId": "chitin guantlet - left",
+      "name": "Chitin Left Gauntlet",
+      "enchant": 100,
+      "type": "Armor",
+      "subType": "LeftGauntlet"
+    },
+    "darkbrotherhood_boots": {
+      "refId": "darkbrotherhood boots",
+      "name": "Dark Brotherhood Boots",
+      "enchant": 30,
+      "type": "Armor",
+      "subType": "Boots"
+    },
+    "darkbrotherhood_cuirass": {
+      "refId": "darkbrotherhood cuirass",
+      "name": "Dark Brotherhood Cuirass",
+      "enchant": 100,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "darkbrotherhood_gauntlet_l": {
+      "refId": "darkbrotherhood gauntlet_l",
+      "name": "Dark Brotherhood Left Gauntlet",
+      "enchant": 100,
+      "type": "Armor",
+      "subType": "LeftGauntlet"
+    },
+    "darkbrotherhood_gauntlet_r": {
+      "refId": "darkbrotherhood gauntlet_r",
+      "name": "Dark Brotherhood Right Gauntlet",
+      "enchant": 100,
+      "type": "Armor",
+      "subType": "RightGauntlet"
+    },
+    "darkbrotherhood_greaves": {
+      "refId": "darkbrotherhood greaves",
+      "name": "Dark Brotherhood Greaves",
+      "enchant": 50,
+      "type": "Armor",
+      "subType": "Greaves"
+    },
+    "darkbrotherhood_helm": {
+      "refId": "darkbrotherhood helm",
+      "name": "Dark Brotherhood Helm",
+      "enchant": 175,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "darkbrotherhood_pauldron_l": {
+      "refId": "darkbrotherhood pauldron_l",
+      "name": "Dark Brotherhood Left Pauldron",
+      "enchant": 12,
+      "type": "Armor",
+      "subType": "LeftPauldron"
+    },
+    "darkbrotherhood_pauldron_r": {
+      "refId": "darkbrotherhood pauldron_r",
+      "name": "Dark Brotherhood Right Pauldron",
+      "enchant": 12,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "dreugh_shield": {
+      "refId": "dreugh_shield",
+      "name": "Dreugh Shield",
+      "enchant": 450,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "dwemer_shield_battle_unique": {
+      "refId": "dwemer_shield_battle_unique",
+      "name": "Dwemer Battle Shield",
+      "enchant": 500,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "ebony_shield_auriel_x": {
+      "refId": "ebony_shield_auriel_x",
+      "name": "Auriel's Shield",
+      "enchant": 1000,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "fur_boots": {
+      "refId": "fur_boots",
+      "name": "Nordic Fur Boots",
+      "enchant": 26,
+      "type": "Armor",
+      "subType": "Boots"
+    },
+    "fur_helm": {
+      "refId": "fur_helm",
+      "name": "Nordic Fur Helm",
+      "enchant": 75,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "fur_pauldron_left": {
+      "refId": "fur_pauldron_left",
+      "name": "Nordic Fur Left Pauldron",
+      "enchant": 10,
+      "type": "Armor",
+      "subType": "LeftPauldron"
+    },
+    "fur_pauldron_right": {
+      "refId": "fur_pauldron_right",
+      "name": "Nordic Fur Right Pauldron",
+      "enchant": 10,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "goblin_shield": {
+      "refId": "goblin_shield",
+      "name": "Goblin Buckler",
+      "enchant": 100,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "helsethguard_boots": {
+      "refId": "helsethguard_boots",
+      "name": "Royal Guard Boots",
+      "enchant": 150,
+      "type": "Armor",
+      "subType": "Boots"
+    },
+    "helsethguard_cuirass": {
+      "refId": "helsethguard_cuirass",
+      "name": "Royal Guard Cuirass",
+      "enchant": 250,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "helsethguard_gauntlet_left": {
+      "refId": "helsethguard_gauntlet_left",
+      "name": "Royal Guard Left Gauntlet",
+      "enchant": 120,
+      "type": "Armor",
+      "subType": "LeftGauntlet"
+    },
+    "helsethguard_gauntlet_right": {
+      "refId": "helsethguard_gauntlet_right",
+      "name": "Royal Guard Right Gauntlet",
+      "enchant": 120,
+      "type": "Armor",
+      "subType": "RightGauntlet"
+    },
+    "helsethguard_greaves": {
+      "refId": "helsethguard_greaves",
+      "name": "Royal Guard Greaves",
+      "enchant": 40,
+      "type": "Armor",
+      "subType": "Greaves"
+    },
+    "helsethguard_helmet": {
+      "refId": "helsethguard_helmet",
+      "name": "Royal Guard Helm",
+      "enchant": 300,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "helsethguard_pauldron_left": {
+      "refId": "helsethguard_pauldron_left",
+      "name": "Royal Guard Left Pauldron",
+      "enchant": 30,
+      "type": "Armor",
+      "subType": "LeftPauldron"
+    },
+    "helsethguard_pauldron_right": {
+      "refId": "helsethguard_pauldron_right",
+      "name": "Royal Guard Right Pauldron",
+      "enchant": 30,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "imperial_cuirass_armor": {
+      "refId": "imperial cuirass_armor",
+      "name": "Imperial Steel Cuirass",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "imperial_chain_cuirass": {
+      "refId": "imperial_chain_cuirass",
+      "name": "Imperial Chain Cuirass",
+      "enchant": 140,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "imperial_chain_greaves": {
+      "refId": "imperial_chain_greaves",
+      "name": "Imperial Chain Greaves",
+      "enchant": 70,
+      "type": "Armor",
+      "subType": "Greaves"
+    },
+    "imperial_chain_pauldron_left": {
+      "refId": "imperial_chain_pauldron_left",
+      "name": "Imperial Chain Left Pauldron",
+      "enchant": 70,
+      "type": "Armor",
+      "subType": "LeftPauldron"
+    },
+    "imperial_chain_pauldron_right": {
+      "refId": "imperial_chain_pauldron_right",
+      "name": "Imperial Chain Right Pauldron",
+      "enchant": 70,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "imperial_studded_cuirass": {
+      "refId": "imperial_studded_cuirass",
+      "name": "Imperial Studded Leather Cuiras",
+      "enchant": 60,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "indoril_helmet": {
+      "refId": "indoril helmet",
+      "name": "Indoril Helmet",
+      "enchant": 225,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "indoril_mh_guard_boots": {
+      "refId": "indoril_mh_guard_boots",
+      "name": "Her Hand's Boots",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "Boots"
+    },
+    "indoril_mh_guard_cuirass": {
+      "refId": "indoril_mh_guard_cuirass",
+      "name": "Her Hand's Cuirass",
+      "enchant": 550,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "indoril_mh_guard_gauntlet_l": {
+      "refId": "indoril_mh_guard_gauntlet_l",
+      "name": "Her Hand's Left Gauntlet",
+      "enchant": 500,
+      "type": "Armor",
+      "subType": "LeftGauntlet"
+    },
+    "indoril_mh_guard_gauntlet_r": {
+      "refId": "indoril_mh_guard_gauntlet_r",
+      "name": "Her Hand's Right Gauntlet",
+      "enchant": 500,
+      "type": "Armor",
+      "subType": "RightGauntlet"
+    },
+    "indoril_mh_guard_greaves": {
+      "refId": "indoril_mh_guard_greaves",
+      "name": "Her Hand's Greaves",
+      "enchant": 60,
+      "type": "Armor",
+      "subType": "Greaves"
+    },
+    "indoril_mh_guard_helmet": {
+      "refId": "indoril_mh_guard_helmet",
+      "name": "Her Hand's Helmet",
+      "enchant": 650,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "indoril_mh_guard_pauldron_l": {
+      "refId": "indoril_mh_guard_pauldron_l",
+      "name": "Her Hand's Left Pauldron",
+      "enchant": 50,
+      "type": "Armor",
+      "subType": "LeftPauldron"
+    },
+    "indoril_mh_guard_pauldron_r": {
+      "refId": "indoril_mh_guard_pauldron_r",
+      "name": "Her Hand's Right Pauldron",
+      "enchant": 50,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "indoril_mh_guard_shield": {
+      "refId": "indoril_mh_guard_shield",
+      "name": "Her Hand's Shield",
+      "enchant": 500,
+      "type": "Armor",
+      "subType": "Shield"
+    },
+    "iron_boots": {
+      "refId": "iron boots",
+      "name": "Iron Boots",
+      "enchant": 26,
+      "type": "Armor",
+      "subType": "Boots"
+    },
+    "iron_cuirass": {
+      "refId": "iron_cuirass",
+      "name": "Iron Cuirass",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "iron_helmet": {
+      "refId": "iron_helmet",
+      "name": "Iron Helmet",
+      "enchant": 25,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "netch_leather_boots": {
+      "refId": "netch_leather_boots",
+      "name": "Netch Leather Boots",
+      "enchant": 26,
+      "type": "Armor",
+      "subType": "Boots"
+    },
+    "netch_leather_cuirass": {
+      "refId": "netch_leather_cuirass",
+      "name": "Netch Leather Cuirass",
+      "enchant": 60,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "netch_leather_gauntlet_left": {
+      "refId": "netch_leather_gauntlet_left",
+      "name": "Netch Leather Left Gauntlet",
+      "enchant": 60,
+      "type": "Armor",
+      "subType": "LeftGauntlet"
+    },
+    "netch_leather_gauntlet_right": {
+      "refId": "netch_leather_gauntlet_right",
+      "name": "Netch Leather Right Gauntlet",
+      "enchant": 60,
+      "type": "Armor",
+      "subType": "RightGauntlet"
+    },
+    "netch_leather_pauldron_left": {
+      "refId": "netch_leather_pauldron_left",
+      "name": "Netch Leather Left Pauldron",
+      "enchant": 10,
+      "type": "Armor",
+      "subType": "LeftPauldron"
+    },
+    "netch_leather_pauldron_right": {
+      "refId": "netch_leather_pauldron_right",
+      "name": "Netch Leather Right Pauldron",
+      "enchant": 10,
+      "type": "Armor",
+      "subType": "RightPauldron"
+    },
+    "steel_cuirass": {
+      "refId": "steel_cuirass",
+      "name": "Steel Cuirass",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "Cuirass"
+    },
+    "steel_gauntlet_left": {
+      "refId": "steel_gauntlet_left",
+      "name": "Steel Left Gauntlet",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "LeftGauntlet"
+    },
+    "steel_gauntlet_right": {
+      "refId": "steel_gauntlet_right",
+      "name": "Steel Right Gauntlet",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "RightGauntlet"
+    },
+    "steel_helm": {
+      "refId": "steel_helm",
+      "name": "Steel Helm",
+      "enchant": 250,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "trollbone_helm": {
+      "refId": "trollbone_helm",
+      "name": "Nordic Trollbone Helm",
+      "enchant": 200,
+      "type": "Armor",
+      "subType": "Helmet"
+    },
+    "common_pants_06": {
+      "refId": "common_pants_06",
+      "name": "Common Pants",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_pants_07": {
+      "refId": "common_pants_07",
+      "name": "Common Pants",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_robe_eot": {
+      "refId": "common_robe_eot",
+      "name": "Common Robe",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_shirt_06": {
+      "refId": "common_shirt_06",
+      "name": "Common Shirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_shirt_07": {
+      "refId": "common_shirt_07",
+      "name": "Common Shirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_shoes_06": {
+      "refId": "common_shoes_06",
+      "name": "Common Shoes",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_shoes_07": {
+      "refId": "common_shoes_07",
+      "name": "Common Shoes",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "common_skirt_06": {
+      "refId": "common_skirt_06",
+      "name": "Common Skirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "common_skirt_07": {
+      "refId": "common_skirt_07",
+      "name": "Common Skirt",
+      "enchant": 20,
+      "type": "Clothing"
+    },
+    "expensive_pants_mournhold": {
+      "refId": "expensive_pants_mournhold",
+      "name": "Expensive Pants",
+      "enchant": 75,
+      "type": "Clothing"
+    },
+    "expensive_shirt_mournhold": {
+      "refId": "expensive_shirt_mournhold",
+      "name": "Expensive Shirt",
+      "enchant": 100,
+      "type": "Clothing"
+    },
+    "expensive_shoes_01": {
+      "refId": "expensive_shoes_01",
+      "name": "Expensive Shoes",
+      "enchant": 50,
+      "type": "Clothing"
+    },
+    "expensive_shoes_mournhold": {
+      "refId": "expensive_shoes_mournhold",
+      "name": "Expensive Shoes",
+      "enchant": 50,
+      "type": "Clothing"
+    },
+    "expensive_skirt_04": {
+      "refId": "expensive_skirt_04",
+      "name": "Expensive Skirt",
+      "enchant": 75,
+      "type": "Clothing"
+    },
+    "expensive_skirt_mournhold": {
+      "refId": "expensive_skirt_mournhold",
+      "name": "Expensive Skirt",
+      "enchant": 75,
+      "type": "Clothing"
+    },
+    "helseth's_robe": {
+      "refId": "helseth's robe",
+      "name": "Frostguard Robe",
+      "enchant": 10,
+      "type": "Clothing"
+    },
+    "mazed_band": {
+      "refId": "mazed_band",
+      "name": "Barilzar's Mazed Band",
+      "enchant": 150,
+      "type": "Clothing"
+    }
+  },
+  "actors": {
+    "alit": 20,
+    "alit_blighted": 25,
+    "alit_diseased": 25,
+    "ancestor_ghost": 100,
+    "ancestor_ghost_summon": 100,
+    "ancestor_ghost_vabdas": 280,
+    "ancestor_guardian_fgdd": 280,
+    "ancestor_guardian_heler": 100,
+    "ancestor_mg_wisewoman": 280,
+    "ascended_sleeper": 400,
+    "ash_ghoul": 250,
+    "ash_ghoul_fgr": 280,
+    "ash_ghoul_ganel": 280,
+    "ash_ghoul_mulyn": 280,
+    "ash_slave": 100,
+    "ash_zombie": 100,
+    "ash_zombie_fgaz": 100,
+    "atronach_flame": 105,
+    "atronach_flame_az": 105,
+    "atronach_flame_summon": 105,
+    "atronach_flame_ttmk": 105,
+    "atronach_frost": 138,
+    "atronach_frost_gwai_uni": 160,
+    "atronach_frost_summon": 138,
+    "atronach_frost_ttmk": 138,
+    "atronach_storm": 150,
+    "atronach_storm_az": 150,
+    "atronach_storm_summon": 150,
+    "atronach_storm_ttmk": 150,
+    "bonelord": 100,
+    "bonelord_summon": 100,
+    "bonewalker": 75,
+    "bonewalker_dead": 75,
+    "Bonewalker_Greater": 75,
+    "Bonewalker_Greater_dead": 75,
+    "Bonewalker_Greater_summ": 75,
+    "bonewalker_summon": 75,
+    "bonewalker_weak": 65,
+    "centurion_fire_dead": 50,
+    "centurion_Mudan_unique": 0,
+    "centurion_shock_baladas": 0,
+    "centurion_sphere": 0,
+    "centurion_sphere_hts2": 0,
+    "centurion_sphere_nchur": 0,
+    "centurion_sphere_summon": 0,
+    "centurion_spider": 0,
+    "centurion_spider_nchur": 0,
+    "centurion_spider_tga1": 50,
+    "centurion_spider_tga2": 50,
+    "centurion_steam": 0,
+    "centurion_steam_dead": 50,
+    "centurion_steam_exhibit": 0,
+    "centurion_steam_hts": 0,
+    "centurion_steam_nchur": 0,
+    "clannfear": 100,
+    "clannfear_summon": 100,
+    "cliff racer": 20,
+    "cliff racer_blighted": 20,
+    "cliff racer_diseased": 20,
+    "corprus_lame": 160,
+    "corprus_lame_fyr01": 160,
+    "corprus_lame_fyr02": 160,
+    "corprus_lame_fyr03": 160,
+    "corprus_lame_fyr04": 160,
+    "corprus_lame_morvayn": 160,
+    "corprus_stalker": 100,
+    "corprus_stalker_berwen": 0,
+    "corprus_stalker_danar": 100,
+    "corprus_stalker_fgcs": 100,
+    "corprus_stalker_fyr01": 100,
+    "corprus_stalker_fyr02": 100,
+    "corprus_stalker_fyr03": 100,
+    "corprus_stalker_morvayn": 100,
+    "daedroth": 195,
+    "daedroth_az": 195,
+    "daedroth_baladas": 195,
+    "daedroth_fg_nchur": 195,
+    "daedroth_menta_unique": 350,
+    "daedroth_summon": 195,
+    "dagoth aladus": 300,
+    "dagoth araynys": 360,
+    "dagoth baler": 300,
+    "dagoth daynil": 300,
+    "dagoth delnus": 300,
+    "dagoth drals": 300,
+    "Dagoth Draven": 300,
+    "dagoth elam": 300,
+    "dagoth endus": 360,
+    "dagoth fals": 300,
+    "dagoth fandril": 330,
+    "dagoth felmis": 330,
+    "dagoth fervas": 300,
+    "dagoth fovon": 300,
+    "dagoth galmis": 300,
+    "dagoth garel": 330,
+    "dagoth gares": 280,
+    "dagoth gilvoth": 360,
+    "dagoth girer": 300,
+    "dagoth goral": 330,
+    "dagoth ienas": 300,
+    "dagoth irvyn": 330,
+    "dagoth malan": 330,
+    "dagoth mendras": 300,
+    "dagoth molos": 330,
+    "dagoth mulis": 300,
+    "dagoth muthes": 300,
+    "dagoth nilor": 300,
+    "dagoth odros": 360,
+    "dagoth ralas": 300,
+    "dagoth rather": 330,
+    "dagoth reler": 330,
+    "dagoth soler": 300,
+    "dagoth tanis": 330,
+    "dagoth tureynul": 360,
+    "dagoth ulen": 330,
+    "dagoth uthol": 340,
+    "dagoth uvil": 330,
+    "dagoth vaner": 330,
+    "dagoth velos": 300,
+    "dagoth vemyn": 360,
+    "dagoth_hlevul": 330,
+    "dagoth_ur_1": 0,
+    "dagoth_ur_2": 0,
+    "Dahrk Mezalf": 400,
+    "dead rat": 25,
+    "dead_mudcrab": 5,
+    "dead_scamp": 10,
+    "dead_scrib": 10,
+    "dead_skeleton": 0,
+    "dremora": 100,
+    "dremora_gothren_guard1": 100,
+    "dremora_gothren_guard2": 100,
+    "dremora_lord": 200,
+    "dremora_special_Fyr": 200,
+    "dremora_summon": 100,
+    "dremora_ttmg": 0,
+    "dremora_ttpc": 200,
+    "dreugh": 75,
+    "dreugh_koal": 75,
+    "dwarven ghost": 200,
+    "dwarven ghost_jeanne_U": 200,
+    "gateway_haunt": 280,
+    "golden saint": 400,
+    "golden saint_staada": 400,
+    "golden saint_summon": 400,
+    "guar": 20,
+    "guar_feral": 20,
+    "guar_hrmudcrabnest": 5,
+    "guar_llovyn_unique": 20,
+    "guar_pack": 20,
+    "guar_pack_tarvyn_unique": 20,
+    "guar_rollie_unique": 10,
+    "guar_white_unique": 50,
+    "heart_akulakhan": 0,
+    "hunger": 250,
+    "hunger_audenian": 250,
+    "hunger_az_01": 250,
+    "hunger_az_02": 250,
+    "hunger_fghl": 50,
+    "hunger_summon": 250,
+    "kagouti": 20,
+    "kagouti_blighted": 20,
+    "kagouti_diseased": 20,
+    "kagouti_hrk": 200,
+    "kagouti_mating": 200,
+    "kwama forager": 15,
+    "kwama forager blighted": 15,
+    "kwama forager_tb": 8,
+    "Kwama Queen": 30,
+    "Kwama Queen_Abaesen": 50,
+    "kwama queen_ahanibi": 50,
+    "kwama queen_akimaes": 50,
+    "kwama queen_eluba": 50,
+    "kwama queen_eretammus": 50,
+    "kwama queen_gnisis": 50,
+    "kwama queen_hairat": 50,
+    "Kwama Queen_HHEM": 50,
+    "kwama queen_madas": 50,
+    "kwama queen_maesa": 50,
+    "kwama queen_matus": 50,
+    "kwama queen_mudan": 50,
+    "kwama queen_mudan_c": 50,
+    "kwama queen_panabanit": 50,
+    "kwama queen_sarimisun": 50,
+    "kwama queen_shurdan": 50,
+    "kwama queen_shurdan_c": 50,
+    "kwama queen_sinamusa": 50,
+    "kwama queen_zalkin": 50,
+    "kwama warrior": 20,
+    "kwama warrior blighted": 30,
+    "kwama warrior shurdan": 30,
+    "kwama worker": 8,
+    "kwama worker blighted": 8,
+    "kwama worker diseased": 8,
+    "kwama worker entrance": 8,
+    "lustidrike": 100,
+    "mudcrab": 5,
+    "mudcrab-Diseased": 5,
+    "mudcrab_hrmudcrabnest": 20,
+    "mudcrab_unique": 5,
+    "netch_betty": 75,
+    "netch_betty_ilgn": 10,
+    "netch_betty_ranched": 75,
+    "netch_bull": 50,
+    "netch_bull_dead": 10,
+    "netch_bull_dead_2": 10,
+    "netch_bull_ilgn": 10,
+    "netch_bull_ranched": 10,
+    "Netch_Giant_UNIQUE": 60,
+    "nix-hound": 10,
+    "nix-hound blighted": 10,
+    "ogrim": 165,
+    "ogrim titan": 70,
+    "ogrim_az": 165,
+    "Rat": 10,
+    "rat_blighted": 10,
+    "rat_cave_fgrh": 10,
+    "rat_cave_fgt": 10,
+    "rat_cave_hhte1": 10,
+    "rat_cave_hhte2": 10,
+    "rat_diseased": 40,
+    "rat_telvanni_unique": 10,
+    "rat_telvanni_unique_2": 10,
+    "scamp": 100,
+    "scamp_creeper": 10,
+    "scamp_dead": 10,
+    "scamp_mg_apprentice": 10,
+    "scamp_summon": 100,
+    "scrib": 10,
+    "scrib _0hp": 10,
+    "scrib _dead": 10,
+    "scrib blighted": 20,
+    "scrib diseased": 10,
+    "scrib_vaba-amus": 10,
+    "shalk": 30,
+    "shalk_blighted": 30,
+    "shalk_diseased": 30,
+    "shalk_diseased_hram": 10,
+    "skeleton": 30,
+    "skeleton archer": 30,
+    "skeleton champ_sandas00": 200,
+    "skeleton champ_sandas10": 200,
+    "skeleton champion": 200,
+    "skeleton entrance": 30,
+    "skeleton hero dead": 0,
+    "skeleton warrior": 30,
+    "skeleton_aldredaynia": 300,
+    "skeleton_summon": 30,
+    "skeleton_Vemynal": 200,
+    "skeleton_weak": 10,
+    "slaughterfish": 10,
+    "slaughterfish_hr_sfavd": 5,
+    "Slaughterfish_Small": 10,
+    "vivec_god": 1000,
+    "winged twilight": 300,
+    "winged twilight_grunda_": 350,
+    "winged twilight_summon": 300,
+    "worm lord": 0,
+    "wraith_sul_senipul": 100,
+    "yagrum bagarn": 200,
+    "almalexia": 1500,
+    "Almalexia_warrior": 1500,
+    "ancestor_ghost_greater": 200,
+    "ancestor_ghost_Variner": 280,
+    "centurion_projectile": 0,
+    "centurion_projectile_C": 0,
+    "centurion_sphere_bbot1": 0,
+    "centurion_sphere_bbot5": 0,
+    "centurion_sphere_bbot6": 0,
+    "centurion_spider_bbot1": 0,
+    "centurion_spider_bbot3": 0,
+    "centurion_spider_bbot7": 0,
+    "centurion_spider_dead": 0,
+    "centurion_steam_A_C": 0,
+    "centurion_steam_advance": 0,
+    "centurion_steam_bbot2": 0,
+    "centurion_steam_bbot4": 0,
+    "centurion_steam_bbot8": 0,
+    "centurion_steam_C_L": 0,
+    "dremora_lord_khash_uni": 300,
+    "durzog_diseased": 10,
+    "durzog_war": 100,
+    "durzog_war_trained": 100,
+    "durzog_wild": 50,
+    "durzog_wild_weaker": 10,
+    "dwarven ghost_radac": 200,
+    "fabricant_hulkin_attack": 165,
+    "fabricant_hulking": 165,
+    "fabricant_hulking_attac": 165,
+    "fabricant_hulking_C": 165,
+    "fabricant_hulking_C_L": 165,
+    "fabricant_hulking_ss": 165,
+    "fabricant_machine_1": 10,
+    "fabricant_summon": 0,
+    "fabricant_verm_attack": 0,
+    "fabricant_verminous": 0,
+    "fabricant_verminous-rs": 0,
+    "fabricant_verminous_C": 0,
+    "fabricant_verminousDead": 0,
+    "goblin_bruiser": 200,
+    "goblin_footsoldier": 120,
+    "goblin_grunt": 100,
+    "goblin_handler": 200,
+    "goblin_officer": 300,
+    "goblin_officerUNI": 300,
+    "goblin_warchief1": 350,
+    "goblin_warchief2": 350,
+    "golden saint_velas1": 400,
+    "golden saint_velas2": 400,
+    "Imperfect": 165,
+    "lich": 300,
+    "lich_barilzar": 30,
+    "lich_profane_unique": 300,
+    "lich_relvel": 300,
+    "ogrim titan_velas": 70,
+    "Rat_pack_rerlas": 10,
+    "Rat_plague": 10,
+    "Rat_plague_hall1": 10,
+    "Rat_plague_hall1a": 10,
+    "Rat_plague_hall2": 10,
+    "Rat_rerlas": 10,
+    "scrib_rerlas": 10,
+    "skeleton_relvel": 300,
+    "atronach_frost_BM": 200,
+    "bm skeleton champion gr": 200,
+    "BM_bear_be_UNIQUE": 50,
+    "BM_bear_black": 100,
+    "BM_bear_black_Claw_UNIQ": 50,
+    "BM_bear_black_fat": 100,
+    "BM_bear_black_summon": 100,
+    "BM_bear_brown": 100,
+    "BM_bear_snow_unique": 50,
+    "BM_bear_SPR_UNIQUE": 50,
+    "BM_draugr01": 300,
+    "BM_draugr_bloodskal": 300,
+    "BM_frost_boar": 150,
+    "bm_frost_giant": 100,
+    "BM_hircine": 50,
+    "BM_hircine2": 50,
+    "BM_hircine_huntaspect": 100,
+    "BM_hircine_spdaspect": 100,
+    "BM_hircine_straspect": 100,
+    "BM_horker": 80,
+    "BM_horker_dead": 80,
+    "BM_horker_large": 80,
+    "BM_horker_swim_UNIQUE": 50,
+    "BM_ice_troll": 100,
+    "BM_ice_troll_sun": 100,
+    "BM_ice_troll_tough": 50,
+    "BM_icetroll_FG_Uni": 300,
+    "BM_riekling": 100,
+    "BM_riekling_be_UNIQUE": 100,
+    "BM_riekling_be_UNIQUE1": 100,
+    "BM_riekling_be_UNIQUE2": 100,
+    "BM_riekling_be_UNIQUE3": 100,
+    "BM_riekling_be_UNIQUE4": 100,
+    "BM_riekling_be_UNIQUE5": 100,
+    "BM_riekling_boarmaster": 100,
+    "BM_riekling_Dulk_UNIQUE": 100,
+    "BM_riekling_Krish_UNIQU": 100,
+    "BM_riekling_mounted": 150,
+    "BM_riekling_st_UNIQUE": 50,
+    "bm_sk_champ_bloodskal01": 200,
+    "bm_sk_champ_bloodskal02": 200,
+    "bm_skeleton_pirate ": 200,
+    "bm_skeleton_pirate_capt": 200,
+    "BM_spriggan": 350,
+    "BM_spriggan_co1": 350,
+    "BM_spriggan_co2": 350,
+    "BM_spriggan_co3": 350,
+    "BM_spriggan_co4": 350,
+    "BM_spriggan_st_UNIQUE": 350,
+    "BM_udyrfrykte": 250,
+    "BM_werewolf_default": 20,
+    "BM_werewolf_ritual": 20,
+    "BM_wolf_bone_summon": 50,
+    "BM_wolf_caenlorn1": 100,
+    "BM_wolf_caenlorn2": 100,
+    "BM_wolf_caenlorn3": 50,
+    "BM_wolf_grey": 50,
+    "BM_wolf_grey_lvl_1": 50,
+    "BM_wolf_grey_summon": 50,
+    "BM_wolf_hroldar": 50,
+    "BM_wolf_red": 50,
+    "BM_wolf_skeleton": 50,
+    "BM_wolf_snow_unique": 50,
+    "draugr": 200,
+    "draugr_aesliip": 200,
+    "draugr_co_3": 200,
+    "draugr_co_3_dead": 200,
+    "draugr_valbrandr": 200,
+    "glenmoril_raven": 10,
+    "glenmoril_raven_cave": 10,
+    "skeleton nord ": 200,
+    "skeleton nord_2": 200,
+    "skeleton_stahl_uni": 200
+  }
+}
