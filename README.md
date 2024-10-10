@@ -1,6 +1,7 @@
 Scripts:
 
 - Runic Enchanting
+
   Allows for crafting of multiple enchanting tools, including a soul gem that keeps filling and souls of different sizes can be extracted from it and tools that can upgrade the enchant capacity of any item
 
   Install
