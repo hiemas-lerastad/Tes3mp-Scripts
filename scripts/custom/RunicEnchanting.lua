@@ -340,7 +340,7 @@ function RunicEnchanting.validateCraft(pid, reqs, refId, soulFilled)
 
     if not ReservoirList[playerRef.name] then
       ReservoirList[playerRef.name] = 0
-      RunicEnchanting.saveData()
+      RunicEnchanting.saveReservoirData()
     end
   else
     tes3mp.CustomMessageBox(pid, REBGuI2, color.Default..RunicEnchanting.labels.requirementsError.."\n\n"..color.Error..failedMessage, RunicEnchanting.labels.close)
