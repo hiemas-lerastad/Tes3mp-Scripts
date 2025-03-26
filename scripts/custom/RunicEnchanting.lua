@@ -58,6 +58,17 @@ RunicEnchanting.config = {
         count = 1
       }
     }
+  },
+
+  -- Recipe for Practice Repair Tools
+  repairRecipe = {
+    items = {
+      {
+        name = "ingred_raw_ebony_01",
+        label = "Raw Ebony",
+        count = 1
+      }
+    }
   }
 }
 
@@ -65,6 +76,7 @@ RunicEnchanting.labels = {
   bookMain = "The book is full of schematics of strange objects and tools.\nWhat would you like to attempt to craft",
   soulReservoirName = "Soul Reservoir",
   upgradeToolName = "Rune Smith's Tools",
+  repairToolName = "Practice Repair Hammer",
   soulReservoirName = "Soul Reservoir",
   soulVialName = "Soul Vial",
   bookName = "Secrets of Runic Enchanting",
@@ -126,7 +138,7 @@ function RunicEnchanting.createRecord()
     },
     {
       refId = "re_soul_gem_02",
-      name = RunicEnchanting.labels.soulVial,
+      name = RunicEnchanting.labels.soulVialName,
       icon = "m\\Tx_pot_blue_01.tga",
       model = "m\\Misc_pot_blue_01.NIF",
       weight = 0.1,
@@ -155,6 +167,39 @@ function RunicEnchanting.createRecord()
       value = item.value,
       keyState = item.keyState,
       script = item.script
+    }
+    
+  end
+  recordStore:Save()
+
+  recordStore = RecordStores["repair"]
+
+  local itemList = {
+    {
+      refId = "re_repair_tool",
+      name = RunicEnchanting.labels.repairToolName,
+      icon = "m\\Tx_repair_A_01.tga",
+      model = "m\\misc_hammer10.nif",
+      weight = 1.0,
+      value = 1,
+      uses = 1000,
+      quality = 0.0
+    }
+  }
+
+  for i=1, #itemList do
+    local item = itemList[i]
+    recordStore.data.permanentRecords[item.refId] = {
+      baseId = item.baseId,
+      name = item.name,
+      model = item.model,
+      icon = item.icon,
+      weight = item.weight,
+      value = item.value,
+      keyState = item.keyState,
+      script = item.script,
+      uses = item.uses,
+      quality = item.quality
     }
     
   end
@@ -243,7 +288,7 @@ end
 customEventHooks.registerHandler("OnServerPostInit", RunicEnchanting.OnServerPostInit)
 
 function RunicEnchanting.showBookGUI(pid)
-  tes3mp.CustomMessageBox(pid, REBGuI1, color.DarkOrange..RunicEnchanting.labels.bookMain, RunicEnchanting.labels.soulReservoirName..";"..RunicEnchanting.labels.upgradeToolName..";"..RunicEnchanting.labels.bookCopy..";"..RunicEnchanting.labels.requirements..";"..RunicEnchanting.labels.close)
+  tes3mp.CustomMessageBox(pid, REBGuI1, color.DarkOrange..RunicEnchanting.labels.bookMain, RunicEnchanting.labels.soulReservoirName..";"..RunicEnchanting.labels.upgradeToolName..";"..RunicEnchanting.labels.repairToolName..";"..RunicEnchanting.labels.bookCopy..";"..RunicEnchanting.labels.requirements..";"..RunicEnchanting.labels.close)
 end
 
 function RunicEnchanting.validateCraftBook(pid)
@@ -259,6 +304,11 @@ end
 function RunicEnchanting.validateCraftTool(pid)
   local reqs = RunicEnchanting.config.toolsRecipe
   RunicEnchanting.validateCraft(pid, reqs, "re_upgrade_tool")
+end
+
+function RunicEnchanting.validateCraftRepairTool(pid)
+  local reqs = RunicEnchanting.config.repairRecipe
+  RunicEnchanting.validateCraft(pid, reqs, "re_repair_tool")
 end
 
 function RunicEnchanting.validateCraft(pid, reqs, refId, soulFilled)
@@ -340,7 +390,7 @@ function RunicEnchanting.validateCraft(pid, reqs, refId, soulFilled)
 
     if not ReservoirList[playerRef.name] then
       ReservoirList[playerRef.name] = 0
-      RunicEnchanting.saveReservoirData()
+      RunicEnchanting.saveData()
     end
   else
     tes3mp.CustomMessageBox(pid, REBGuI2, color.Default..RunicEnchanting.labels.requirementsError.."\n\n"..color.Error..failedMessage, RunicEnchanting.labels.close)
@@ -443,10 +493,14 @@ function RunicEnchanting.OnGUIAction(eventStatus, pid, idGui, data)
         RunicEnchanting.validateCraftBook(pid)
         return
       elseif tonumber(data) == 3 then
+        -- Craft Rune Smiths Tools
+        RunicEnchanting.validateCraftTool(pid)
+        return
+      elseif tonumber(data) == 4 then
         -- Display Requirements Screen
         RunicEnchanting.displayRequirementsGUI(pid)
         return
-      elseif tonumber(data) == 4 then
+      elseif tonumber(data) == 5 then
         -- Do Nothing
         return
       end
