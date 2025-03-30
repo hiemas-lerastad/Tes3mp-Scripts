@@ -8,13 +8,6 @@
     "misc_soulgem_azura": 15000
   },
   "items": {
-    "6th_bell_hammer_test": {
-      "refId": "6th bell hammer test",
-      "name": "Sixth House Bell Hammer",
-      "enchant": 105,
-      "type": "Weapon",
-      "subType": "BluntTwoClose"
-    },
     "6th_bell_hammer": {
       "refId": "6th bell hammer",
       "name": "Sixth House Bell Hammer",
