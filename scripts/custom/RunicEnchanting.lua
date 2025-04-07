@@ -1,28 +1,52 @@
+local HiemUtils = require("custom/HiemUtils")
+
 RunicEnchanting = {}
 
 RunicEnchanting.config = {
+  -- Recipe to train enchanting (study)
   enchantTrainingRecipe = {
     items = {
       {
-        name = "Misc_Inkwell",
+        name = {"misc_inkwell"},
         label = "Inkwell",
         count = 1,
         consumed = false
       },
       {
-        name = "Misc_Quill",
+        name = {"misc_quill"},
         label = "Quill Pen",
         count = 1,
         consumed = false
       },
       {
-        name = "sc_paper plain",
+        name = {"sc_paper plain"},
         label = "Paper",
         count = 1,
         consumed = true
-      }
+      },
+      {
+        name = {
+          "Soul_Gem",
+          "re_soul_gem_02",
+          "misc_soulgem_petty",
+          "misc_soulgem_lesser",
+          "misc_soulgem_common",
+          "misc_soulgem_greater",
+          "misc_soulgem_grand",
+          "misc_soulgem_azura"
+        },
+        label = "Tiny Soul (15)",
+        count = 1,
+        soulMinSize = 15,
+        consumed = "soul",
+        additionalValidation = "soulValue"
+      },
+    },
+    sounds = {
+      success = "book open"
     }
   },
+
   -- Recipe for Crafting Book
   bookRecipe = {
     skills = {
@@ -33,11 +57,16 @@ RunicEnchanting.config = {
     },
     items = {
       {
-        name = "sc_paper plain",
+        name = {
+          "sc_paper plain"
+        },
         label = "Paper",
         count = 5,
         consumed = true
       }
+    },
+    sounds = {
+      success = "book open"
     }
   },
 
@@ -55,11 +84,14 @@ RunicEnchanting.config = {
     },
     items = {
       {
-        name = "misc_soulgem_grand",
+        name = {"misc_soulgem_grand"},
         label = "Grand Soul Gem",
         count = 1,
         consumed = true
       }
+    },
+    sounds = {
+      success = "potion fail"
     }
   },
 
@@ -77,30 +109,42 @@ RunicEnchanting.config = {
     },
     items = {
       {
-        name = "repair_prongs",
+        name = {"repair_prongs"},
         label = "Repair Prongs",
         count = 1,
         consumed = true
       },
       {
-        name = "hammer_repair",
+        name = {"hammer_repair"},
         label = "Apprentice's Armorer's Hammer",
         count = 1,
         consumed = true
       },
       {
-        name = "Soul_Gem",
-        label = "Soul Gem",
+        name = {
+          "re_soul_gem_02",
+          "misc_soulgem_petty",
+          "misc_soulgem_lesser",
+          "misc_soulgem_common",
+          "misc_soulgem_greater",
+          "misc_soulgem_grand",
+          "misc_soulgem_azura"
+        },
+        label = "Tiny Soul (15)",
         count = 1,
-        consumed = 'soul',
+        consumed = "soul",
+        additionalValidation = "soulValue",
         soulMinSize = 15
       },
       {
-        name = "ingred_raw_ebony_01",
+        name = {"ingred_raw_ebony_01"},
         label = "Raw Ebony",
         count = 1,
         consumed = true
       }
+    },
+    sounds = {
+      success = "Repair"
     }
   },
 
@@ -113,7 +157,7 @@ RunicEnchanting.config = {
     },
     items = {
       {
-        name = "extravagant_glove_right_01",
+        name = {"extravagant_glove_right_01"},
         label = "Extravagant Right Glove",
         count = 1,
         consumed = true
@@ -124,31 +168,70 @@ RunicEnchanting.config = {
   armorerTrainingRecipe = {
     items = {
       {
-        name = "ingred_raw_ebony_01",
+        name = {"ingred_raw_ebony_01"},
         label = "Raw Ebony",
         count = 1,
         consumed = true
       }
+    },
+    sounds = {
+      success = "Repair"
     }
   },
 
   toolUpgradeRecipe = {
     items = {
       {
-        name = "ingred_raw_ebony_01",
+        name = {"ingred_raw_ebony_01"},
         label = "Raw Ebony",
         count = 1,
         consumed = true
       },
       {
-        name = "Soul_Gem",
-        label = "Soul Gem",
+        name = {
+          "re_soul_gem_02",
+          "misc_soulgem_petty",
+          "misc_soulgem_lesser",
+          "misc_soulgem_common",
+          "misc_soulgem_greater",
+          "misc_soulgem_grand",
+          "misc_soulgem_azura"
+        },
+        label = "Moderate Soul (50)",
         count = 1,
-        consumed = 'soul',
+        consumed = "soul",
+        additionalValidation = "soulValue",
         soulMinSize = 50
       }
+    },
+    sounds = {
+      success = "Repair"
     }
   },
+
+  toolUpgradeBreakpoints = {
+    {
+      clothLabel = "Stitched",
+      metalLabel = "Etched",
+      enchantRequirement = 30,
+      enchantmentValue = 100,
+      key = 're_upgraded_1_'
+    },
+    {
+      clothLabel = "Embroidered",
+      metalLabel = "Carved",
+      enchantRequirement = 80,
+      enchantmentValue = 1000,
+      key = 're_upgraded_2_'
+    },
+    {
+      clothLabel = "Inlaid",
+      metalLabel = "Runic",
+      enchantRequirement = 190,
+      enchantmentValue = 10000,
+      key = 're_upgraded_3_'
+    }
+  }
 }
 
 RunicEnchanting.labels = {
@@ -170,15 +253,13 @@ RunicEnchanting.labels = {
   largeSoulMass = "Large mass of souls",
   divineSoulMass = "Divine mass of souls",
   prefix = "Runic ",
-  item = " - Item: ",
-  skill = " - Skill: ",
   requirements = "Crafting Requirements",
   requirementsError = "Requirements to craft not met",
   extract = "Extract ",
   currentValue = "Current Value: ",
   choice = "What would you like to do?",
   upgradeChoice = "What would you like to upgrade?",
-  soulTrapMessage = "A soul has found purchase in a reservoir"
+  soulTrapMessage = "A soul has found purchase in a reservoir",
 }
 
 -- Don't edit below here unless you know what you are doing
@@ -274,8 +355,8 @@ function RunicEnchanting.createRecord()
           rangeType = 0,
           area = 0,
           duration = 1,
-          magnitudeMax = 4000,
-          magnitudeMin = 4000
+          magnitudeMax = 35000,
+          magnitudeMin = 35000
         }
       }
     }
@@ -338,6 +419,438 @@ function RunicEnchanting.createRecord()
     } 
   end
   recordStore:Save()
+
+  recordStore = RecordStores['cell']
+  local cellList = {
+    {
+      type = "Cell",
+      flags = { 0, 0 },
+      id = "Reenum-Kur's Enchanting Shop",
+      baseId = "Balmora, Guild of Mages",
+      data = {
+        flags = 1,
+        grid = { 3747360, 1061158912 }
+      },
+      water_height = 0.0,
+      atmosphereData = {
+        ambientColor = {
+          75,
+          65,
+          65,
+          0
+        },
+        sunlightColor = {
+          80,
+          60,
+          20,
+          0
+        },
+        fogColor = {
+          30,
+          32,
+          32,
+          0
+        },
+        fogDensity = 0.75
+      },
+      itemsToRemove = {
+        41910,
+        41912,
+        56847,
+        67615,
+        67616,
+        67617,
+        67618,
+        67619,
+        67620,
+        67621,
+        390613,
+        470832,
+        41881,
+        41882,
+        41885,
+        41888,
+        41890,
+        41892,
+        41893,
+        41894,
+        41895,
+        41896,
+        41897,
+        41899,
+        41900,
+        41901,
+        41902,
+        41903,
+        41905,
+        41906,
+        41907,
+        41908,
+        41914,
+        41916,
+        41917,
+        41919,
+        41920,
+        56829,
+        56832,
+        56833,
+        56834,
+        56835,
+        56836,
+        56838,
+        56840,
+        56841,
+        56842,
+        56843,
+        56844,
+        56848,
+        56849,
+        56850,
+        56852,
+        56853,
+        56854,
+        56856,
+        56857,
+        56858,
+        56859,
+        56860,
+        56861,
+        56862,
+        56865,
+        56866,
+        56867,
+        56868,
+        56869,
+        56870,
+        56871,
+        56872,
+        56873,
+        56874,
+        56875,
+        56876,
+        56877,
+        56878,
+        56879,
+        56881,
+        56884,
+        56885,
+        56886,
+        56887,
+        56888,
+        56889,
+        56890,
+        56891,
+        56892,
+        56893,
+        56894,
+        56895,
+        56896,
+        56897,
+        56898,
+        56899,
+        56908,
+        56909,
+        56911,
+        56913,
+        56914,
+        56915,
+        56916,
+        56917,
+        56919,
+        56920,
+        56921,
+        56922,
+        56923,
+        56924,
+        56925,
+        56926,
+        56927,
+        56928,
+        56929,
+        56930,
+        56931,
+        56932,
+        56933,
+        56934,
+        56935,
+        56936,
+        56937,
+        56938,
+        56939,
+        56940,
+        56941,
+        56942,
+        56943,
+        56944,
+        56945,
+        56946,
+        56947,
+        56948,
+        56949,
+        56950,
+        56954,
+        56955,
+        56956,
+        56958,
+        56959,
+        56960,
+        56961,
+        56962,
+        56963,
+        56964,
+        56965,
+        56966,
+        56967,
+        56968,
+        56969,
+        56970,
+        56971,
+        56972,
+        56973,
+        56975,
+        56976,
+        56977,
+        56978,
+        56979,
+        56980,
+        56981,
+        56982,
+        56983,
+        56984,
+        56985,
+        56986,
+        56987,
+        56988,
+        56989,
+        56990,
+        56991,
+        56992,
+        56993,
+        56994,
+        56995,
+        56996,
+        56997,
+        56998,
+        56999,
+        57000,
+        57001,
+        57002,
+        57003,
+        57004,
+        57005,
+        57006,
+        57007,
+        57008,
+        57009,
+        57010,
+        57011,
+        57012,
+        57013,
+        57014,
+        57015,
+        57016,
+        57017,
+        57018,
+        57019,
+        57020,
+        57021,
+        57022,
+        57024,
+        64193,
+        86807,
+        290469,
+        290470,
+        290471,
+        290472,
+        290473,
+        310763,
+        310764,
+        310765,
+        310766,
+        310767,
+        310768,
+        310769,
+        310770,
+        310771,
+        310772,
+        332053,
+        332054,
+        378320,
+        378321,
+        378322,
+        378323,
+        378324,
+        378325,
+        378326,
+        378327,
+        378328,
+        378329,
+        378330,
+        378331,
+        378332,
+        378333,
+        378334,
+        378335,
+        378336,
+        378338,
+        378339,
+        378340,
+        378341,
+        378342,
+        378343,
+        378344,
+        378345,
+        390615,
+        390616,
+        391124,
+        460130,
+        466173,
+        466174,
+        466175,
+        466176,
+        466177,
+        466178,
+        466179,
+        466180,
+        466181,
+        466182,
+        466183,
+        469364,
+        477571,
+        478738,
+        478739,
+        478740,
+        478741,
+        478742,
+        478743,
+        478744,
+        478745,
+        478746,
+        478747,
+        478748,
+        478749,
+        478750,
+        478751,
+        478752,
+        478753,
+        478754,
+        478755,
+        478756,
+        478757,
+        478758,
+        478759,
+        478760,
+        478761,
+        478762,
+        478763,
+        478764,
+        478765,
+        478766,
+        478767,
+        480244,
+        480245,
+        480246,
+        480247,
+        480248,
+        480249,
+        480250,
+        480251,
+        480252,
+        481297,
+        481298,
+        481299,
+        483333,
+        483334,
+        483335,
+        483336
+      },
+      references = {
+        {
+          mast_index = 0,
+          refr_index = 1,
+          id = "in_hlaalu_room_corner",
+          temporary = true,
+          translation = { 0.0, 510.0, 0.0 },
+          rotation = { 0.0, 0.0, 1.5707964 }
+        },
+        {
+          mast_index = 0,
+          refr_index = 2,
+          id = "in_hlaalu_room_corner",
+          temporary = true,
+          translation = { 255.0, 0.0, 0.0 },
+          rotation = { 0.0, 0.0, -1.5707964 }
+        },
+        {
+          mast_index = 0,
+          refr_index = 3,
+          id = "in_hlaalu_room_corner",
+          temporary = true,
+          translation = { 0.0, 0.0, 0.0 },
+          rotation = { 0.0, 0.0, 0.0 }
+        },
+        {
+          mast_index = 0,
+          refr_index = 4,
+          id = "in_hlaalu_room_corner",
+          temporary = true,
+          translation = { 255.0, 510.0, 0.0 },
+          rotation = { 0.0, 0.0, 3.1415927 }
+        },
+        {
+          mast_index = 0,
+          refr_index = 5,
+          id = "in_hlaalu_room_side",
+          temporary = true,
+          translation = { 0.0, 255.0, 0.0 },
+          rotation = { 0.0, 0.0, -1.5707964 }
+        },
+        {
+          mast_index = 0,
+          refr_index = 6,
+          id = "in_hlaalu_room_side",
+          temporary = true,
+          translation = { 255.0, 255.0, 0.0 },
+          rotation = { 0.0, 0.0, 1.5707964 }
+        },
+        {
+          mast_index = 0,
+          refr_index = 7,
+          id = "Furn_Com_RM_Bar_02",
+          temporary = true,
+          translation = { 90.0, 90.0, -90.0 },
+          rotation = { 0.0, 0.0, 0.0 }
+        },
+        {
+          mast_index = 0,
+          refr_index = 8,
+          id = "Furn_Com_RM_Bar_02",
+          temporary = true,
+          translation = { 90.0, 218.0, -90.0 },
+          rotation = { 0.0, 0.0, 3.1415927 }
+        },
+        {
+          mast_index = 0,
+          refr_index = 9,
+          id = "Furn_Com_RM_Bar_01",
+          temporary = true,
+          translation = { 90.0, 154.0, -90.0 },
+          rotation = { 0.0, 0.0, 1.5707964 }
+        }
+      }
+    }
+  }
+
+  for i=1, #cellList do
+    local item = cellList[i]
+    recordStore.data.permanentRecords[item.id] = item;
+  end
+  recordStore:Save()
+
+  for i=1, #cellList do
+    local item = cellList[i]
+    HiemUtils.populateCell(item)
+  end
 end
 
 function RunicEnchanting.loadReservoirData()
@@ -359,7 +872,8 @@ function RunicEnchanting.initialseData()
 end
 
 function RunicEnchanting.OnServerPostInit(eventStatus)
-  if not WorldInstance.data.customVariables.RE_Records_Initisalised then
+  -- if not WorldInstance.data.customVariables.RE_Records_Initisalised then
+  if true then
     RunicEnchanting.createRecord()
     WorldInstance.data.customVariables.RE_Records_Initisalised = true
 
@@ -393,242 +907,238 @@ customEventHooks.registerHandler("OnServerPostInit", RunicEnchanting.OnServerPos
 -- Train Enchanting (Study)
 function RunicEnchanting.validateCraftEnchantTraining(pid)
   local reqs = RunicEnchanting.config.enchantTrainingRecipe
-  RunicEnchanting.validateCraft(pid, reqs, false, false, RunicEnchanting.trainEnchantStudy)
+  HiemUtils.validateCraft(pid, reqs, false, false, RunicEnchanting.trainEnchantStudy)
 end
 
 function RunicEnchanting.trainEnchantStudy(pid, refId, reqs)
-  RunicEnchanting.increaseSkill(pid, 'Enchant', 'Intelligence', 10)
+  HiemUtils.increaseSkill(pid, 'Enchant', 'Intelligence', 10)
 end
 
 -- Craft Book Copy
 function RunicEnchanting.validateCraftBook(pid)
   local reqs = RunicEnchanting.config.bookRecipe
-  RunicEnchanting.validateCraft(pid, reqs, "re_enchant_book")
+  HiemUtils.validateCraft(pid, reqs, "re_enchant_book")
 end
 
 -- Craft Soul Reservior
 function RunicEnchanting.validateCraftGem(pid)
   local reqs =  RunicEnchanting.config.gemRecipe
-  RunicEnchanting.validateCraft(pid, reqs, "re_soul_gem", true)
+  HiemUtils.validateCraft(pid, reqs, "re_soul_gem", true)
 end
 
 -- Craft Rune Smith's Tools
 function RunicEnchanting.validateCraftTool(pid)
   local reqs = RunicEnchanting.config.toolsRecipe
-  RunicEnchanting.validateCraft(pid, reqs, "re_upgrade_tool")
+  HiemUtils.validateCraft(pid, reqs, "re_upgrade_tool")
 end
 
 -- Craft Enchanters Gear (Undecided)
 function RunicEnchanting.validateCraftGlove(pid)
   local reqs = RunicEnchanting.config.gloveRecipe
-  RunicEnchanting.validateCraft(pid, reqs, "re_enchant_gloves")
+  HiemUtils.validateCraft(pid, reqs, "re_enchant_gloves")
 end
 
+-- Upgrade Armor (Rune Smith's Tools)
+function RunicEnchanting.validateUpgradeArmor(pid, itemId)
+  local reqs = RunicEnchanting.config.toolUpgradeRecipe
+  HiemUtils.validateCraft(pid, reqs, itemId, false, RunicEnchanting.upgradeItem)
+end
+
+function RunicEnchanting.upgradeItem(pid, refId)
+  local itemData = Data.items[(refId:gsub("-", "_"):gsub(" ", "_"))]
+  local playerRef = Players[pid]
+  local playerInv = playerRef.data.inventory
+
+  local breakpoint = HiemUtils.getBreakpoint(pid, 'Enchant', RunicEnchanting.config.toolUpgradeBreakpoints, 'enchantRequirement')
+
+  if not itemData and logicHandler.GetRecordStoreByRecordId(refId) then
+    local data = logicHandler.GetRecordStoreByRecordId(refId)
+
+    if data.data then
+      if data.data.generatedRecords and data.data.generatedRecords[refId] then
+        data = data.data.generatedRecords[refId]
+      elseif data.data.permanentRecords and data.data.permanentRecords[refId] then
+        data = data.data.permanentRecords[refId]
+      end
+    end
+
+    local type = logicHandler.GetRecordTypeByRecordId(refId)
+
+    if data.baseId then
+      local baseData = logicHandler.GetRecordStoreByRecordId(data.baseId)
+      if baseData then
+        if baseData.data.generatedRecords and data.data.generatedRecords[refId] then
+          baseData = baseData.data.generatedRecords[refId]
+        elseif data.data.permanentRecords and data.data.permanentRecords[refId] then
+          baseData = baseData.data.permanentRecords[refId]
+        end
+      else
+        baseData = Data.items[(data.baseId:gsub("-", "_"):gsub(" ", "_"))]
+      end
+
+      itemData = {
+        type = type,
+        refId = data.baseId,
+        trueRefId = data.refId,
+        name = baseData.name,
+        enchantmentCharge = data.enchantmentCharge
+      }
+    else
+      itemData = {
+        type = type,
+        refId = data.refId,
+        name = data.name,
+        enchantmentCharge = data.enchantmentCharge
+      }
+    end
+  end
+
+  local prefix = breakpoint.metalLabel
+  if itemData.type == 'clothing' then
+    prefix = breakpoint.clothLabel
+  end
+
+  local newRefId = breakpoint.key..itemData.refId
+
+  if not logicHandler.GetRecordStoreByRecordId(newRefId) then
+    local recordType = string.lower(itemData.type)
+    recordStore = RecordStores[recordType]
+
+    local recordTable = {
+      baseId = itemData.refId,
+      enchantmentCharge = breakpoint.enchantmentValue,
+      name = prefix..' '..itemData.name,
+      refId = newRefId
+    }
+
+    recordStore.data.permanentRecords[newRefId] = recordTable
+
+    recordStore:Save()
+    recordStore:QuicksaveToDrive()
+    tes3mp.ClearRecords()
+    tes3mp.SetRecordType(enumerations.recordType[string.upper(recordType)])
+    packetBuilder.AddRecordByType(newRefId, recordTable, recordType)
+    tes3mp.SendRecordDynamic(pid, true, false)
+  end
+
+  local trueRefId = itemData.refId
+  if itemData.trueRefId then
+    trueRefId = itemData.trueRefId
+  end
+
+
+  local itemsToRemove = {{refId = trueRefId, count = 1, charge = -1, enchantmentCharge = -1, soul = ""}}
+  HiemUtils.addPlayerItems(pid, itemsToAdd)
+
+  -- inventoryHelper.removeItem(playerInv, trueRefId, 1, -1, -1, "")
+
+  -- tes3mp.ClearInventoryChanges(pid)
+  -- tes3mp.SetInventoryChangesAction(pid, enumerations.inventory.REMOVE)
+  -- tes3mp.AddItemChange(pid, trueRefId, 1, -1, -1, "")
+  -- tes3mp.SendInventoryChanges(pid)
+
+
+
+  local itemsToAdd = {{refId = newRefId, count = 1, charge = -1, enchantmentCharge = -1, soul = ""}}
+  HiemUtils.addPlayerItems(pid, itemsToAdd)
+
+  -- inventoryHelper.addItem(playerInv, newRefId, 1, -1, -1, "")
+
+  -- tes3mp.ClearInventoryChanges(pid)
+  -- tes3mp.SetInventoryChangesAction(pid, enumerations.inventory.ADD)
+  -- tes3mp.AddItemChange(pid, newRefId, 1, -1, -1, "")
+  -- tes3mp.SendInventoryChanges(pid)
+
+  -- local recordType
+  -- local newRefId
+  -- local trueRefId
+  -- local trueName
+
+  -- if itemData then
+  --   newRefId = breakpoint.key..itemData.refId
+  --   trueRefId = itemData.refId
+  --   trueName = itemData.name
+  -- else
+  --   newRefId = breakpoint.key..refId
+  --   trueRefId = refId
+  -- end
+
+
+  -- if logicHandler.GetRecordStoreByRecordId(refId) then
+  --   recordType = logicHandler.GetRecordTypeByRecordId(refId)
+  --   local recordData = logicHandler.GetRecordStoreByRecordId(refId)
+  --   if recordData and recordData.baseId then
+  --     trueName = 
+  --   end
+  -- elseif itemData then
+  --   recordType = string.lower(itemData.type)
+  -- end
+
+  -- recordStore = RecordStores[recordType]
+
+  -- local prefix = breakpoint.metalLabel
+  -- if recordType == 'clothing' then
+  --   prefix = breakpoint.clothLabel
+  -- end
+
+  -- local recordTable = {
+  --   baseId = refId,
+  --   enchantmentCharge = breakpoint.enchantmentValue,
+  --   name = prefix..' '..trueName,
+  --   refId = newRefId
+  -- }
+
+  -- recordStore.data.permanentRecords[newRefId] = recordTable
+
+  -- recordStore:QuicksaveToDrive()
+  -- tes3mp.ClearRecords()
+  -- tes3mp.SetRecordType(enumerations.recordType[string.upper(recordType)])
+  -- packetBuilder.AddRecordByType(newRefId, recordTable, recordType)
+  -- tes3mp.SendRecordDynamic(pid, true, false)
+
+  -- inventoryHelper.removeItem(playerInv, trueRefId, 1, -1, -1, "")
+
+  -- tes3mp.ClearInventoryChanges(pid)
+  -- tes3mp.SetInventoryChangesAction(pid, enumerations.inventory.REMOVE)
+  -- tes3mp.AddItemChange(pid, trueRefId, 1, -1, -1, "")
+  -- tes3mp.SendInventoryChanges(pid)
+
+  -- inventoryHelper.addItem(playerInv, newRefId, 1, -1, -1, "")
+
+  -- tes3mp.ClearInventoryChanges(pid)
+  -- tes3mp.SetInventoryChangesAction(pid, enumerations.inventory.ADD)
+  -- tes3mp.AddItemChange(pid, newRefId, 1, -1, -1, "")
+  -- tes3mp.SendInventoryChanges(pid)
+end
+
+-- Train Armorer (Etching)
 function RunicEnchanting.validateCraftArmorerTraining(pid)
   local reqs = RunicEnchanting.config.armorerTrainingRecipe
-  RunicEnchanting.validateCraft(pid, reqs, false, false, RunicEnchanting.trainArmorerPractice)
+  HiemUtils.validateCraft(pid, reqs, false, false, RunicEnchanting.trainArmorerPractice)
 end
 
 function RunicEnchanting.trainArmorerPractice(pid)
-  RunicEnchanting.increaseSkill(pid, 'Armorer', 'Strength', 10)
+  HiemUtils.increaseSkill(pid, 'Armorer', 'Strength', 10)
 end
 
-
-
--- Utility Functions
-function RunicEnchanting.increaseSkill(pid, skillName, attributeName, amount)
-  local skillId = tes3mp.GetSkillId(skillName)
-  local skillValue = tes3mp.GetSkillBase(pid, id)
-  local attributeId = tes3mp.GetAttributeId(attributeName)
-  local currentLevelProgress = tes3mp.GetLevelProgress(pid)
-
-  local isMajorSkill = false
-  for i=0,4 do
-    if tes3mp.GetClassMajorSkill(pid, i) == skillId then
-      isMajorSkill = true
-    end
+function HiemUtils.validators.soulValue(item, req, pid)
+  if not (item.soul == "") and Data.actors[item.soul] >= req.soulMinSize then
+    return true
   end
 
-  local isMinorSkill = false
-  for i=0,4 do
-    if tes3mp.GetClassMinorSkill(pid, i) == skillId then
-      isMinorSkill = true
-    end
-  end
-
-  local increaseAmount = amount
-  if skillValue + amount > 100 then
-    increaseAmount = 100 - skillValue;
-  end
-
-  tes3mp.SetLevelProgress(pid, tes3mp.GetLevelProgress(pid) + increaseAmount)
-  tes3mp.SetSkillIncrease(pid, attributeId, tes3mp.SetSkillIncrease(pid) + increaseAmount);
-  tes3mp.SetSkillBase(pid, skillId, skillValue + increaseAmount);
-
-  tes3mp.SendLevel(pid)
-  tes3mp.SendAttributes(pid);
-  tes3mp.SendSkills(pid);
-end
-
-function RunicEnchanting.validateCraft(pid, reqs, refId, soulFilled, callback)
-  local playerRef = Players[pid]
-  local playerInv = playerRef.data.inventory
-  local playerSkills = playerRef.data.skills
-  local failed = false
-  local failedMessage = ""
-  local charge = 0
-  local soul = ""
-
-  if soulFilled then
-    charge = #ReservoirList +  1
-  end
-
-  if reqs.items then
-    for i=1, #reqs.items do
-      local itemReq = reqs.items[i]
-      local itemFound = false
-      local itemIndex = false
-
-      if reqs.items[i].name == "Soul_Gem" then
-        local gemList = Data.gems
-        table.insert(gemList, "re_soul_gem_02")
-        for j=1, #gemList do
-          for k=1, #playerInv do
-            if playerInv[k] then
-              if playerInv[k].refId == gemList[j].name and playerInv[k].charge >= itemReq.soulMinSize then
-                itemFound = true
-                itemIndex = k
-              end
-            end
-          end
-        end
-      else
-        for j=1, #playerInv do
-          if playerInv[j] then
-            if playerInv[j].refId == itemReq.name then
-              itemFound = true
-              itemIndex = j
-            end
-          end
-        end
-      end
-
-      if itemFound then
-        if playerInv[itemIndex].count < itemReq.count then
-          failed = true
-          failedMessage = failedMessage .. RunicEnchanting.labels.item .. itemReq.label .. " " .. itemReq.count .. "\n"
-        end
-      else
-        failed = true
-        failedMessage = failedMessage .. RunicEnchanting.labels.item .. itemReq.label .. " " .. itemReq.count .. "\n"
-      end
-    end
-  end
-
-  if reqs.skills then
-    for i=1, #reqs.skills do
-      local skillReq = reqs.skills[i]
-
-      if playerSkills[skillReq.name].base < skillReq.value then
-        failed = true
-        failedMessage = failedMessage .. RunicEnchanting.labels.skill .. skillReq.name .. " " .. skillReq.value .. "\n"
-      end
-    end
-  end
-
-  if not failed then
-    if reqs.items then
-      for i=1, #reqs.items do
-        if reqs.items[i].consumed then
-          inventoryHelper.removeItem(
-              playerInv,
-              reqs.items[i].name,
-              reqs.items[i].count,
-              -1,
-              -1,
-              ""
-          )
-        end
-
-        tes3mp.ClearInventoryChanges(pid)
-        tes3mp.SetInventoryChangesAction(pid, enumerations.inventory.REMOVE)
-        tes3mp.AddItemChange(pid, reqs.items[i].name, reqs.items[i].count, -1, -1, "")
-
-        if reqs.items[i].consumed == "soul" and reqs.items[i].name == "misc_soulgem_azura" then
-          tes3mp.ClearInventoryChanges(pid)
-          tes3mp.SetInventoryChangesAction(pid, enumerations.inventory.ADD)
-          inventoryHelper.addItem(playerInv, reqs.items[i].name, reqs.items[i].count, -1, -1, "")
-          tes3mp.AddItemChange(pid, reqs.items[i].name, reqs.items[i].count, -1, -1, "")
-        end
-
-        tes3mp.SendInventoryChanges(pid)
-      end
-    end
-
-    if callback then
-      callback(pid, refId, reqs)
-    else
-      inventoryHelper.addItem(playerInv, refId, 1, charge, -1, soul)
-
-      tes3mp.ClearInventoryChanges(pid)
-      tes3mp.SetInventoryChangesAction(pid, enumerations.inventory.ADD)
-      tes3mp.AddItemChange(pid, refId, 1, charge, -1, soul)
-      tes3mp.SendInventoryChanges(pid)
-
-      if not ReservoirList[playerRef.name] then
-        ReservoirList[playerRef.name] = 0
-        RunicEnchanting.saveReservoirData()
-      end
-    end
-  else
-    tes3mp.CustomMessageBox(pid, REBGuI2, color.Default..RunicEnchanting.labels.requirementsError.."\n\n"..color.Error..failedMessage, RunicEnchanting.labels.close)
-  end
-end
-
-function RunicEnchanting.generateRequirementsString(label, reqs)
-  local items = ""
-  local skills = ""
-  if reqs.items then
-    for i=1, #reqs.items do
-      local itemReq = reqs.items[i]
-      items = items .. RunicEnchanting.labels.item .. itemReq.label .. " " .. itemReq.count .. "\n"
-    end
-  end
-
-  if reqs.skills then
-    for i=1, #reqs.skills do
-      local skillReq = reqs.skills[i]
-      skills = skills .. RunicEnchanting.labels.skill .. skillReq.name .. " " .. skillReq.value .. "\n"
-    end
-  end
-
-  return label.."\n"..skills..items.."\n"
-end
-
-function RunicEnchanting.dump(o)
-   if type(o) == 'table' then
-      local s = '{ '
-      for k,v in pairs(o) do
-         if type(k) ~= 'number' then k = '"'..k..'"' end
-         s = s .. '['..k..'] = ' .. dump(v) .. ','
-      end
-      return s .. '} '
-   else
-      return tostring(o)
-   end
+  return false
 end
 
 
 -- GUI Functions
 function RunicEnchanting.showBookGUI(pid)
-  -- tes3mp.CustomMessageBox(pid, REBGuI1, color.DarkOrange..RunicEnchanting.labels.bookMain, RunicEnchanting.labels.soulReservoirName..";"..RunicEnchanting.labels.upgradeToolName..";"..RunicEnchanting.labels.enchantGloveName..";"..RunicEnchanting.labels.bookCopy..";"..RunicEnchanting.labels.requirements..";"..RunicEnchanting.labels.close)
-  tes3mp.CustomMessageBox(pid, REBGuI1, color.DarkOrange..RunicEnchanting.labels.bookMain, RunicEnchanting.labels.bookStudy..";"..RunicEnchanting.labels.bookCopy..";"..RunicEnchanting.labels.upgradeToolName..";"..RunicEnchanting.labels.soulReservoirName..";"..RunicEnchanting.labels.enchantGloveName..";"..RunicEnchanting.labels.close)
+  tes3mp.CustomMessageBox(pid, REBGuI1, color.DarkOrange..RunicEnchanting.labels.bookMain, RunicEnchanting.labels.bookStudy..";"..RunicEnchanting.labels.bookCopy..";"..RunicEnchanting.labels.upgradeToolName..";"..RunicEnchanting.labels.soulReservoirName..";"..RunicEnchanting.labels.enchantGloveName..";"..RunicEnchanting.labels.requirements..";"..RunicEnchanting.labels.close)
 end
 
 function RunicEnchanting.displayRequirementsGUI(pid)
-  local reservoirRequirements = RunicEnchanting.generateRequirementsString(RunicEnchanting.labels.soulReservoirName, RunicEnchanting.config.gemRecipe)
-  local toolsRequirements = RunicEnchanting.generateRequirementsString(RunicEnchanting.labels.upgradeToolName, RunicEnchanting.config.toolsRecipe)
-  local bookRequirements = RunicEnchanting.generateRequirementsString(RunicEnchanting.labels.bookName, RunicEnchanting.config.bookRecipe)
+  local reservoirRequirements = HiemUtils.generateRequirementsString(RunicEnchanting.labels.soulReservoirName, RunicEnchanting.config.gemRecipe)
+  local toolsRequirements = HiemUtils.generateRequirementsString(RunicEnchanting.labels.upgradeToolName, RunicEnchanting.config.toolsRecipe)
+  local bookRequirements = HiemUtils.generateRequirementsString(RunicEnchanting.labels.bookName, RunicEnchanting.config.bookRecipe)
   tes3mp.CustomMessageBox(pid, REBGuI3, color.DarkOrange..RunicEnchanting.labels.requirements.."\n\n"..color.Default..reservoirRequirements..toolsRequirements..bookRequirements, RunicEnchanting.labels.back..";"..RunicEnchanting.labels.close)
 end
 
@@ -655,24 +1165,25 @@ function RunicEnchanting.displayUpgradeGUI(pid)
   local enchantableList = {}
   local enchantableListString = ""
 
+  local breakpoint = HiemUtils.getBreakpoint(pid, 'Enchant', RunicEnchanting.config.toolUpgradeBreakpoints, 'enchantRequirement')
+
   for i=1, #playerInv do
     local enchantableItem = false
     if playerInv[i] then
-      if logicHandler.IsGeneratedRecord(playerInv[i].refId) then
-        if logicHandler.GetRecordStoreByRecordId(playerInv[i].refId) then
-          local tempItem = logicHandler.GetRecordStoreByRecordId(playerInv[i].refId)
-          if #tempItem.data.generatedRecords then
-            enchantableItem = tempItem.data.generatedRecords[playerInv[i].refId]
-          elseif #tempItem.data.permanentRecords then
-            enchantableItem = tempItem.data.permanentRecords[playerInv[i].refId]
-          end
+      if logicHandler.GetRecordStoreByRecordId(playerInv[i].refId) then
+        local tempItem = logicHandler.GetRecordStoreByRecordId(playerInv[i].refId)
+        if #tempItem.data.generatedRecords and tempItem.data.generatedRecords[playerInv[i].refId] then
+          enchantableItem = tempItem.data.generatedRecords[playerInv[i].refId]
+        end
+        if #tempItem.data.permanentRecords and tempItem.data.permanentRecords[playerInv[i].refId] then
+          enchantableItem = tempItem.data.permanentRecords[playerInv[i].refId]
         end
       elseif Data.items[(playerInv[i].refId:gsub("-", "_"):gsub(" ", "_"))] then
         enchantableItem = Data.items[(playerInv[i].refId:gsub("-", "_"):gsub(" ", "_"))]
       end
       if enchantableItem then
-        if enchantableItem.enchant then
-          if enchantableItem.enchant > 0 then
+        if enchantableItem.enchantmentCharge and not enchantableItem.enchantmentId then
+          if enchantableItem.enchantmentCharge > 0 and enchantableItem.enchantmentCharge < breakpoint.enchantmentValue then
             enchantableListString = enchantableListString..enchantableItem.name.."\n"
             enchantableList[#enchantableList + 1] = {
               refId = enchantableItem.id or enchantableItem.refId,
@@ -691,31 +1202,6 @@ end
 function RunicEnchanting.OnGUIAction(eventStatus, pid, idGui, data)
   local isValid = eventStatus.validDefaultHandler
   if isValid ~= false then
-    -- if idGui == REBGuI1 then
-    --   if tonumber(data) == 0 then
-    --     -- Craft Soul Reservoir
-    --     RunicEnchanting.validateCraftGem(pid)
-    --     return
-    --   elseif tonumber(data) == 1 then
-    --     -- Craft Rune Smiths Tools
-    --     RunicEnchanting.validateCraftTool(pid)
-    --     return
-    --   elseif tonumber(data) == 2 then
-    --     -- Craft Glove
-    --     RunicEnchanting.validateCraftGlove(pid)
-    --     return
-    --   elseif tonumber(data) == 3 then
-    --     -- Craft Book Copy
-    --     RunicEnchanting.validateCraftBook(pid)
-    --     return
-    --   elseif tonumber(data) == 4 then
-    --     -- Display Requirements Screen
-    --     RunicEnchanting.displayRequirementsGUI(pid)
-    --     return
-    --   elseif tonumber(data) == 5 then
-    --     -- Do Nothing
-    --     return
-    --   end
     if idGui == REBGuI1 then
       if tonumber(data) == 0 then
         -- Study the Tome
@@ -762,12 +1248,15 @@ function RunicEnchanting.OnGUIAction(eventStatus, pid, idGui, data)
         local playerRef = Players[pid]
         local playerInv = playerRef.data.inventory
 
-        inventoryHelper.addItem(playerInv, "re_soul_gem_02", 1, -1, -1, "re_creature_soul_small")
+        local itemsToAdd = {{refId = "re_soul_gem_02", count = 1, charge = -1, enchantmentCharge = -1, soul = "re_creature_soul_small"}}
+        HiemUtils.addPlayerItems(pid, itemsToAdd)
 
-        tes3mp.ClearInventoryChanges(pid)
-        tes3mp.SetInventoryChangesAction(pid, enumerations.inventory.ADD)
-        tes3mp.AddItemChange(pid, "re_soul_gem_02", 1, -1, -1, "re_creature_soul_small")
-        tes3mp.SendInventoryChanges(pid)
+        -- inventoryHelper.addItem(playerInv, "re_soul_gem_02", 1, -1, -1, "re_creature_soul_small")
+
+        -- tes3mp.ClearInventoryChanges(pid)
+        -- tes3mp.SetInventoryChangesAction(pid, enumerations.inventory.ADD)
+        -- tes3mp.AddItemChange(pid, "re_soul_gem_02", 1, -1, -1, "re_creature_soul_small")
+        -- tes3mp.SendInventoryChanges(pid)
 
         ReservoirList[playerRef.name] = ReservoirList[playerRef.name] - 100
         RunicEnchanting.saveReservoirData()
@@ -776,12 +1265,8 @@ function RunicEnchanting.OnGUIAction(eventStatus, pid, idGui, data)
         local playerRef = Players[pid]
         local playerInv = playerRef.data.inventory
 
-        inventoryHelper.addItem(playerInv, "re_soul_gem_02", 1, -1, -1, "re_creature_soul_large")
-
-        tes3mp.ClearInventoryChanges(pid)
-        tes3mp.SetInventoryChangesAction(pid, enumerations.inventory.ADD)
-        tes3mp.AddItemChange(pid, "re_soul_gem_02", 1, -1, -1, "re_creature_soul_large")
-        tes3mp.SendInventoryChanges(pid)
+        local itemsToAdd = {{refId = "re_soul_gem_02", count = 1, charge = -1, enchantmentCharge = -1, soul = "re_creature_soul_large"}}
+        HiemUtils.addPlayerItems(pid, itemsToAdd)
 
         ReservoirList[playerRef.name] = ReservoirList[playerRef.name] - 500
         RunicEnchanting.saveReservoirData()
@@ -790,12 +1275,8 @@ function RunicEnchanting.OnGUIAction(eventStatus, pid, idGui, data)
         local playerRef = Players[pid]
         local playerInv = playerRef.data.inventory
 
-        inventoryHelper.addItem(playerInv, "re_soul_gem_02", 1, -1, -1, "re_creature_soul_divine")
-
-        tes3mp.ClearInventoryChanges(pid)
-        tes3mp.SetInventoryChangesAction(pid, enumerations.inventory.ADD)
-        tes3mp.AddItemChange(pid, "re_soul_gem_02", 1, -1, -1, "re_creature_soul_divine")
-        tes3mp.SendInventoryChanges(pid)
+        local itemsToAdd = {{refId = "re_soul_gem_02", count = 1, charge = -1, enchantmentCharge = -1, soul = "re_creature_soul_divine"}}
+        HiemUtils.addPlayerItems(pid, itemsToAdd)
 
         ReservoirList[playerRef.name] = ReservoirList[playerRef.name] - 1000
         RunicEnchanting.saveReservoirData()
@@ -808,7 +1289,7 @@ function RunicEnchanting.OnGUIAction(eventStatus, pid, idGui, data)
         return
       elseif tonumber(data) == 1 then
         -- show practice gui
-        RunicEnchanting.displayPracticeGUI(pid)
+        RunicEnchanting.validateCraftArmorerTraining(pid)
         return
       elseif tonumber(data) == 2 then
         -- Do Nothing
@@ -817,61 +1298,7 @@ function RunicEnchanting.OnGUIAction(eventStatus, pid, idGui, data)
     elseif idGui == REUGuI2 then
       if tonumber(data) < 10000 then
         local refId = UpgradeData[Players[pid].name][tonumber(data) + 1].refId
-        local itemData = Data.items[(refId:gsub("-", "_"):gsub(" ", "_"))]
-        local playerRef = Players[pid]
-        local playerInv = playerRef.data.inventory
-
-        local recordType
-        local newRefId
-        local trueRefId
-        local trueName
-        if itemData then
-          newRefId = "re_upgraded_"..itemData.refId
-          trueRefId = itemData.refId
-          trueName = itemData.name
-        else
-          newRefId = "re_upgraded_"..refId
-          trueRefId = refId
-        end
-
-        if not logicHandler.IsGeneratedRecord(newRefId) then
-          if logicHandler.IsGeneratedRecord(refId) then
-            recordType = logicHandler.GetRecordTypeByRecordId(refId)
-            trueName = GetRecordStoreByRecordId(refId).name
-          elseif itemData then
-            recordType = string.lower(itemData.type)
-          end
-
-          recordStore = RecordStores[recordType]
-
-          local recordTable = {
-            baseId = refId,
-            enchantmentCharge = 10000,
-            name = RunicEnchanting.labels.prefix..trueName
-          }
-
-          recordStore.data.permanentRecords[newRefId] = recordTable
-
-          recordStore:QuicksaveToDrive()
-          tes3mp.ClearRecords()
-          tes3mp.SetRecordType(enumerations.recordType[string.upper(recordType)])
-          packetBuilder.AddRecordByType(newRefId, recordTable, recordType)
-          tes3mp.SendRecordDynamic(pid, true, false)
-        end
-
-        inventoryHelper.removeItem(playerInv, trueRefId, 1, -1, -1, "")
-
-        tes3mp.ClearInventoryChanges(pid)
-        tes3mp.SetInventoryChangesAction(pid, enumerations.inventory.REMOVE)
-        tes3mp.AddItemChange(pid, trueRefId, 1, -1, -1, "")
-        tes3mp.SendInventoryChanges(pid)
-
-        inventoryHelper.addItem(playerInv, newRefId, 1, -1, -1, "")
-
-        tes3mp.ClearInventoryChanges(pid)
-        tes3mp.SetInventoryChangesAction(pid, enumerations.inventory.ADD)
-        tes3mp.AddItemChange(pid, newRefId, 1, -1, -1, "")
-        tes3mp.SendInventoryChanges(pid)
+        RunicEnchanting.validateUpgradeArmor(pid, refId)
       end
     end
   end
@@ -906,7 +1333,7 @@ function RunicEnchanting.OnActorDeath(eventStatus, pid, cellDescription, actors)
 
       for gemKey, gemValue in pairs(Data.gems) do
         if Data.actors[value.refId] then
-          if Data.actors[value.refId] <= gemValue then
+          if tonumber(Data.actors[value.refId]) <= tonumber(gemValue) then
             if inventoryHelper.containsItem(playerInv, gemKey, -1, -1, "") then
               alternative = true
             end
