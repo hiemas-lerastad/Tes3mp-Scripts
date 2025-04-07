@@ -7,11 +7,13 @@ Scripts:
   The book with the recipes to craft these items can be found down the side of Galbedir's desk in Balmora, Guild of Mages
 
   Install
-  
+  Save the scripts/custom/HiemUtils.lua as HiemUtils.lua inside your server/scripts/custom folder.
   Save the scripts/custom/RunicEnchanting.lua as RunicEnchanting.lua inside your server/scripts/custom folder.
   Save the data/custom/REDataList.json as REDataList.json inside your server/data/custom folder.
   
-  To customScripts.lua add : require("custom/RunicEnchanting")
+  To customScripts.lua add : 
+    require("custom/HiemUtils")
+    require("custom/RunicEnchanting")
 
 
 - CareFreeLevelling
