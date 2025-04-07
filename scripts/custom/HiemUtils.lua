@@ -35,13 +35,12 @@ end
 
 function HiemUtils.removePlayerItems(pid, itemTable)
     for _,item in pairs(itemTable) do
-        HiemUtils.Log(Players[pid].data.inventory, true)
-        HiemUtils.Log(item, true)
-
         if item.count > 1 then
-          local index = inventoryHelper.getItemIndex(Players[pid].data.inventory, item.refId, item.count, item.charge, item.enchantmentCharge, item.soul)
+          local index = inventoryHelper.getItemIndex(Players[pid].data.inventory, item.refId, item.charge, item.enchantmentCharge, item.soul)
           if index then
             Players[pid].data.inventory[index].count = Players[pid].data.inventory[index].count - 1
+          else
+            inventoryHelper.removeClosestItem(Players[pid].data.inventory, item.refId, 1, item.charge, item.enchantmentCharge, item.soul)
           end
         else
           inventoryHelper.removeClosestItem(Players[pid].data.inventory, item.refId, 1, item.charge, item.enchantmentCharge, item.soul)
@@ -323,19 +322,24 @@ function HiemUtils.populateCell(cell)
   logicHandler.LoadCell(cellDescription)
 
   local objectStatesToSave = {}
-
+  local states = {}
   for i=1, #cell.itemsToRemove do
-    local itemRefr = cell.itemsToRemove[i]
-    HiemUtils.removeObject(itemRefr.."-0", cellDescription, objectStatesToSave)
+    local item = cell.itemsToRemove[i]
+    if item.index then
+      objectStatesToSave = HiemUtils.removeObject(item.index.."-0", cellDescription, objectStatesToSave, item.refId)
+    end
   end
+  HiemUtils.Log(objectStatesToSave, true)
+
   LoadedCells[cellDescription]:SaveObjectStates(objectStatesToSave)
   LoadedCells[cellDescription]:QuicksaveToDrive()
 
-  for k,v in pairs(LoadedCells[cellDescription].data.objectData) do
-    objectStatesToSave = HiemUtils.removeObject(k, cellDescription, objectStatesToSave)
-  end
-  LoadedCells[cellDescription]:SaveObjectStates(objectStatesToSave)
-  LoadedCells[cellDescription]:QuicksaveToDrive()
+  -- objectStatesToSave = {}
+  -- for k,v in pairs(LoadedCells[cellDescription].data.objectData) do
+  --   objectStatesToSave = HiemUtils.removeObject(k, cellDescription, objectStatesToSave)
+  -- end
+  -- LoadedCells[cellDescription]:SaveObjectStates(objectStatesToSave)
+  -- LoadedCells[cellDescription]:QuicksaveToDrive()
 
   for i=1, #cell.references do
     local reference = cell.references[i]
@@ -355,13 +359,14 @@ function HiemUtils.populateCell(cell)
   logicHandler.UnloadCell(cellDescription)
 end
 
-function HiemUtils.removeObject(refIndex, cellDescription, objectStatesToSave)
+function HiemUtils.removeObject(refIndex, cellDescription, objectStatesToSave, refId)
     local objectData = LoadedCells[cellDescription].data.objectData[refIndex]
     local splitIndex = refIndex:split("-")
     tes3mp.ClearObjectList()
     tes3mp.SetObjectListCell(cellDescription)
     tes3mp.SetObjectRefNum(splitIndex[1])
     tes3mp.SetObjectMpNum(splitIndex[2])
+    -- local refId = tes3mp.GetObjectRefId(0)
     tes3mp.SetObjectState(false)
     tes3mp.SendObjectState(true, false)
 
@@ -369,6 +374,15 @@ function HiemUtils.removeObject(refIndex, cellDescription, objectStatesToSave)
 
     if LoadedCells[cellDescription].data.objectData[refIndex] then
       LoadedCells[cellDescription].data.objectData[refIndex].state = false
+
+      if refId and not LoadedCells[cellDescription].data.objectData[refIndex].refId then
+        LoadedCells[cellDescription].data.objectData[refIndex].refId = refId
+      end
+    elseif refId then
+      LoadedCells[cellDescription].data.objectData[refIndex] = {
+        state = false,
+        refId = refId
+      }
     end
 
 
@@ -376,7 +390,10 @@ function HiemUtils.removeObject(refIndex, cellDescription, objectStatesToSave)
       objectStatesToSave[refIndex] = {refId = objectData.refId, state = false}
 
       return objectStatesToSave
-    end
+    elseif objectStatesToSave and refId then
+      objectStatesToSave[refIndex] = {refId = refId, state = false}
+
+      return objectStatesToSave    end
 end
 
 function HiemUtils.placeObject(refId, location, cell)

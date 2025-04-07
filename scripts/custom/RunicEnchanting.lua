@@ -454,315 +454,1242 @@ function RunicEnchanting.createRecord()
         fogDensity = 0.75
       },
       itemsToRemove = {
-        41910,
-        41912,
-        56847,
-        67615,
-        67616,
-        67617,
-        67618,
-        67619,
-        67620,
-        67621,
-        390613,
-        470832,
-        41881,
-        41882,
-        41885,
-        41888,
-        41890,
-        41892,
-        41893,
-        41894,
-        41895,
-        41896,
-        41897,
-        41899,
-        41900,
-        41901,
-        41902,
-        41903,
-        41905,
-        41906,
-        41907,
-        41908,
-        41914,
-        41916,
-        41917,
-        41919,
-        41920,
-        56829,
-        56832,
-        56833,
-        56834,
-        56835,
-        56836,
-        56838,
-        56840,
-        56841,
-        56842,
-        56843,
-        56844,
-        56848,
-        56849,
-        56850,
-        56852,
-        56853,
-        56854,
-        56856,
-        56857,
-        56858,
-        56859,
-        56860,
-        56861,
-        56862,
-        56865,
-        56866,
-        56867,
-        56868,
-        56869,
-        56870,
-        56871,
-        56872,
-        56873,
-        56874,
-        56875,
-        56876,
-        56877,
-        56878,
-        56879,
-        56881,
-        56884,
-        56885,
-        56886,
-        56887,
-        56888,
-        56889,
-        56890,
-        56891,
-        56892,
-        56893,
-        56894,
-        56895,
-        56896,
-        56897,
-        56898,
-        56899,
-        56908,
-        56909,
-        56911,
-        56913,
-        56914,
-        56915,
-        56916,
-        56917,
-        56919,
-        56920,
-        56921,
-        56922,
-        56923,
-        56924,
-        56925,
-        56926,
-        56927,
-        56928,
-        56929,
-        56930,
-        56931,
-        56932,
-        56933,
-        56934,
-        56935,
-        56936,
-        56937,
-        56938,
-        56939,
-        56940,
-        56941,
-        56942,
-        56943,
-        56944,
-        56945,
-        56946,
-        56947,
-        56948,
-        56949,
-        56950,
-        56954,
-        56955,
-        56956,
-        56958,
-        56959,
-        56960,
-        56961,
-        56962,
-        56963,
-        56964,
-        56965,
-        56966,
-        56967,
-        56968,
-        56969,
-        56970,
-        56971,
-        56972,
-        56973,
-        56975,
-        56976,
-        56977,
-        56978,
-        56979,
-        56980,
-        56981,
-        56982,
-        56983,
-        56984,
-        56985,
-        56986,
-        56987,
-        56988,
-        56989,
-        56990,
-        56991,
-        56992,
-        56993,
-        56994,
-        56995,
-        56996,
-        56997,
-        56998,
-        56999,
-        57000,
-        57001,
-        57002,
-        57003,
-        57004,
-        57005,
-        57006,
-        57007,
-        57008,
-        57009,
-        57010,
-        57011,
-        57012,
-        57013,
-        57014,
-        57015,
-        57016,
-        57017,
-        57018,
-        57019,
-        57020,
-        57021,
-        57022,
-        57024,
-        64193,
-        86807,
-        290469,
-        290470,
-        290471,
-        290472,
-        290473,
-        310763,
-        310764,
-        310765,
-        310766,
-        310767,
-        310768,
-        310769,
-        310770,
-        310771,
-        310772,
-        332053,
-        332054,
-        378320,
-        378321,
-        378322,
-        378323,
-        378324,
-        378325,
-        378326,
-        378327,
-        378328,
-        378329,
-        378330,
-        378331,
-        378332,
-        378333,
-        378334,
-        378335,
-        378336,
-        378338,
-        378339,
-        378340,
-        378341,
-        378342,
-        378343,
-        378344,
-        378345,
-        390615,
-        390616,
-        391124,
-        460130,
-        466173,
-        466174,
-        466175,
-        466176,
-        466177,
-        466178,
-        466179,
-        466180,
-        466181,
-        466182,
-        466183,
-        469364,
-        477571,
-        478738,
-        478739,
-        478740,
-        478741,
-        478742,
-        478743,
-        478744,
-        478745,
-        478746,
-        478747,
-        478748,
-        478749,
-        478750,
-        478751,
-        478752,
-        478753,
-        478754,
-        478755,
-        478756,
-        478757,
-        478758,
-        478759,
-        478760,
-        478761,
-        478762,
-        478763,
-        478764,
-        478765,
-        478766,
-        478767,
-        480244,
-        480245,
-        480246,
-        480247,
-        480248,
-        480249,
-        480250,
-        480251,
-        480252,
-        481297,
-        481298,
-        481299,
-        483333,
-        483334,
-        483335,
-        483336
+        {
+            index = 41910,
+            refId = "in_hlaalu_loaddoor_01"
+        },
+        {
+            index = 41912,
+            refId = "in_hlaalu_loaddoor_01"
+        },
+        {
+            index = 56847,
+            refId = "in_hlaalu_loaddoor_01"
+        },
+        {
+            index = 67615,
+            refId = "masalinie merian"
+        },
+        {
+            index = 67616,
+            refId = "marayn dren"
+        },
+        {
+            index = 67617,
+            refId = "sharn gra-muzgob"
+        },
+        {
+            index = 67618,
+            refId = "ajira"
+        },
+        {
+            index = 67619,
+            refId = "estirdalin"
+        },
+        {
+            index = 67620,
+            refId = "ranis athrys"
+        },
+        {
+            index = 67621,
+            refId = "galbedir"
+        },
+        {
+            index = 390613,
+            refId = "de_p_desk_01_galbedir"
+        },
+        {
+            index = 470832,
+            refId = "common_ring_01_mgbwg"
+        },
+        {
+            index = 41881,
+            refId = "in_hlaalu_hall_3way"
+        },
+        {
+            index = 41882,
+            refId = "in_hlaalu_hall_3way"
+        },
+        {
+            index = 41885,
+            refId = "in_hlaalu_hall_3way"
+        },
+        {
+            index = 41888,
+            refId = "in_hlaalu_hall_3way"
+        },
+        {
+            index = 41890,
+            refId = "in_hlaalu_hall_3way"
+        },
+        {
+            index = 41892,
+            refId = "in_hlaalu_hall_corner_01"
+        },
+        {
+            index = 41893,
+            refId = "in_hlaalu_hall_corner_01"
+        },
+        {
+            index = 41894,
+            refId = "in_hlaalu_hall_stairsr"
+        },
+        {
+            index = 41895,
+            refId = "in_hlaalu_hall_3way"
+        },
+        {
+            index = 41896,
+            refId = "in_hlaalu_hall_corner_01"
+        },
+        {
+            index = 41897,
+            refId = "in_hlaalu_hall_ramp"
+        },
+        {
+            index = 41899,
+            refId = "in_hlaalu_wall"
+        },
+        {
+            index = 41900,
+            refId = "in_hlaalu_hall_corner_01"
+        },
+        {
+            index = 41901,
+            refId = "in_hlaalu_hall_ramp"
+        },
+        {
+            index = 41902,
+            refId = "in_hlaalu_roomt_sided"
+        },
+        {
+            index = 41903,
+            refId = "in_hlaalu_roomt_corner_01"
+        },
+        {
+            index = 41905,
+            refId = "in_hlaalu_wall"
+        },
+        {
+            index = 41906,
+            refId = "in_hlaalu_roomt_corner_01"
+        },
+        {
+            index = 41907,
+            refId = "in_hlaalu_roomt_corner_01"
+        },
+        {
+            index = 41908,
+            refId = "in_hlaalu_roomt_corner_01"
+        },
+        {
+            index = 41914,
+            refId = "furn_de_rug_01"
+        },
+        {
+            index = 41916,
+            refId = "in_hlaalu_room_rail"
+        },
+        {
+            index = 41917,
+            refId = "light_de_candle_14_64"
+        },
+        {
+            index = 41919,
+            refId = "bk_OriginOfTheMagesGuild"
+        },
+        {
+            index = 41920,
+            refId = "misc_de_pot_redware_02"
+        },
+        {
+            index = 56829,
+            refId = "furn_de_p_chair_01"
+        },
+        {
+            index = 56832,
+            refId = "in_hlaalu_roomt_sided"
+        },
+        {
+            index = 56833,
+            refId = "in_hlaalu_room_door1"
+        },
+        {
+            index = 56834,
+            refId = "in_hlaalu_room_corner"
+        },
+        {
+            index = 56835,
+            refId = "in_hlaalu_room_corner"
+        },
+        {
+            index = 56836,
+            refId = "in_hlaalu_room_corner"
+        },
+        {
+            index = 56838,
+            refId = "in_hlaalu_doorjamb"
+        },
+        {
+            index = 56840,
+            refId = "Furn_de_rug_big_09"
+        },
+        {
+            index = 56841,
+            refId = "furn_de_rug_02"
+        },
+        {
+            index = 56842,
+            refId = "furn_de_p_table_05"
+        },
+        {
+            index = 56843,
+            refId = "light_com_candle_07_128"
+        },
+        {
+            index = 56844,
+            refId = "misc_de_bowl_orange_green_01"
+        },
+        {
+            index = 56848,
+            refId = "barrel_01_cheapfood5"
+        },
+        {
+            index = 56849,
+            refId = "barrel_02_Ingred"
+        },
+        {
+            index = 56850,
+            refId = "com_basket_01_ingredien"
+        },
+        {
+            index = 56852,
+            refId = "com_basket_01_food"
+        },
+        {
+            index = 56853,
+            refId = "com_sack_01_saltrice_10"
+        },
+        {
+            index = 56854,
+            refId = "com_sack_02_chpfood3"
+        },
+        {
+            index = 56856,
+            refId = "light_de_lamp_01"
+        },
+        {
+            index = 56857,
+            refId = "furn_de_p_shelf_02"
+        },
+        {
+            index = 56858,
+            refId = "light_de_candle_08_64"
+        },
+        {
+            index = 56859,
+            refId = "chest_small_01_ingredie"
+        },
+        {
+            index = 56860,
+            refId = "light_de_candle_08_64"
+        },
+        {
+            index = 56861,
+            refId = "de_p_desk_01_masalinie "
+        },
+        {
+            index = 56862,
+            refId = "de_p_desk_01_ajira"
+        },
+        {
+            index = 56865,
+            refId = "furn_de_p_table_04"
+        },
+        {
+            index = 56866,
+            refId = "Com_Sack_02_Ingred"
+        },
+        {
+            index = 56867,
+            refId = "Com_Sack_02_Ingred"
+        },
+        {
+            index = 56868,
+            refId = "com_sack_01_ingred"
+        },
+        {
+            index = 56869,
+            refId = "com_sack_01_ingred"
+        },
+        {
+            index = 56870,
+            refId = "misc_de_pot_blue_01"
+        },
+        {
+            index = 56871,
+            refId = "misc_de_pot_glass_peach_01"
+        },
+        {
+            index = 56872,
+            refId = "misc_de_pot_glass_peach_01"
+        },
+        {
+            index = 56873,
+            refId = "misc_de_pot_glass_peach_02"
+        },
+        {
+            index = 56874,
+            refId = "ingred_bonemeal_01"
+        },
+        {
+            index = 56875,
+            refId = "ingred_crab_meat_01"
+        },
+        {
+            index = 56876,
+            refId = "furn_de_tray_01"
+        },
+        {
+            index = 56877,
+            refId = "ingred_emerald_01"
+        },
+        {
+            index = 56878,
+            refId = "ingred_green_lichen_01"
+        },
+        {
+            index = 56879,
+            refId = "ingred_saltrice_01"
+        },
+        {
+            index = 56881,
+            refId = "light_de_candle_06_64"
+        },
+        {
+            index = 56884,
+            refId = "furn_de_rope_03"
+        },
+        {
+            index = 56885,
+            refId = "light_de_lantern_10_128_Static"
+        },
+        {
+            index = 56886,
+            refId = "light_de_lantern_10_177_Static"
+        },
+        {
+            index = 56887,
+            refId = "furn_de_rope_03"
+        },
+        {
+            index = 56888,
+            refId = "light_de_lantern_10_177_Static"
+        },
+        {
+            index = 56889,
+            refId = "furn_de_rope_03"
+        },
+        {
+            index = 56890,
+            refId = "light_de_lantern_10_177_Static"
+        },
+        {
+            index = 56891,
+            refId = "furn_de_rope_03"
+        },
+        {
+            index = 56892,
+            refId = "light_de_lantern_10_177_Static"
+        },
+        {
+            index = 56893,
+            refId = "furn_de_rope_03"
+        },
+        {
+            index = 56894,
+            refId = "light_de_lantern_10_128_Static"
+        },
+        {
+            index = 56895,
+            refId = "furn_de_rope_03"
+        },
+        {
+            index = 56896,
+            refId = "light_de_lantern_10_128_Static"
+        },
+        {
+            index = 56897,
+            refId = "furn_de_rope_03"
+        },
+        {
+            index = 56898,
+            refId = "light_de_lantern_10_177_Static"
+        },
+        {
+            index = 56899,
+            refId = "furn_de_rope_03"
+        },
+        {
+            index = 56908,
+            refId = "furn_de_r_table_07"
+        },
+        {
+            index = 56909,
+            refId = "furn_de_r_chair_03"
+        },
+        {
+            index = 56911,
+            refId = "light_de_candle_17_64"
+        },
+        {
+            index = 56913,
+            refId = "furn_de_r_table_07"
+        },
+        {
+            index = 56914,
+            refId = "furn_de_r_chair_03"
+        },
+        {
+            index = 56915,
+            refId = "furn_de_r_chair_03"
+        },
+        {
+            index = 56916,
+            refId = "light_de_candle_17_64"
+        },
+        {
+            index = 56917,
+            refId = "light_de_candle_17_64"
+        },
+        {
+            index = 56919,
+            refId = "furn_de_r_wallscreen_02"
+        },
+        {
+            index = 56920,
+            refId = "furn_de_r_wallscreen_02"
+        },
+        {
+            index = 56921,
+            refId = "furn_de_r_wallscreen_02"
+        },
+        {
+            index = 56922,
+            refId = "furn_de_r_wallscreen_02"
+        },
+        {
+            index = 56923,
+            refId = "furn_de_r_wallscreen_02"
+        },
+        {
+            index = 56924,
+            refId = "furn_de_r_bench_01"
+        },
+        {
+            index = 56925,
+            refId = "furn_de_r_bench_01"
+        },
+        {
+            index = 56926,
+            refId = "furn_de_r_bench_01"
+        },
+        {
+            index = 56927,
+            refId = "furn_de_r_bench_01"
+        },
+        {
+            index = 56928,
+            refId = "furn_de_r_shelf_01"
+        },
+        {
+            index = 56929,
+            refId = "furn_de_r_shelf_01"
+        },
+        {
+            index = 56930,
+            refId = "bk_BriefHistoryEmpire1"
+        },
+        {
+            index = 56931,
+            refId = "bk_BriefHistoryEmpire2"
+        },
+        {
+            index = 56932,
+            refId = "bk_BriefHistoryEmpire3"
+        },
+        {
+            index = 56933,
+            refId = "bk_BriefHistoryEmpire4"
+        },
+        {
+            index = 56934,
+            refId = "misc_de_pot_redware_04"
+        },
+        {
+            index = 56935,
+            refId = "misc_de_pot_redware_04"
+        },
+        {
+            index = 56936,
+            refId = "misc_de_pot_glass_peach_01"
+        },
+        {
+            index = 56937,
+            refId = "bk_HouseOfTroubles_o"
+        },
+        {
+            index = 56938,
+            refId = "furn_de_p_chair_01"
+        },
+        {
+            index = 56939,
+            refId = "furn_de_p_chair_01"
+        },
+        {
+            index = 56940,
+            refId = "ingred_saltrice_01"
+        },
+        {
+            index = 56941,
+            refId = "ingred_scrap_metal_01"
+        },
+        {
+            index = 56942,
+            refId = "sc_paper plain"
+        },
+        {
+            index = 56943,
+            refId = "sc_paper plain"
+        },
+        {
+            index = 56944,
+            refId = "furn_de_r_wallscreen_02"
+        },
+        {
+            index = 56945,
+            refId = "furn_de_r_wallscreen_02"
+        },
+        {
+            index = 56946,
+            refId = "furn_de_r_wallscreen_02"
+        },
+        {
+            index = 56947,
+            refId = "furn_de_r_wallscreen_02"
+        },
+        {
+            index = 56948,
+            refId = "furn_de_r_wallscreen_02"
+        },
+        {
+            index = 56949,
+            refId = "furn_de_r_table_07"
+        },
+        {
+            index = 56950,
+            refId = "furn_de_r_chair_03"
+        },
+        {
+            index = 56954,
+            refId = "furn_de_r_table_07"
+        },
+        {
+            index = 56955,
+            refId = "furn_de_r_chair_03"
+        },
+        {
+            index = 56956,
+            refId = "furn_de_r_chair_03"
+        },
+        {
+            index = 56958,
+            refId = "light_de_candle_17_64"
+        },
+        {
+            index = 56959,
+            refId = "Furn_De_R_Bookshelf_02"
+        },
+        {
+            index = 56960,
+            refId = "furn_de_r_shelf_01"
+        },
+        {
+            index = 56961,
+            refId = "active_de_p_bed_03"
+        },
+        {
+            index = 56962,
+            refId = "active_de_p_bed_03"
+        },
+        {
+            index = 56963,
+            refId = "Furn_de_rug_big_09"
+        },
+        {
+            index = 56964,
+            refId = "furn_de_p_table_01"
+        },
+        {
+            index = 56965,
+            refId = "furn_de_p_chair_01"
+        },
+        {
+            index = 56966,
+            refId = "furn_de_p_chair_01"
+        },
+        {
+            index = 56967,
+            refId = "furn_de_p_chair_01"
+        },
+        {
+            index = 56968,
+            refId = "de_p_closet_02_mguild"
+        },
+        {
+            index = 56969,
+            refId = "apparatus_a_calcinator_01"
+        },
+        {
+            index = 56970,
+            refId = "apparatus_m_mortar_01"
+        },
+        {
+            index = 56971,
+            refId = "apparatus_j_retort_01"
+        },
+        {
+            index = 56972,
+            refId = "apparatus_j_alembic_01"
+        },
+        {
+            index = 56973,
+            refId = "light_de_candle_17_64"
+        },
+        {
+            index = 56975,
+            refId = "Furn_de_rug_big_09"
+        },
+        {
+            index = 56976,
+            refId = "misc_com_bottle_09"
+        },
+        {
+            index = 56977,
+            refId = "misc_com_bottle_09"
+        },
+        {
+            index = 56978,
+            refId = "misc_com_bottle_15"
+        },
+        {
+            index = 56979,
+            refId = "misc_de_foldedcloth00"
+        },
+        {
+            index = 56980,
+            refId = "misc_de_goblet_02"
+        },
+        {
+            index = 56981,
+            refId = "misc_de_goblet_02"
+        },
+        {
+            index = 56982,
+            refId = "Misc_Com_Bottle_04"
+        },
+        {
+            index = 56983,
+            refId = "misc_de_goblet_07"
+        },
+        {
+            index = 56984,
+            refId = "misc_de_goblet_07"
+        },
+        {
+            index = 56985,
+            refId = "misc_com_basket_02"
+        },
+        {
+            index = 56986,
+            refId = "misc_com_bottle_03"
+        },
+        {
+            index = 56987,
+            refId = "Misc_Com_Bottle_04"
+        },
+        {
+            index = 56988,
+            refId = "misc_com_bottle_05"
+        },
+        {
+            index = 56989,
+            refId = "Misc_Com_Bottle_04"
+        },
+        {
+            index = 56990,
+            refId = "Misc_Com_Bottle_04"
+        },
+        {
+            index = 56991,
+            refId = "Misc_Com_Bottle_04"
+        },
+        {
+            index = 56992,
+            refId = "misc_com_bottle_05"
+        },
+        {
+            index = 56993,
+            refId = "misc_com_bottle_05"
+        },
+        {
+            index = 56994,
+            refId = "misc_com_bottle_05"
+        },
+        {
+            index = 56995,
+            refId = "misc_com_bottle_03"
+        },
+        {
+            index = 56996,
+            refId = "misc_com_bottle_03"
+        },
+        {
+            index = 56997,
+            refId = "Misc_Com_Bottle_14"
+        },
+        {
+            index = 56998,
+            refId = "Misc_Com_Bottle_14"
+        },
+        {
+            index = 56999,
+            refId = "Misc_Com_Bottle_14"
+        },
+        {
+            index = 57000,
+            refId = "Misc_Com_Bottle_14"
+        },
+        {
+            index = 57001,
+            refId = "Misc_Com_Bottle_14"
+        },
+        {
+            index = 57002,
+            refId = "Misc_Com_Bottle_14"
+        },
+        {
+            index = 57003,
+            refId = "misc_de_bowl_bugdesign_01"
+        },
+        {
+            index = 57004,
+            refId = "misc_de_goblet_03"
+        },
+        {
+            index = 57005,
+            refId = "misc_de_goblet_03"
+        },
+        {
+            index = 57006,
+            refId = "misc_de_goblet_03"
+        },
+        {
+            index = 57007,
+            refId = "misc_de_goblet_03"
+        },
+        {
+            index = 57008,
+            refId = "misc_de_goblet_03"
+        },
+        {
+            index = 57009,
+            refId = "misc_de_goblet_03"
+        },
+        {
+            index = 57010,
+            refId = "misc_de_goblet_03"
+        },
+        {
+            index = 57011,
+            refId = "Misc_DE_glass_green_01"
+        },
+        {
+            index = 57012,
+            refId = "Misc_DE_glass_green_01"
+        },
+        {
+            index = 57013,
+            refId = "Misc_DE_glass_green_01"
+        },
+        {
+            index = 57014,
+            refId = "Misc_DE_glass_green_01"
+        },
+        {
+            index = 57015,
+            refId = "Misc_DE_glass_green_01"
+        },
+        {
+            index = 57016,
+            refId = "Misc_DE_glass_green_01"
+        },
+        {
+            index = 57017,
+            refId = "Misc_DE_glass_green_01"
+        },
+        {
+            index = 57018,
+            refId = "misc_de_foldedcloth00"
+        },
+        {
+            index = 57019,
+            refId = "misc_de_foldedcloth00"
+        },
+        {
+            index = 57020,
+            refId = "misc_de_foldedcloth00"
+        },
+        {
+            index = 57021,
+            refId = "misc_de_pitcher_01"
+        },
+        {
+            index = 57022,
+            refId = "misc_de_pot_blue_01"
+        },
+        {
+            index = 57024,
+            refId = "in_hlaalu_hall_stairsl"
+        },
+        {
+            index = 64193,
+            refId = "furn_de_lecturn"
+        },
+        {
+            index = 86807,
+            refId = "de_r_chest_01_sharn"
+        },
+        {
+            index = 290469,
+            refId = "misc_uni_pillow_01"
+        },
+        {
+            index = 290470,
+            refId = "misc_uni_pillow_01"
+        },
+        {
+            index = 290471,
+            refId = "misc_uni_pillow_01"
+        },
+        {
+            index = 290472,
+            refId = "misc_uni_pillow_01"
+        },
+        {
+            index = 290473,
+            refId = "NorthMarker"
+        },
+        {
+            index = 310763,
+            refId = "misc_com_bottle_01"
+        },
+        {
+            index = 310764,
+            refId = "misc_com_bottle_03"
+        },
+        {
+            index = 310765,
+            refId = "misc_com_bottle_09"
+        },
+        {
+            index = 310766,
+            refId = "misc_com_bottle_11"
+        },
+        {
+            index = 310767,
+            refId = "misc_com_bottle_11"
+        },
+        {
+            index = 310768,
+            refId = "misc_de_bowl_redware_01"
+        },
+        {
+            index = 310769,
+            refId = "misc_de_bowl_redware_01"
+        },
+        {
+            index = 310770,
+            refId = "misc_de_goblet_02"
+        },
+        {
+            index = 310771,
+            refId = "misc_de_goblet_02"
+        },
+        {
+            index = 310772,
+            refId = "Furn_de_rug_big_09"
+        },
+        {
+            index = 332053,
+            refId = "chest_01_v_potion_al_02"
+        },
+        {
+            index = 332054,
+            refId = "chest_01_v_potion_h_03"
+        },
+        {
+            index = 378320,
+            refId = "in_hlaalu_hall_center"
+        },
+        {
+            index = 378321,
+            refId = "in_hlaalu_hall_corner_01"
+        },
+        {
+            index = 378322,
+            refId = "in_hlaalu_hall_rail"
+        },
+        {
+            index = 378323,
+            refId = "light_de_candle_06_64"
+        },
+        {
+            index = 378324,
+            refId = "light_com_candle_07_77"
+        },
+        {
+            index = 378325,
+            refId = "in_hlaalu_roomt_post"
+        },
+        {
+            index = 378326,
+            refId = "in_hlaalu_roomt_post"
+        },
+        {
+            index = 378327,
+            refId = "furn_planter_02"
+        },
+        {
+            index = 378328,
+            refId = "In_Hlaalu_Platform_01"
+        },
+        {
+            index = 378329,
+            refId = "flora_tree_ai_03"
+        },
+        {
+            index = 378330,
+            refId = "flora_bush_01"
+        },
+        {
+            index = 378331,
+            refId = "flora_bush_01"
+        },
+        {
+            index = 378332,
+            refId = "flora_bush_01"
+        },
+        {
+            index = 378333,
+            refId = "flora_grass_01"
+        },
+        {
+            index = 378334,
+            refId = "flora_grass_01"
+        },
+        {
+            index = 378335,
+            refId = "flora_grass_01"
+        },
+        {
+            index = 378336,
+            refId = "light_de_lamp_01_128"
+        },
+        {
+            index = 378338,
+            refId = "in_hlaalu_doorjamb_load"
+        },
+        {
+            index = 378339,
+            refId = "in_hlaalu_doorjamb_load"
+        },
+        {
+            index = 378340,
+            refId = "in_hlaalu_doorjamb_load"
+        },
+        {
+            index = 378341,
+            refId = "light_de_lantern_08_177_01"
+        },
+        {
+            index = 378342,
+            refId = "light_de_lantern_03_200"
+        },
+        {
+            index = 378343,
+            refId = "in_hlaalu_hall_center"
+        },
+        {
+            index = 378344,
+            refId = "furn_de_rope_03"
+        },
+        {
+            index = 378345,
+            refId = "furn_de_rope_03"
+        },
+        {
+            index = 390615,
+            refId = "bk_Ajira1"
+        },
+        {
+            index = 390616,
+            refId = "bk_Ajira2"
+        },
+        {
+            index = 391124,
+            refId = "common_ring_01_mge"
+        },
+        {
+            index = 460130,
+            refId = "com_chest_02_mg_supply"
+        },
+        {
+            index = 466173,
+            refId = "misc_lw_platter"
+        },
+        {
+            index = 466174,
+            refId = "Misc_SoulGem_Petty"
+        },
+        {
+            index = 466175,
+            refId = "Misc_SoulGem_Petty"
+        },
+        {
+            index = 466176,
+            refId = "Misc_SoulGem_Petty"
+        },
+        {
+            index = 466177,
+            refId = "Misc_SoulGem_Common"
+        },
+        {
+            index = 466178,
+            refId = "Misc_SoulGem_Common"
+        },
+        {
+            index = 466179,
+            refId = "Misc_SoulGem_Greater"
+        },
+        {
+            index = 466180,
+            refId = "Misc_SoulGem_Grand"
+        },
+        {
+            index = 466181,
+            refId = "Misc_SoulGem_Lesser"
+        },
+        {
+            index = 466182,
+            refId = "Misc_SoulGem_Lesser"
+        },
+        {
+            index = 466183,
+            refId = "Misc_SoulGem_Lesser"
+        },
+        {
+            index = 469364,
+            refId = "light_de_candle_14_64"
+        },
+        {
+            index = 477571,
+            refId = "com_chest_02_galbedir"
+        },
+        {
+            index = 478738,
+            refId = "furn_de_tapestry_07"
+        },
+        {
+            index = 478739,
+            refId = "furn_de_tapestry_07"
+        },
+        {
+            index = 478740,
+            refId = "furn_de_tapestry_07"
+        },
+        {
+            index = 478741,
+            refId = "furn_de_tapestry_07"
+        },
+        {
+            index = 478742,
+            refId = "furn_de_tapestry_07"
+        },
+        {
+            index = 478743,
+            refId = "furn_de_tapestry_07"
+        },
+        {
+            index = 478744,
+            refId = "furn_de_tapestry_07"
+        },
+        {
+            index = 478745,
+            refId = "furn_de_tapestry_07"
+        },
+        {
+            index = 478746,
+            refId = "furn_de_tapestry_07"
+        },
+        {
+            index = 478747,
+            refId = "furn_de_tapestry_07"
+        },
+        {
+            index = 478748,
+            refId = "furn_c_t_wizard_01"
+        },
+        {
+            index = 478749,
+            refId = "light_de_lantern_03_200"
+        },
+        {
+            index = 478750,
+            refId = "furn_de_rope_03"
+        },
+        {
+            index = 478751,
+            refId = "furn_de_tapestry_07"
+        },
+        {
+            index = 478752,
+            refId = "furn_c_t_ritual_01"
+        },
+        {
+            index = 478753,
+            refId = "light_de_lantern_03_200"
+        },
+        {
+            index = 478754,
+            refId = "furn_de_rope_03"
+        },
+        {
+            index = 478755,
+            refId = "furn_de_tapestry_07"
+        },
+        {
+            index = 478756,
+            refId = "light_de_lantern_03_200"
+        },
+        {
+            index = 478757,
+            refId = "furn_de_rope_03"
+        },
+        {
+            index = 478758,
+            refId = "furn_de_tapestry_07"
+        },
+        {
+            index = 478759,
+            refId = "furn_de_tapestry_07"
+        },
+        {
+            index = 478760,
+            refId = "furn_de_tapestry_07"
+        },
+        {
+            index = 478761,
+            refId = "furn_de_tapestry_07"
+        },
+        {
+            index = 478762,
+            refId = "furn_de_tapestry_07"
+        },
+        {
+            index = 478763,
+            refId = "furn_de_tapestry_07"
+        },
+        {
+            index = 478764,
+            refId = "Flame Light_64"
+        },
+        {
+            index = 478765,
+            refId = "furn_de_tapestry_07"
+        },
+        {
+            index = 478766,
+            refId = "furn_de_tapestry_07"
+        },
+        {
+            index = 478767,
+            refId = "furn_de_tapestry_07"
+        },
+        {
+            index = 480244,
+            refId = "In_Hlaalu_Platform_01"
+        },
+        {
+            index = 480245,
+            refId = "light_de_lantern_10_128_Static"
+        },
+        {
+            index = 480246,
+            refId = "furn_de_rope_03"
+        },
+        {
+            index = 480247,
+            refId = "flora_grass_01"
+        },
+        {
+            index = 480248,
+            refId = "furn_planter_01"
+        },
+        {
+            index = 480249,
+            refId = "Furn_De_Railing_04"
+        },
+        {
+            index = 480250,
+            refId = "Furn_De_Railing_04"
+        },
+        {
+            index = 480251,
+            refId = "Furn_De_Railing_04"
+        },
+        {
+            index = 480252,
+            refId = "Furn_De_Railing_06"
+        },
+        {
+            index = 481297,
+            refId = "furn_de_tapestry_07"
+        },
+        {
+            index = 481298,
+            refId = "flora_grass_01"
+        },
+        {
+            index = 481299,
+            refId = "furn_planter_01"
+        },
+        {
+            index = 483333,
+            refId = "bk_charterMG"
+        },
+        {
+            index = 483334,
+            refId = "bk_wherewereyoudragonbroke"
+        },
+        {
+            index = 483335,
+            refId = "bk_galerionthemystic"
+        },
+        {
+            index = 483336,
+            refId = "bk_fragmentonartaeum"
+        }
       },
       references = {
         {
@@ -872,8 +1799,7 @@ function RunicEnchanting.initialseData()
 end
 
 function RunicEnchanting.OnServerPostInit(eventStatus)
-  -- if not WorldInstance.data.customVariables.RE_Records_Initisalised then
-  if true then
+  if not WorldInstance.data.customVariables.RE_Records_Initisalised then
     RunicEnchanting.createRecord()
     WorldInstance.data.customVariables.RE_Records_Initisalised = true
 
