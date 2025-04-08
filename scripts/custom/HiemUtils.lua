@@ -313,6 +313,64 @@ function HiemUtils.prettyDump(o,level)
     end
 end
 
+-- Recordstore Functions
+function HiemUtils.addRecords(type, list)
+  local recordStore = RecordStores[type]
+  for i=1, #list do
+    local item = list[i]
+    local id = item.id
+    if not item.id then
+      id = item.refId
+    end
+
+    if item.container_flags then
+      item.flags = item.container_flags
+    end
+
+    if type == 'npc' then
+      item = HiemUtils.formatNPCRecordData(item)
+    end
+
+    recordStore.data.permanentRecords[id] = item;
+  end
+  recordStore:Save()
+
+  -- for i=1, #list do
+  --   local record = list[i]
+  --   if record.inventory then
+  --       for _, item in pairs(record.inventory) do
+  --         packetBuilder.AddInventoryItemToRecord(item)
+  --       end
+  --   end
+  -- end
+end
+
+function HiemUtils.formatNPCRecordData(item)
+  item.gender = 1
+  if string.find(item.mesh, 'female') then
+    item.gender = 0
+  end
+
+  if item.data then
+    item.level = item.data.level
+
+    if item.data.stats then
+      item.health = item.data.stats.health
+      item.magicka = item.data.stats.magicka
+      item.fatigue = item.data.stats.fatigue
+    end
+  end
+
+  if item.ai_data then
+    item.aiFight = item.ai_data.fight
+    item.aiFlee = item.ai_data.flee
+    item.aiAlarm = item.ai_data.alarm
+    item.aiServices = item.ai_data.services
+  end
+
+  return item
+end
+
 -- Cell Functions
 
 function HiemUtils.populateCell(cell)
@@ -322,24 +380,17 @@ function HiemUtils.populateCell(cell)
   logicHandler.LoadCell(cellDescription)
 
   local objectStatesToSave = {}
-  local states = {}
-  for i=1, #cell.itemsToRemove do
-    local item = cell.itemsToRemove[i]
-    if item.index then
-      objectStatesToSave = HiemUtils.removeObject(item.index.."-0", cellDescription, objectStatesToSave, item.refId)
+  if cell.itemsToRemove then
+    for i=1, #cell.itemsToRemove do
+      local item = cell.itemsToRemove[i]
+      if item.index then
+        objectStatesToSave = HiemUtils.removeObject(item.index.."-0", cellDescription, objectStatesToSave, item.refId)
+      end
     end
+
+    LoadedCells[cellDescription]:SaveObjectStates(objectStatesToSave)
+    LoadedCells[cellDescription]:QuicksaveToDrive()
   end
-  HiemUtils.Log(objectStatesToSave, true)
-
-  LoadedCells[cellDescription]:SaveObjectStates(objectStatesToSave)
-  LoadedCells[cellDescription]:QuicksaveToDrive()
-
-  -- objectStatesToSave = {}
-  -- for k,v in pairs(LoadedCells[cellDescription].data.objectData) do
-  --   objectStatesToSave = HiemUtils.removeObject(k, cellDescription, objectStatesToSave)
-  -- end
-  -- LoadedCells[cellDescription]:SaveObjectStates(objectStatesToSave)
-  -- LoadedCells[cellDescription]:QuicksaveToDrive()
 
   for i=1, #cell.references do
     local reference = cell.references[i]
@@ -353,7 +404,24 @@ function HiemUtils.populateCell(cell)
       rotZ = reference.rotation[3]
     }
 
-    local uniqueIndex = HiemUtils.placeObject(reference.id, location, cellDescription)
+    local type = 'place'
+    if logicHandler.GetRecordTypeByRecordId(reference.id) == 'npc' or logicHandler.GetRecordTypeByRecordId(reference.id) == 'creature' then
+      type = 'spawn'
+    end
+
+    local uniqueIndex = HiemUtils.placeObject(reference.id, location, cellDescription, type)
+
+    local record = logicHandler.GetRecordStoreByRecordId(reference.id)
+    if record then
+      local inventory = record.data.permanentRecords[reference.id].inventory
+      HiemUtils.Log(LoadedCells[cellDescription].data.objectData[uniqueIndex], true)
+      LoadedCells[cellDescription].data.objectData[uniqueIndex].inventory = {}
+      if inventory then
+        for i,v in ipairs(inventory) do
+          inventoryHelper.addItem(LoadedCells[cellDescription].data.objectData[uniqueIndex].inventory, v[2], v[1])
+        end
+      end
+    end
   end
 
   logicHandler.UnloadCell(cellDescription)
@@ -366,7 +434,6 @@ function HiemUtils.removeObject(refIndex, cellDescription, objectStatesToSave, r
     tes3mp.SetObjectListCell(cellDescription)
     tes3mp.SetObjectRefNum(splitIndex[1])
     tes3mp.SetObjectMpNum(splitIndex[2])
-    -- local refId = tes3mp.GetObjectRefId(0)
     tes3mp.SetObjectState(false)
     tes3mp.SendObjectState(true, false)
 
@@ -393,10 +460,11 @@ function HiemUtils.removeObject(refIndex, cellDescription, objectStatesToSave, r
     elseif objectStatesToSave and refId then
       objectStatesToSave[refIndex] = {refId = refId, state = false}
 
-      return objectStatesToSave    end
+      return objectStatesToSave
+    end
 end
 
-function HiemUtils.placeObject(refId, location, cell)
+function HiemUtils.placeObject(refId, location, cell, type)
   local mpNum = WorldInstance:GetCurrentMpNum() + 1
   local refIndex =  0 .. "-" .. mpNum
   
@@ -409,7 +477,7 @@ function HiemUtils.placeObject(refId, location, cell)
 
   LoadedCells[cell]:InitializeObjectData(refIndex, refId)
   LoadedCells[cell].data.objectData[refIndex].location = location
-  table.insert(LoadedCells[cell].data.packets.place, refIndex)
+  table.insert(LoadedCells[cell].data.packets[type], refIndex)
  
   for onlinePid, player in pairs(Players) do
     if player:IsLoggedIn() then

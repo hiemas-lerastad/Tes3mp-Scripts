@@ -281,8 +281,7 @@ local REUGuI2 = 44332262 -- Upgrade, upgrade gui
 local REUGuI3 = 44332263 -- Upgrade, break gui
 
 function RunicEnchanting.createRecord()
-  recordStore = RecordStores["miscellaneous"]
-
+  -- miscellaneous
   local itemList = {
     {
       refId = "re_enchant_book",
@@ -321,25 +320,31 @@ function RunicEnchanting.createRecord()
       script = ""
     },
   }
+  HiemUtils.addRecords("miscellaneous", itemList)
 
-  for i=1, #itemList do
-    local item = itemList[i]
-    recordStore.data.permanentRecords[item.refId] = {
-      baseId = item.baseId,
-      name = item.name,
-      model = item.model,
-      icon = item.icon,
-      weight = item.weight,
-      value = item.value,
-      keyState = item.keyState,
-      script = item.script
+
+  -- book
+  local bookList = {
+    {
+      type = "Book",
+      flags = { 0, 0 },
+      id = "sc_paper enchanting",
+      data = {
+        weight = 1.0,
+        value = 20,
+        flags = 1,
+        skill = "None",
+        enchantment = 1000
+      },
+      name = "imbued paper",
+      mesh = "m\\Misc_paper_plain_01.nif",
+      icon = "m\\Tx_paper_plain_01.tga"
     }
-    
-  end
-  recordStore:Save()
+  }
+  HiemUtils.addRecords("book", bookList)
 
-  recordStore = RecordStores["enchantment"]
 
+  -- enchantment
   local enchantList = {
     {
       refId = "re_enchanting_enchant",
@@ -361,15 +366,9 @@ function RunicEnchanting.createRecord()
       }
     }
   }
+  HiemUtils.addRecords("enchantment", enchantList)
 
-  for i=1, #enchantList do
-    local item = enchantList[i]
-    recordStore.data.permanentRecords[item.refId] = item;
-  end
-  recordStore:Save()
-
-  recordStore = RecordStores["clothing"]
-
+  -- clothing
   local clothingList = {
     {
       refId = "re_enchant_gloves",
@@ -378,16 +377,9 @@ function RunicEnchanting.createRecord()
       enchantmentId = "re_enchanting_enchant"
     }
   }
+  HiemUtils.addRecords("clothing", clothingList)
 
-  for i=1, #clothingList do
-    local item = clothingList[i]
-    recordStore.data.permanentRecords[item.refId] = item;
-    
-  end
-  recordStore:Save()
-
-  recordStore = RecordStores["creature"]
-
+  -- creature
   local creatureList = {
     {
       baseId = "ancestor_ghost_summon",
@@ -408,19 +400,84 @@ function RunicEnchanting.createRecord()
       soulValue = 1000
     },
   }
+  HiemUtils.addRecords("creature", creatureList)
 
-  for i=1, #creatureList do
-    local creature = creatureList[i]
-    recordStore.data.permanentRecords[creature.refId] = {
-      baseId = creature.baseId,
-      id = creature.refId,
-      name = creature.name,
-      soulValue = creature.soulValue,
-    } 
-  end
-  recordStore:Save()
+  -- NPC
+  -- local npcList = {
+  --   {
+  --     type = "Npc",
+  --     flags = { 0, 0 },
+  --     id = "herra witch warrior",
+  --     name = "Herra Witch-Warrior",
+  --     mesh = "base_anim_female.nif",
+  --     race = "Nord",
+  --     class = "Witch",
+  --     faction = "",
+  --     head = "B_N_Nord_F_Head_08",
+  --     hair = "b_n_nord_f_hair_04",
+  --     gender = 0,
+  --     npc_flags = 9,
+  --     level = 20,
+  --     attributes = { 50, 30, 50, 30, 40, 50, 30, 50 },
+  --     skills = { 5, 5, 15, 10, 15, 10, 15, 10, 5, 80, 10, 20, 35, 35, 35, 10, 50, 35, 5, 15, 15, 15, 30, 5, 60, 15, 5 },
+  --     health = 50,
+  --     magicka = 60,
+  --     fatigue = 180,
+  --     disposition = 50,
+  --     reputation = 0,
+  --     rank = 0,
+  --     gold = 0,
+  --     inventory = { { 1, "BM_NordicMail_gauntletL" }, { 1, "BM_NordicMail_gauntletR" }, { 1, "BM_NordicMail_PauldronL" }, { 1, "BM_NordicMail_PauldronR" }, { 1, "expensive_robe_02_a" }, { 1, "expensive_shoes_02" }, { 1, "expensive_skirt_01" } },
+  --     spells = { "holy word", "turn undead", "frenzy creature", "frenzy humanoid", "demoralize creature", "demoralize humanoid", "father's hand", "noise", "detect enchantment", "tevral's hawkshaw", "almalexia's grace", "blindself" },
+  --     aiFlee =30,
+  --     aiAlarm = 0,
+  --     aiServices = 113951,
+  --     aiHello = 30,
+  --     aiFight = 30,
+  --   }
+  -- }
 
-  recordStore = RecordStores['cell']
+  local npcList = { {
+    type = "Npc",
+    flags = { 0, 0 },
+    id = "herra witch warrior",
+    name = "Herra Witch-Warrior",
+    mesh = "base_anim_female.nif",
+    race = "Nord",
+    class = "Witch",
+    faction = "",
+    head = "B_N_Nord_F_Head_08",
+    hair = "b_n_nord_f_hair_04",
+    npc_flags = 9,
+    data = {
+      level = 20,
+      stats = {
+        attributes = { 50, 30, 50, 30, 40, 50, 30, 50 },
+        skills = { 5, 5, 15, 10, 15, 10, 15, 10, 5, 80, 10, 20, 35, 35, 35, 10, 50, 35, 5, 15, 15, 15, 30, 5, 60, 15, 5 },
+        health = 50,
+        magicka = 60,
+        fatigue = 180
+      },
+      disposition = 50,
+      reputation = 0,
+      rank = 0,
+      gold = 0
+    },
+    inventory = { { 1, "BM_NordicMail_gauntletL" }, { 1, "BM_NordicMail_gauntletR" }, { 1, "BM_NordicMail_PauldronL" }, { 1, "BM_NordicMail_PauldronR" }, { 1, "expensive_robe_02_a" }, { 1, "expensive_shoes_02" }, { 1, "expensive_skirt_01" } },
+    spells = { "holy word", "turn undead", "frenzy creature", "frenzy humanoid", "demoralize creature", "demoralize humanoid", "father's hand", "noise", "detect enchantment", "tevral's hawkshaw", "almalexia's grace", "blindself" },
+    ai_data = {
+      hello = 30,
+      fight = 30,
+      flee = 30,
+      alarm = 0,
+      services = 113951
+    },
+    ai_packages = { },
+    travel_destinations = { }
+  } }
+  HiemUtils.addRecords("npc", npcList)
+
+  -- cell
   local cellList = {
     {
       type = "Cell",
@@ -1691,91 +1748,162 @@ function RunicEnchanting.createRecord()
             refId = "bk_fragmentonartaeum"
         }
       },
+      references ={ {
+        mast_index = 0,
+        refr_index = 2,
+        id = "herra witch warrior",
+        temporary = false,
+        translation = { 251.85272, 245.47557, -89.4133 },
+        rotation = { 0.0, 0.0, 4.6831856 },
+      }, {
+        mast_index = 0,
+        refr_index = 3,
+        id = "in_hlaalu_room_corner",
+        temporary = true,
+        translation = { 0.0, 510.0, 0.0 },
+        rotation = { 0.0, 0.0, 1.5707964 }
+      }, {
+        mast_index = 0,
+        refr_index = 4,
+        id = "in_hlaalu_room_corner",
+        temporary = true,
+        translation = { 255.0, 0.0, 0.0 },
+        rotation = { 0.0, 0.0, -1.5707964 }
+      }, {
+        mast_index = 0,
+        refr_index = 5,
+        id = "in_hlaalu_room_corner",
+        temporary = true,
+        translation = { 0.0, 0.0, 0.0 },
+        rotation = { 0.0, 0.0, 0.0 }
+      }, {
+        mast_index = 0,
+        refr_index = 6,
+        id = "in_hlaalu_room_corner",
+        temporary = true,
+        translation = { 255.0, 510.0, 0.0 },
+        rotation = { 0.0, 0.0, 3.1415927 }
+      }, {
+        mast_index = 0,
+        refr_index = 7,
+        id = "in_hlaalu_room_side",
+        temporary = true,
+        translation = { 0.0, 255.0, 0.0 },
+        rotation = { 0.0, 0.0, -1.5707964 }
+      }, {
+        mast_index = 0,
+        refr_index = 8,
+        id = "Furn_Com_RM_Bar_02",
+        temporary = true,
+        translation = { 171.58002, 200.89647, -90.0 },
+        rotation = { 0.0, 0.0, 0.0 }
+      }, {
+        mast_index = 0,
+        refr_index = 9,
+        id = "Furn_Com_RM_Bar_02",
+        temporary = true,
+        translation = { 171.58002, 328.8965, -90.0 },
+        rotation = { 0.0, 0.0, 3.1415927 }
+      }, {
+        mast_index = 0,
+        refr_index = 10,
+        id = "Furn_Com_RM_Bar_01",
+        temporary = true,
+        translation = { 171.58002, 264.89648, -90.0 },
+        rotation = { 0.0, 0.0, 1.5707964 }
+      }, {
+        mast_index = 0,
+        refr_index = 11,
+        id = "in_hlaalu_room_side",
+        temporary = true,
+        translation = { 255.0, 255.0, 0.0 },
+        rotation = { 0.0, 0.0, 1.5707964 }
+      }, {
+        mast_index = 0,
+        refr_index = 12,
+        id = "light_com_candle_04",
+        temporary = true,
+        translation = { 166.747, 195.468, -35.0 },
+        rotation = { 0.0, 0.0, 0.0 }
+      }, {
+        mast_index = 0,
+        refr_index = 13,
+        id = "chest_small_01_herra",
+        temporary = true,
+        translation = { 466.65347, 193.59569, -27.0 },
+        rotation = { 0.0, 0.0, 0.0 },
+        owner = "herra witch warrior",
+        health_left = 0
+      } }
+    }
+  }
+
+  HiemUtils.addRecords("cell", cellList)
+
+  -- container
+  local containerList = {
+    {
+      type = "Container",
+      flags = { 0, 0 },
+      id = "chest_small_01_herra",
+      name = "Small Chest",
+      mesh = "o\\Contain_chest_small_01.NIF",
+      encumbrance = 80.0,
+      container_flags = 8,
+      inventory = { { -1, "Misc_Inkwell" }, { -1, "Misc_Quill" }, { -5, "Misc_SoulGem_Common" }, { -5, "Misc_SoulGem_Grand" }, { -5, "Misc_SoulGem_Greater" }, { -5, "Misc_SoulGem_Lesser" }, { -5, "Misc_SoulGem_Petty" }, { -10, "sc_paper enchanting" }, { -10, "sc_paper plain" } }
+    }
+  }
+  HiemUtils.addRecords("container", containerList)
+
+  -- scripts
+  local scriptList = {
+    {
+      refId = "re_enchant_shop_door_entrance_script",
+      scriptText = "Begin re_enchant_shop_door_entrance_script\nIf ( OnActivate == 1 )\n    Player->PositionCell, 0, 0, 0, 0, \"Reenum-Kur's Enchanting Shop\"\n    Player->PlaySoundVP, \"Door Latched Two Open\" 1 1\nEndif\nEnd re_enchant_shop_door_entrance_script"
+    }
+  }
+  HiemUtils.addRecords("script", scriptList)
+
+  -- activator
+  local activatorList = {
+    {
+      refId = "re_enchant_shop_door_entrance",
+      name = "Reenum-Kur's Enchanting Shop",
+      model =  "d\\In_Hlaalu_Door.NIF",
+      script = "re_enchant_door_script"
+    }
+  }
+  HiemUtils.addRecords("activator", activatorList)
+
+  -- new cell population
+  for i=1, #cellList do
+    local item = cellList[i]
+    HiemUtils.populateCell(item)
+  end
+
+  -- existing cell population
+  local objectList = {
+    {
+      id = "-4, -2",
       references = {
         {
-          mast_index = 0,
-          refr_index = 1,
-          id = "in_hlaalu_room_corner",
-          temporary = true,
-          translation = { 0.0, 510.0, 0.0 },
-          rotation = { 0.0, 0.0, 1.5707964 }
-        },
-        {
-          mast_index = 0,
-          refr_index = 2,
-          id = "in_hlaalu_room_corner",
-          temporary = true,
-          translation = { 255.0, 0.0, 0.0 },
-          rotation = { 0.0, 0.0, -1.5707964 }
-        },
-        {
-          mast_index = 0,
-          refr_index = 3,
-          id = "in_hlaalu_room_corner",
-          temporary = true,
-          translation = { 0.0, 0.0, 0.0 },
-          rotation = { 0.0, 0.0, 0.0 }
-        },
-        {
-          mast_index = 0,
-          refr_index = 4,
-          id = "in_hlaalu_room_corner",
-          temporary = true,
-          translation = { 255.0, 510.0, 0.0 },
-          rotation = { 0.0, 0.0, 3.1415927 }
-        },
-        {
-          mast_index = 0,
-          refr_index = 5,
-          id = "in_hlaalu_room_side",
-          temporary = true,
-          translation = { 0.0, 255.0, 0.0 },
-          rotation = { 0.0, 0.0, -1.5707964 }
-        },
-        {
-          mast_index = 0,
-          refr_index = 6,
-          id = "in_hlaalu_room_side",
-          temporary = true,
-          translation = { 255.0, 255.0, 0.0 },
-          rotation = { 0.0, 0.0, 1.5707964 }
-        },
-        {
-          mast_index = 0,
-          refr_index = 7,
-          id = "Furn_Com_RM_Bar_02",
-          temporary = true,
-          translation = { 90.0, 90.0, -90.0 },
-          rotation = { 0.0, 0.0, 0.0 }
-        },
-        {
-          mast_index = 0,
-          refr_index = 8,
-          id = "Furn_Com_RM_Bar_02",
-          temporary = true,
-          translation = { 90.0, 218.0, -90.0 },
-          rotation = { 0.0, 0.0, 3.1415927 }
-        },
-        {
-          mast_index = 0,
-          refr_index = 9,
-          id = "Furn_Com_RM_Bar_01",
-          temporary = true,
-          translation = { 90.0, 154.0, -90.0 },
-          rotation = { 0.0, 0.0, 1.5707964 }
+          id = "re_enchant_shop_door_entrance",
+          translation = {
+            -25313.225,
+            -13993.441,
+            1113.058
+          },
+          rotation = {
+            0.0,
+            0.0,
+            4.712389
+          }
         }
       }
     }
   }
-
-  for i=1, #cellList do
-    local item = cellList[i]
-    recordStore.data.permanentRecords[item.id] = item;
-  end
-  recordStore:Save()
-
-  for i=1, #cellList do
-    local item = cellList[i]
+  for i=1, #objectList do
+    local item = objectList[i]
     HiemUtils.populateCell(item)
   end
 end
@@ -1799,7 +1927,8 @@ function RunicEnchanting.initialseData()
 end
 
 function RunicEnchanting.OnServerPostInit(eventStatus)
-  if not WorldInstance.data.customVariables.RE_Records_Initisalised then
+  -- if not WorldInstance.data.customVariables.RE_Records_Initisalised then
+  if true then
     RunicEnchanting.createRecord()
     WorldInstance.data.customVariables.RE_Records_Initisalised = true
 
@@ -1956,85 +2085,8 @@ function RunicEnchanting.upgradeItem(pid, refId)
   local itemsToRemove = {{refId = trueRefId, count = 1, charge = -1, enchantmentCharge = -1, soul = ""}}
   HiemUtils.addPlayerItems(pid, itemsToAdd)
 
-  -- inventoryHelper.removeItem(playerInv, trueRefId, 1, -1, -1, "")
-
-  -- tes3mp.ClearInventoryChanges(pid)
-  -- tes3mp.SetInventoryChangesAction(pid, enumerations.inventory.REMOVE)
-  -- tes3mp.AddItemChange(pid, trueRefId, 1, -1, -1, "")
-  -- tes3mp.SendInventoryChanges(pid)
-
-
-
   local itemsToAdd = {{refId = newRefId, count = 1, charge = -1, enchantmentCharge = -1, soul = ""}}
   HiemUtils.addPlayerItems(pid, itemsToAdd)
-
-  -- inventoryHelper.addItem(playerInv, newRefId, 1, -1, -1, "")
-
-  -- tes3mp.ClearInventoryChanges(pid)
-  -- tes3mp.SetInventoryChangesAction(pid, enumerations.inventory.ADD)
-  -- tes3mp.AddItemChange(pid, newRefId, 1, -1, -1, "")
-  -- tes3mp.SendInventoryChanges(pid)
-
-  -- local recordType
-  -- local newRefId
-  -- local trueRefId
-  -- local trueName
-
-  -- if itemData then
-  --   newRefId = breakpoint.key..itemData.refId
-  --   trueRefId = itemData.refId
-  --   trueName = itemData.name
-  -- else
-  --   newRefId = breakpoint.key..refId
-  --   trueRefId = refId
-  -- end
-
-
-  -- if logicHandler.GetRecordStoreByRecordId(refId) then
-  --   recordType = logicHandler.GetRecordTypeByRecordId(refId)
-  --   local recordData = logicHandler.GetRecordStoreByRecordId(refId)
-  --   if recordData and recordData.baseId then
-  --     trueName = 
-  --   end
-  -- elseif itemData then
-  --   recordType = string.lower(itemData.type)
-  -- end
-
-  -- recordStore = RecordStores[recordType]
-
-  -- local prefix = breakpoint.metalLabel
-  -- if recordType == 'clothing' then
-  --   prefix = breakpoint.clothLabel
-  -- end
-
-  -- local recordTable = {
-  --   baseId = refId,
-  --   enchantmentCharge = breakpoint.enchantmentValue,
-  --   name = prefix..' '..trueName,
-  --   refId = newRefId
-  -- }
-
-  -- recordStore.data.permanentRecords[newRefId] = recordTable
-
-  -- recordStore:QuicksaveToDrive()
-  -- tes3mp.ClearRecords()
-  -- tes3mp.SetRecordType(enumerations.recordType[string.upper(recordType)])
-  -- packetBuilder.AddRecordByType(newRefId, recordTable, recordType)
-  -- tes3mp.SendRecordDynamic(pid, true, false)
-
-  -- inventoryHelper.removeItem(playerInv, trueRefId, 1, -1, -1, "")
-
-  -- tes3mp.ClearInventoryChanges(pid)
-  -- tes3mp.SetInventoryChangesAction(pid, enumerations.inventory.REMOVE)
-  -- tes3mp.AddItemChange(pid, trueRefId, 1, -1, -1, "")
-  -- tes3mp.SendInventoryChanges(pid)
-
-  -- inventoryHelper.addItem(playerInv, newRefId, 1, -1, -1, "")
-
-  -- tes3mp.ClearInventoryChanges(pid)
-  -- tes3mp.SetInventoryChangesAction(pid, enumerations.inventory.ADD)
-  -- tes3mp.AddItemChange(pid, newRefId, 1, -1, -1, "")
-  -- tes3mp.SendInventoryChanges(pid)
 end
 
 -- Train Armorer (Etching)
@@ -2177,13 +2229,6 @@ function RunicEnchanting.OnGUIAction(eventStatus, pid, idGui, data)
         local itemsToAdd = {{refId = "re_soul_gem_02", count = 1, charge = -1, enchantmentCharge = -1, soul = "re_creature_soul_small"}}
         HiemUtils.addPlayerItems(pid, itemsToAdd)
 
-        -- inventoryHelper.addItem(playerInv, "re_soul_gem_02", 1, -1, -1, "re_creature_soul_small")
-
-        -- tes3mp.ClearInventoryChanges(pid)
-        -- tes3mp.SetInventoryChangesAction(pid, enumerations.inventory.ADD)
-        -- tes3mp.AddItemChange(pid, "re_soul_gem_02", 1, -1, -1, "re_creature_soul_small")
-        -- tes3mp.SendInventoryChanges(pid)
-
         ReservoirList[playerRef.name] = ReservoirList[playerRef.name] - 100
         RunicEnchanting.saveReservoirData()
         return
@@ -2324,7 +2369,5 @@ function RunicEnchanting.OnActorSpellsActive(eventStatus, pid, cellDescription, 
 end
 
 customEventHooks.registerValidator("OnActorSpellsActive", RunicEnchanting.OnActorSpellsActive)
-
-
 
 return RunicEnchanting;
