@@ -264,6 +264,18 @@ function HiemUtils.playSound(pid, sfxId, volume, pitch)
   logicHandler.RunConsoleCommandOnPlayer(pid, "PlaySoundVP \""..sfxId .."\" "..volume.." "..pitch)
 end
 
+-- Data Functions
+
+function HiemUtils.hasValue(tab, val)
+    for index, value in ipairs(tab) do
+        if value == val then
+            return true
+        end
+    end
+
+    return false
+end
+
 -- Logging Functions
 
 function HiemUtils.Log(o, pretty, depth, level)
@@ -314,6 +326,7 @@ function HiemUtils.prettyDump(o,level)
 end
 
 -- Recordstore Functions
+
 function HiemUtils.addRecords(type, list)
   local recordStore = RecordStores[type]
   for i=1, #list do
@@ -411,16 +424,36 @@ function HiemUtils.populateCell(cell)
 
     local uniqueIndex = HiemUtils.placeObject(reference.id, location, cellDescription, type)
 
+    if type == 'spawn' and not HiemUtils.hasValue(LoadedCells[cellDescription].data.packets.actorList, uniqueIndex) then
+      table.insert(LoadedCells[cellDescription].data.packets.actorList, uniqueIndex)
+    end
+
     local record = logicHandler.GetRecordStoreByRecordId(reference.id)
     if record then
+      -- if record.data.permanentRecords[reference.id].data then
+      --   local stats = record.data.permanentRecords[reference.id].data.stats
+      --   if stats then
+          
+      --   end
+      -- end
+      -- local equipment = record.data.permanentRecords[reference.id].equipment
+      -- if equipment then
+      --   HiemUtils.equipItems(equipment, cellDescription, uniqueIndex)
+
+      --   if not HiemUtils.hasValue(LoadedCells[cellDescription].data.packets.equipment, uniqueIndex) then
+      --     table.insert(LoadedCells[cellDescription].data.packets.equipment, uniqueIndex)
+      --   end
+      -- end
+
       local inventory = record.data.permanentRecords[reference.id].inventory
-      HiemUtils.Log(LoadedCells[cellDescription].data.objectData[uniqueIndex], true)
-      LoadedCells[cellDescription].data.objectData[uniqueIndex].inventory = {}
       if inventory then
-        for i,v in ipairs(inventory) do
-          inventoryHelper.addItem(LoadedCells[cellDescription].data.objectData[uniqueIndex].inventory, v[2], v[1])
+        HiemUtils.stockItems(inventory, cellDescription, uniqueIndex)
+
+        if not HiemUtils.hasValue(LoadedCells[cellDescription].data.packets.container, uniqueIndex) then
+          table.insert(LoadedCells[cellDescription].data.packets.container, uniqueIndex)
         end
       end
+
     end
   end
 
@@ -495,6 +528,73 @@ function HiemUtils.placeObject(refId, location, cell, type)
   
   LoadedCells[cell]:Save()
   return refIndex
+end
+
+-- NPC Functions
+
+function HiemUtils.stockItems(itemsToStock, cellDescription, uniqueIndex)
+    if itemsToStock ~= nil then
+        local cell = LoadedCells[cellDescription]
+        local objectData = cell.data.objectData
+        local reloadInventory = false
+
+        if not objectData[uniqueIndex].inventory then
+          objectData[uniqueIndex].inventory = {}
+        end
+
+        local currentInventory = objectData[uniqueIndex].inventory
+
+        if objectData[uniqueIndex] ~= nil then
+
+            for _, object in pairs(currentInventory) do
+                for i, itemData in pairs(itemsToStock) do
+                    if object.refId == itemsToStock[i].refId then
+                        if object.count < itemsToStock[i].count then
+                            object.count = itemsToStock[i].count
+                            if not reloadInventory then reloadInventory = true end
+                        else
+                            itemsToStock[i].count = object.count
+                        end
+                    end
+                end
+            end
+
+            for i, v in pairs(itemsToStock) do
+                if not tableHelper.containsValue(currentInventory, itemsToStock[i].refId, true) then
+                    inventoryHelper.addItem(currentInventory, itemsToStock[i][2], itemsToStock[i][1], itemsToStock[i][3] or -1, itemsToStock[i][4] or -1, itemsToStock[i][5] or "")
+                    if not reloadInventory then reloadInventory = true end
+                end
+            end
+
+            if reloadInventory then
+                for i = 0, #Players do
+                    if Players[i] ~= nil and Players[i]:IsLoggedIn() then
+                        if Players[i].data.location.cell == cellDescription then
+                            cell:LoadContainers(i, cell.data.objectData, {uniqueIndex})
+                        end
+                    end
+                end
+            end
+        end
+    end
+end
+
+function HiemUtils.equipItems(itemsToEquip, cellDescription, uniqueIndex)
+  if itemsToStock ~= nil then
+    local cell = LoadedCells[cellDescription]
+    local objectData = cell.data.objectData
+
+    if not objectData[uniqueIndex].equipment then
+      objectData[uniqueIndex].equipment = {}
+    end
+
+
+    if objectData[uniqueIndex] ~= nil then
+      local currentEquipment = objectData[uniqueIndex].equipment
+
+      currentEquipment = itemsToEquip
+    end
+  end
 end
 
 return HiemUtils

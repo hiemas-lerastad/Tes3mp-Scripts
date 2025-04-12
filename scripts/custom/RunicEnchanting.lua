@@ -262,6 +262,8 @@ RunicEnchanting.labels = {
   soulTrapMessage = "A soul has found purchase in a reservoir",
 }
 
+RunicEnchanting.npcs = {}
+
 -- Don't edit below here unless you know what you are doing
 
 local ReservoirList
@@ -403,78 +405,113 @@ function RunicEnchanting.createRecord()
   HiemUtils.addRecords("creature", creatureList)
 
   -- NPC
-  -- local npcList = {
-  --   {
-  --     type = "Npc",
-  --     flags = { 0, 0 },
-  --     id = "herra witch warrior",
-  --     name = "Herra Witch-Warrior",
-  --     mesh = "base_anim_female.nif",
-  --     race = "Nord",
-  --     class = "Witch",
-  --     faction = "",
-  --     head = "B_N_Nord_F_Head_08",
-  --     hair = "b_n_nord_f_hair_04",
-  --     gender = 0,
-  --     npc_flags = 9,
-  --     level = 20,
-  --     attributes = { 50, 30, 50, 30, 40, 50, 30, 50 },
-  --     skills = { 5, 5, 15, 10, 15, 10, 15, 10, 5, 80, 10, 20, 35, 35, 35, 10, 50, 35, 5, 15, 15, 15, 30, 5, 60, 15, 5 },
-  --     health = 50,
-  --     magicka = 60,
-  --     fatigue = 180,
-  --     disposition = 50,
-  --     reputation = 0,
-  --     rank = 0,
-  --     gold = 0,
-  --     inventory = { { 1, "BM_NordicMail_gauntletL" }, { 1, "BM_NordicMail_gauntletR" }, { 1, "BM_NordicMail_PauldronL" }, { 1, "BM_NordicMail_PauldronR" }, { 1, "expensive_robe_02_a" }, { 1, "expensive_shoes_02" }, { 1, "expensive_skirt_01" } },
-  --     spells = { "holy word", "turn undead", "frenzy creature", "frenzy humanoid", "demoralize creature", "demoralize humanoid", "father's hand", "noise", "detect enchantment", "tevral's hawkshaw", "almalexia's grace", "blindself" },
-  --     aiFlee =30,
-  --     aiAlarm = 0,
-  --     aiServices = 113951,
-  --     aiHello = 30,
-  --     aiFight = 30,
-  --   }
-  -- }
-
-  local npcList = { {
-    type = "Npc",
-    flags = { 0, 0 },
-    id = "herra witch warrior",
-    name = "Herra Witch-Warrior",
-    mesh = "base_anim_female.nif",
-    race = "Nord",
-    class = "Witch",
-    faction = "",
-    head = "B_N_Nord_F_Head_08",
-    hair = "b_n_nord_f_hair_04",
-    npc_flags = 9,
-    data = {
-      level = 20,
-      stats = {
-        attributes = { 50, 30, 50, 30, 40, 50, 30, 50 },
-        skills = { 5, 5, 15, 10, 15, 10, 15, 10, 5, 80, 10, 20, 35, 35, 35, 10, 50, 35, 5, 15, 15, 15, 30, 5, 60, 15, 5 },
-        health = 50,
-        magicka = 60,
-        fatigue = 180
+  local npcList = {
+    {
+      type = "Npc",
+      flags = { 0, 0 },
+      id = "herra witch warrior",
+      baseId = "fryfnhild",
+      name = "Herra Witch-Warrior",
+      mesh = "base_anim_female.nif",
+      race = "Nord",
+      class = "Witch",
+      faction = "",
+      head = "B_N_Nord_F_Head_08",
+      hair = "b_n_nord_f_hair_04",
+      npc_flags = 9,
+      data = {
+        level = 20,
+        stats = {
+          attributes = { 50, 30, 50, 30, 40, 50, 30, 50 },
+          skills = { 5, 5, 15, 10, 15, 10, 15, 10, 5, 80, 10, 20, 35, 35, 35, 10, 50, 35, 5, 15, 15, 15, 30, 5, 60, 15, 5 },
+          health = 50,
+          magicka = 60,
+          fatigue = 180
+        },
+        disposition = 50,
+        reputation = 0,
+        rank = 0,
+        gold = 0
       },
-      disposition = 50,
-      reputation = 0,
-      rank = 0,
-      gold = 0
-    },
-    inventory = { { 1, "BM_NordicMail_gauntletL" }, { 1, "BM_NordicMail_gauntletR" }, { 1, "BM_NordicMail_PauldronL" }, { 1, "BM_NordicMail_PauldronR" }, { 1, "expensive_robe_02_a" }, { 1, "expensive_shoes_02" }, { 1, "expensive_skirt_01" } },
-    spells = { "holy word", "turn undead", "frenzy creature", "frenzy humanoid", "demoralize creature", "demoralize humanoid", "father's hand", "noise", "detect enchantment", "tevral's hawkshaw", "almalexia's grace", "blindself" },
-    ai_data = {
-      hello = 30,
-      fight = 30,
-      flee = 30,
-      alarm = 0,
-      services = 113951
-    },
-    ai_packages = { },
-    travel_destinations = { }
-  } }
+      inventory = {
+        { 1, "BM_NordicMail_gauntletL" },
+        { 1, "BM_NordicMail_gauntletR" },
+        { 1, "BM_NordicMail_PauldronL" },
+        { 1, "BM_NordicMail_PauldronR" },
+        { 1, "expensive_robe_02_a" },
+        { 1, "expensive_shoes_02" },
+        { 1, "expensive_skirt_01" },
+        { 10, "sc_paper plain" },
+      },
+      -- equipment = {
+      --   [3] = {
+      --     refId = "BM_NordicMail_PauldronL",
+      --     count = 1,
+      --     charge = -1,
+      --     enchantmentCharge = -1
+      --   },
+      --   [4] = {
+      --     refId = "BM_NordicMail_PauldronR",
+      --     count = 1,
+      --     charge = -1,
+      --     enchantmentCharge = -1
+      --   },
+      --   [5] = {
+      --     refId = "BM_NordicMail_gauntletL",
+      --     count = 1,
+      --     charge = -1,
+      --     enchantmentCharge = -1
+      --   },
+      --   [6] = {
+      --     refId = "BM_NordicMail_gauntletR",
+      --     count = 1,
+      --     charge = -1,
+      --     enchantmentCharge = -1
+      --   },
+      --   [7] = {
+      --     refId = "expensive_shoes_02",
+      --     count = 1,
+      --     charge = -1,
+      --     enchantmentCharge = -1
+      --   },
+      --   [10] = {
+      --     refId = "expensive_skirt_01",
+      --     count = 1,
+      --     charge = -1,
+      --     enchantmentCharge = -1
+      --   },
+      --   [11] = {
+      --     refId = "expensive_robe_02_a",
+      --     count = 1,
+      --     charge = -1,
+      --     enchantmentCharge = -1
+      --   },
+      -- },
+      spells = {
+        "holy word",
+        "turn undead",
+        "frenzy creature",
+        "frenzy humanoid",
+        "demoralize creature",
+        "demoralize humanoid",
+        "father's hand",
+        "noise",
+        "detect enchantment",
+        "tevral's hawkshaw",
+        "almalexia's grace",
+        "blindself"
+      },
+      ai_data = {
+        hello = 30,
+        fight = 30,
+        flee = 30,
+        alarm = 0,
+        services = 113951
+      },
+      ai_packages = { },
+      travel_destinations = { }
+    }
+  }
   HiemUtils.addRecords("npc", npcList)
 
   -- cell
@@ -1850,7 +1887,7 @@ function RunicEnchanting.createRecord()
       mesh = "o\\Contain_chest_small_01.NIF",
       encumbrance = 80.0,
       container_flags = 8,
-      inventory = { { -1, "Misc_Inkwell" }, { -1, "Misc_Quill" }, { -5, "Misc_SoulGem_Common" }, { -5, "Misc_SoulGem_Grand" }, { -5, "Misc_SoulGem_Greater" }, { -5, "Misc_SoulGem_Lesser" }, { -5, "Misc_SoulGem_Petty" }, { -10, "sc_paper enchanting" }, { -10, "sc_paper plain" } }
+      inventory = { { 1, "Misc_Inkwell" }, { 1, "Misc_Quill" }, { 5, "Misc_SoulGem_Common" }, { 5, "Misc_SoulGem_Grand" }, { 5, "Misc_SoulGem_Greater" }, { 5, "Misc_SoulGem_Lesser" }, { 5, "Misc_SoulGem_Petty" }, { 10, "sc_paper enchanting" }, { 10, "sc_paper plain" } }
     }
   }
   HiemUtils.addRecords("container", containerList)
@@ -1870,7 +1907,7 @@ function RunicEnchanting.createRecord()
       refId = "re_enchant_shop_door_entrance",
       name = "Reenum-Kur's Enchanting Shop",
       model =  "d\\In_Hlaalu_Door.NIF",
-      script = "re_enchant_door_script"
+      script = "re_enchant_shop_door_entrance_script"
     }
   }
   HiemUtils.addRecords("activator", activatorList)
@@ -1927,8 +1964,8 @@ function RunicEnchanting.initialseData()
 end
 
 function RunicEnchanting.OnServerPostInit(eventStatus)
-  -- if not WorldInstance.data.customVariables.RE_Records_Initisalised then
-  if true then
+  if not WorldInstance.data.customVariables.RE_Records_Initisalised then
+  -- if true then
     RunicEnchanting.createRecord()
     WorldInstance.data.customVariables.RE_Records_Initisalised = true
 
