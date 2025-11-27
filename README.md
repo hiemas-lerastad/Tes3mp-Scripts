@@ -85,3 +85,18 @@
   5) BE SURE THERE IS NO `--` SYMBOLS TO THE LEFT OF IT, ELSE IT WILL NOT WORK.
 
   6) Save `customScripts.lua` and restart your server.
+
+
+## FurnishedBlodskallsHouse
+
+  This script adds high capacity containers to the blodskaals house in skaal village
+
+  Installation
+  1) Ensure that HiemUtils.lua has been installed
+  2) Place this file as `FurnishedBlodskallsHouse.lua` inside your TES3MP servers `server\scripts\custom` folder.
+  3) Open your `customScripts.lua` file in a text editor. 
+      (It can be found in `server\scripts` folder.)
+  4) Add the below line to your `customScripts.lua` file:
+      require("custom/FurnishedBlodskallsHouse")
+  5) BE SURE THERE IS NO `--` SYMBOLS TO THE LEFT OF IT, ELSE IT WILL NOT WORK.
+  6) Save `customScripts.lua` and restart your server.

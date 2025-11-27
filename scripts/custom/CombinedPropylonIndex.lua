@@ -143,10 +143,10 @@ CombinedPropylonIndex.ids = {
 }
 
 function CombinedPropylonIndex.OnServerPostInit(eventStatus)
-  -- if not WorldInstance.data.customVariables.CPI_Records_Initisalised then
+  if not WorldInstance.data.customVariables.CPI_Records_Initisalised then
     CombinedPropylonIndex.createRecord()
     WorldInstance.data.customVariables.CPI_Records_Initisalised = true
-  -- end
+  end
 end
 customEventHooks.registerHandler("OnServerPostInit", CombinedPropylonIndex.OnServerPostInit)
 
