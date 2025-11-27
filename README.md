@@ -1,6 +1,6 @@
-Scripts:
+# Scripts
 
- - CareFreeLevelling
+## CareFreeLevelling
 
   A script that makes level up bonuses always +5
 
@@ -14,7 +14,7 @@ Scripts:
   5) Save `customScripts.lua` and restart your server.
 
 
- - ClearBounty
+## ClearBounty
 
   A simple script that adds a command to clear your own bounty
 
@@ -28,7 +28,7 @@ Scripts:
   5) Save `customScripts.lua` and restart your server.
 
 
- - HiemUtils
+## HiemUtils
 
   This contains many utility functions compiled for shared use within different scripts
 
@@ -43,7 +43,7 @@ Scripts:
   6) Save `customScripts.lua` and restart your server.
 
 
- - CombinedPropylonIndex
+## CombinedPropylonIndex
 
   This scripts works as a replacement for the Master Propylon Index plugin so users do not have to download and enable the plugin
   A blueprint can be found in caldera mages guild, when used this item prompts a crafting menu in order to craft the combined index
@@ -63,7 +63,7 @@ Scripts:
   6) Save `customScripts.lua` and restart your server.
 
 
- - WayOfTheNords
+## WayOfTheNords
 
   WIP - This adds a new building and merchant in solsteim that sells two unique items
   The first item is a "Spirit Stone"
@@ -83,4 +83,5 @@ Scripts:
   4) Add the below line to your `customScripts.lua` file:
       require("custom/WayOfTheNords")
   5) BE SURE THERE IS NO `--` SYMBOLS TO THE LEFT OF IT, ELSE IT WILL NOT WORK.
+
   6) Save `customScripts.lua` and restart your server.
