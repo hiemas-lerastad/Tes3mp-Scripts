@@ -6124,5 +6124,15 @@
         "rot": 720
       }
     },
+  },
+  "locations": {
+    "Skaal Village, The Blodskaal's House": {
+      "displayName": "Blodskaal",
+      "cellName": "Skaal Village, The Blodskaal's House",
+      "mapCoords": {
+        "x": -19,
+        "y": 25
+      },
+    }
   }
 }

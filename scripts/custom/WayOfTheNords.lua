@@ -59,6 +59,8 @@ WayOfTheNords.labels = {
 
 
 WayOfTheNords.settings = {
+  enableWitchWarrior = true, -- Enables way of the Witch-Warrior
+  enableTongues = true, -- Enabled way of the Tongues
   smallSpiritPearlValue = 100,
   moderateSpiritPearlValue = 500,
   largeSpiritPearlValue = 1000,
@@ -174,9 +176,6 @@ WayOfTheNords.config = {
   },
 }
 
-
-local SpiritStoneList
--- local Data
 local SoulTrapList = {}
 local UpgradeData = {}
 
@@ -189,43 +188,24 @@ WayOfTheNords.ids = {
 }
 
 
-function WayOfTheNords.loadSpiritStoneData()
-  SpiritStoneList = jsonInterface.load("custom/WOTNSpiritStoneList.json")
-end
-
-
-function WayOfTheNords.saveSpiritStoneData()
-  jsonInterface.quicksave("custom/WOTNSpiritStoneList.json", SpiritStoneList)
-end
-
-
-function WayOfTheNords.initialseData()
-  WayOfTheNords.loadSpiritStoneData()
-  if not SpiritStoneList then 
-    SpiritStoneList = {}
-    WayOfTheNords.saveSpiritStoneData()
+function WayOfTheNords.OnServerPostInit(eventStatus)
+  if not WorldInstance.data.customVariables.WOTN_WW_Records_Initisalised and WayOfTheNords.settings.enableWitchWarrior then
+    WayOfTheNords.createWWRecord()
+    WayOfTheNords.initialseWWData()
+    WorldInstance.data.customVariables.WOTN_WW_Records_Initisalised = true
   end
+end
+customEventHooks.registerHandler("OnServerPostInit", WayOfTheNords.OnServerPostInit)
 
-  -- Data = jsonInterface.load("custom/HIEMDataList.json")
 
+function WayOfTheNords.initialseWWData()
   HiemUtils.Data.actors["wotn_creature_soul_small"] = WayOfTheNords.settings.smallSpiritPearlValue
   HiemUtils.Data.actors["wotn_creature_soul_moderate"] = WayOfTheNords.settings.moderateSpiritPearlValue
   HiemUtils.Data.actors["wotn_creature_soul_large"] = WayOfTheNords.settings.largeSpiritPearlValue
 end
 
 
-function WayOfTheNords.OnServerPostInit(eventStatus)
-  if not WorldInstance.data.customVariables.WOTN_Records_Initisalised then
-    WayOfTheNords.createRecord()
-    WorldInstance.data.customVariables.WOTN_Records_Initisalised = true
-  end
-
-  WayOfTheNords.initialseData()
-end
-customEventHooks.registerHandler("OnServerPostInit", WayOfTheNords.OnServerPostInit)
-
-
-function WayOfTheNords.createRecord()
+function WayOfTheNords.createWWRecord()
   local itemList = {
     {
       refId = "wotn_spirit_stone",
@@ -779,9 +759,8 @@ function WayOfTheNords.validateCreateRing(pid)
 end
 
 function WayOfTheNords.craftRing(pid, refId, reqs)
-  local enchantValue = SpiritStoneList[Players[pid].name]
-  SpiritStoneList[Players[pid].name] = 0
-  WayOfTheNords.saveSpiritStoneData()
+  local enchantValue = Players[pid].data.customVariables.wotnSpiritStoneValue
+  Players[pid].data.customVariables.wotnSpiritStoneValue = 0
 
   local enchantList = {
     {
@@ -825,7 +804,7 @@ function WayOfTheNords.craftRing(pid, refId, reqs)
 end
 
 function HiemUtils.validators.spiritStoneValue(item, req, pid)
-  if SpiritStoneList[Players[pid].name] and SpiritStoneList[Players[pid].name] > 0 then
+  if Players[pid].data.customVariables.wotnSpiritStoneValue and Players[pid].data.customVariables.wotnSpiritStoneValue > 0 then
     return true
   end
 
@@ -835,7 +814,7 @@ end
 -- GUI
 
 function WayOfTheNords.displaySpiritStoneGUI(pid)
-  local currentAmount = SpiritStoneList[Players[pid].name] or 0
+  local currentAmount = Players[pid].data.customVariables.wotnSpiritStoneValue or 0
   local buttons = WayOfTheNords.labels.close
   if currentAmount >= 1000 then
     buttons = WayOfTheNords.labels.close..";"..WayOfTheNords.labels.extract..WayOfTheNords.labels.smallSpiritPearlName.." ("..WayOfTheNords.settings.smallSpiritPearlValue..");"..WayOfTheNords.labels.extract..WayOfTheNords.labels.moderateSpiritPearlName.." ("..WayOfTheNords.settings.moderateSpiritPearlValue..");"..WayOfTheNords.labels.extract..WayOfTheNords.labels.largeSpiritPearlName.." ("..WayOfTheNords.settings.largeSpiritPearlValue..")"
@@ -910,8 +889,7 @@ function WayOfTheNords.OnSoulStoneInteraction(data, pid)
     local itemsToAdd = {{refId = "wotn_spirit_pearl", count = 1, charge = -1, enchantmentCharge = -1, soul = "wotn_creature_soul_small"}}
     HiemUtils.addPlayerItems(pid, itemsToAdd)
 
-    SpiritStoneList[playerRef.name] = SpiritStoneList[playerRef.name] - 100
-    WayOfTheNords.saveSpiritStoneData()
+    Players[pid].data.customVariables.wotnSpiritStoneValue = Players[pid].data.customVariables.wotnSpiritStoneValue - 100
     return
   elseif tonumber(data) == 2 then
     local playerRef = Players[pid]
@@ -920,8 +898,7 @@ function WayOfTheNords.OnSoulStoneInteraction(data, pid)
     local itemsToAdd = {{refId = "wotn_spirit_pearl", count = 1, charge = -1, enchantmentCharge = -1, soul = "wotn_creature_soul_moderate"}}
     HiemUtils.addPlayerItems(pid, itemsToAdd)
 
-    SpiritStoneList[playerRef.name] = SpiritStoneList[playerRef.name] - 500
-    WayOfTheNords.saveSpiritStoneData()
+    Players[pid].data.customVariables.wotnSpiritStoneValue = Players[pid].data.customVariables.wotnSpiritStoneValue - 500
     return
   elseif tonumber(data) == 3 then
     local playerRef = Players[pid]
@@ -930,8 +907,7 @@ function WayOfTheNords.OnSoulStoneInteraction(data, pid)
     local itemsToAdd = {{refId = "wotn_spirit_pearl", count = 1, charge = -1, enchantmentCharge = -1, soul = "wotn_creature_soul_large"}}
     HiemUtils.addPlayerItems(pid, itemsToAdd)
 
-    SpiritStoneList[playerRef.name] = SpiritStoneList[playerRef.name] - 1000
-    WayOfTheNords.saveSpiritStoneData()
+    Players[pid].data.customVariables.wotnSpiritStoneValue = Players[pid].data.customVariables.wotnSpiritStoneValue - 1000
     return
   end
 end
@@ -1005,13 +981,15 @@ function WayOfTheNords.OnActorDeath(eventStatus, pid, cellDescription, actors)
         if #indexes then
           if indexes[1] then
             local spiritStone = playerInv[indexes[1]]
-            if SpiritStoneList[player.name] then
-              SpiritStoneList[player.name] = SpiritStoneList[player.name] + HiemUtils.Data.actors[value.refId]
+            if Players[pid].data.customVariables.wotnSpiritStoneValue then
+              Players[pid].data.customVariables.wotnSpiritStoneValue = Players[pid].data.customVariables.wotnSpiritStoneValue + HiemUtils.Data.actors[value.refId]
             else
-              SpiritStoneList[player.name] = HiemUtils.Data.actors[value.refId]
+              Players[pid].data.customVariables.wotnSpiritStoneValue = HiemUtils.Data.actors[value.refId]
             end
-            tes3mp.MessageBox(pid, WayOfTheNords.ids.soulTrapGUI, WayOfTheNords.labels.soulTrapMessage)
-            WayOfTheNords.saveSpiritStoneData()
+
+            if HiemUtils.Data.actors[value.refId] > 0 then
+              tes3mp.MessageBox(pid, WayOfTheNords.ids.soulTrapGUI, WayOfTheNords.labels.soulTrapMessage)
+            end
           end
         end
       end

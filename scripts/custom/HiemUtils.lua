@@ -35,13 +35,18 @@ HiemUtils.GUIConfig = {
   requirementsId = 44332272
 }
 
-function HiemUtils.loadRestockersData()
-  HiemUtils.restockers = jsonInterface.load("custom/HiemRestockers.json")
+function HiemUtils.loadCustomData()
+  HiemUtils.custom = jsonInterface.load("custom/HiemCustom.json")
+
+  if not HiemUtils.custom then
+    HiemUtils.custom = {}
+  end
 end
+HiemUtils.custom = HiemUtils.loadCustomData()
 
 
-function HiemUtils.saveRestockersData()
-  jsonInterface.quicksave("custom/HiemRestockers.json", HiemUtils.restockers)
+function HiemUtils.saveCustomData()
+  jsonInterface.quicksave("custom/HiemCustom.json", HiemUtils.custom)
 end
 
 function HiemUtils.getDistance(coord1, coord2)
@@ -294,7 +299,10 @@ function HiemUtils.increaseSkill(pid, skillName, attributeName, amount, labels)
   local eventStatus = customEventHooks.triggerValidators('OnPlayerSkill', skillArgs)
   customEventHooks.triggerHandlers('OnPlayerSkill', eventStatus, skillArgs)
 
-  tes3mp.SetLevelProgress(pid, levelProgress)
+  if isMinorSkill or isMajorSkill then
+    tes3mp.SetLevelProgress(pid, levelProgress)
+  end
+
   tes3mp.SetSkillIncrease(pid, attributeId, skillIncrease);
   tes3mp.SetSkillBase(pid, skillId, newSkillValue);
 
@@ -414,6 +422,7 @@ function HiemUtils.addRecords(type, list, quicksave)
   for i=1, #list do
     local item = list[i]
     local id = item.id
+
     if not item.id then
       id = item.refId
     end
@@ -434,19 +443,38 @@ function HiemUtils.addRecords(type, list, quicksave)
       tes3mp.SetRecordType(enumerations.recordType[string.upper(type)])
       packetBuilder.AddRecordByType(id, item, type)
     end
+
+    if type == "spell" and item.birthsign == true then
+      if not HiemUtils.custom.birthsignUpdates then
+        HiemUtils.custom.birthsignUpdates = {}
+      end
+
+      HiemUtils.custom.birthsignUpdates[id] = item
+    end
   end
   recordStore:Save()
-
-
-  -- for i=1, #list do
-  --   local record = list[i]
-  --   if record.inventory then
-  --       for _, item in pairs(record.inventory) do
-  --         packetBuilder.AddInventoryItemToRecord(item)
-  --       end
-  --   end
-  -- end
+  HiemUtils.saveCustomData()
 end
+
+function HiemUtils.updateBirthsignSpells(pid)
+  tes3mp.ClearRecords()
+  tes3mp.SetRecordType(enumerations.recordType["SPELL"])
+
+  if not HiemUtils.custom then
+    HiemUtils.loadCustomData()
+  end
+
+  for key, value in pairs(HiemUtils.custom.birthsignUpdates) do
+    packetBuilder.AddRecordByType(key, value, "spell")
+  end
+  tes3mp.SendRecordDynamic(pid, false, false)
+end
+
+customEventHooks.registerHandler("OnPlayerConnect", function(eventStatus, pid)
+    if Players[pid] ~= nil then
+        HiemUtils.updateBirthsignSpells(pid)
+    end
+end)
 
 function HiemUtils.formatNPCRecordData(item)
   item.gender = 1
@@ -537,8 +565,8 @@ function HiemUtils.populateCell(cell)
 
         for i,item in ipairs(inventory) do
           if item[1] < 0 then
-            if not HiemUtils.restockers[uniqueIndex] then
-              HiemUtils.restockers[uniqueIndex] = {}
+            if not HiemUtils.custom.restockers[uniqueIndex] then
+              HiemUtils.custom.restockers[uniqueIndex] = {}
             end
 
             local formattedItem = {
@@ -546,10 +574,10 @@ function HiemUtils.populateCell(cell)
               refId = item[2]
             }
 
-            table.insert(HiemUtils.restockers[uniqueIndex], formattedItem)
+            table.insert(HiemUtils.custom.restockers[uniqueIndex], formattedItem)
           end
         end
-        HiemUtils.saveRestockersData()
+        HiemUtils.saveCustomData()
       end
     end
   end
@@ -638,11 +666,13 @@ end
 -- NPC Functions
 
 function HiemUtils.stockItems(itemsToStock, cellDescription, uniqueIndex)
-    HiemUtils.loadRestockersData()
+    if not HiemUtils.custom then
+      HiemUtils.loadCustomData()
+    end
 
-    if not HiemUtils.restockers then 
-      HiemUtils.restockers = {}
-      HiemUtils.saveRestockersData()
+    if not HiemUtils.custom.restockers then 
+      HiemUtils.custom.restockers = {}
+      HiemUtils.saveCustomData()
     end
 
     if itemsToStock ~= nil then
@@ -718,14 +748,12 @@ function HiemUtils.equipItems(itemsToEquip, cellDescription, uniqueIndex)
 end
 
 function HiemUtils.RestockContainer(eventStatus, pid, cellDescription, objects)
-  HiemUtils.loadRestockersData()
-
   if Players[pid] ~= nil and Players[pid]:IsLoggedIn() then
     for uniqueIndex, object in pairs(objects) do
-      for restockerIndex, merchantRefid in pairs(HiemUtils.restockers) do
+      for restockerIndex, merchantRefid in pairs(HiemUtils.custom.restockers) do
         if restockerIndex == uniqueIndex then
           if object.dialogueChoiceType == 3 then -- BARTER
-            local itemsToStock = HiemUtils.restockers[restockerIndex]
+            local itemsToStock = HiemUtils.custom.restockers[restockerIndex]
 
             if itemsToStock ~= nil then
               local cell = LoadedCells[cellDescription]
@@ -790,6 +818,10 @@ function HiemUtils.OnPlayerCellChangeHandler(eventStatus, pid, playerPacket, pre
     local chamber = HiemUtils.Data.chambers[playerPacket.location.cell]
     HiemUtils.Log("Setting new lastExteriorCell for "..Players[pid].name..", Value: "..chamber.mapCoords.x..", "..chamber.mapCoords.y)
     Players[pid].data.customVariables.lastExteriorCell = chamber.mapCoords.x..", "..chamber.mapCoords.y
+  elseif HiemUtils.Data.locations[playerPacket.location.cell] then
+    local location = HiemUtils.Data.locations[playerPacket.location.cell]
+    HiemUtils.Log("Setting new lastExteriorCell for "..Players[pid].name..", Value: "..location.mapCoords.x..", "..location.mapCoords.y)
+    Players[pid].data.customVariables.lastExteriorCell = location.mapCoords.x..", "..location.mapCoords.y
   elseif string.match(playerPacket.location.cell, patterns.exteriorCell) then
     HiemUtils.Log("Setting new lastExteriorCell for "..Players[pid].name..", Value: "..playerPacket.location.cell)
     Players[pid].data.customVariables.lastExteriorCell = playerPacket.location.cell
