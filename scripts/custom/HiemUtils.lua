@@ -42,7 +42,7 @@ function HiemUtils.loadCustomData()
     HiemUtils.custom = {}
   end
 end
-HiemUtils.custom = HiemUtils.loadCustomData()
+-- HiemUtils.custom = HiemUtils.loadCustomData()
 
 
 function HiemUtils.saveCustomData()
@@ -418,6 +418,10 @@ end
 -- Recordstore Functions
 
 function HiemUtils.addRecords(type, list, quicksave)
+  if not HiemUtils.custom then
+    HiemUtils.loadCustomData()
+  end
+
   local recordStore = RecordStores[type]
   for i=1, #list do
     local item = list[i]
@@ -462,6 +466,10 @@ function HiemUtils.updateBirthsignSpells(pid)
 
   if not HiemUtils.custom then
     HiemUtils.loadCustomData()
+  end
+
+  if not HiemUtils.custom.birthsignUpdates then
+    HiemUtils.custom.birthsignUpdates = {}
   end
 
   for key, value in pairs(HiemUtils.custom.birthsignUpdates) do
