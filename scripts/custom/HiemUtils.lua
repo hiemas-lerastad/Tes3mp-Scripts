@@ -757,52 +757,54 @@ end
 
 function HiemUtils.RestockContainer(eventStatus, pid, cellDescription, objects)
   if Players[pid] ~= nil and Players[pid]:IsLoggedIn() then
-    for uniqueIndex, object in pairs(objects) do
-      for restockerIndex, merchantRefid in pairs(HiemUtils.custom.restockers) do
-        if restockerIndex == uniqueIndex then
-          if object.dialogueChoiceType == 3 then -- BARTER
-            local itemsToStock = HiemUtils.custom.restockers[restockerIndex]
+    if HiemUtils.custom and HiemUtils.custom.restockers then
+      for uniqueIndex, object in pairs(objects) do
+        for restockerIndex, merchantRefid in pairs(HiemUtils.custom.restockers) do
+          if restockerIndex == uniqueIndex then
+            if object.dialogueChoiceType == 3 then -- BARTER
+              local itemsToStock = HiemUtils.custom.restockers[restockerIndex]
 
-            if itemsToStock ~= nil then
-              local cell = LoadedCells[cellDescription]
-              local objectData = cell.data.objectData
-              local reloadInventory = false
+              if itemsToStock ~= nil then
+                local cell = LoadedCells[cellDescription]
+                local objectData = cell.data.objectData
+                local reloadInventory = false
 
-              if not objectData[uniqueIndex].inventory then
-                objectData[uniqueIndex].inventory = {}
-              end
+                if not objectData[uniqueIndex].inventory then
+                  objectData[uniqueIndex].inventory = {}
+                end
 
-              local currentInventory = objectData[uniqueIndex].inventory
+                local currentInventory = objectData[uniqueIndex].inventory
 
-              if objectData[uniqueIndex] ~= nil then
+                if objectData[uniqueIndex] ~= nil then
 
-                for i, itemData in pairs(itemsToStock) do
-                  local objectFound = false;
-                  for _, object in pairs(currentInventory) do
-                    if object.refId == itemData.refId then
-                      objectFound = true;
+                  for i, itemData in pairs(itemsToStock) do
+                    local objectFound = false;
+                    for _, object in pairs(currentInventory) do
+                      if object.refId == itemData.refId then
+                        objectFound = true;
 
-                      if object.count < itemData.count then
-                        object.count = itemData.count
+                        if object.count < itemData.count then
+                          object.count = itemData.count
 
-                        if not reloadInventory then reloadInventory = true end
+                          if not reloadInventory then reloadInventory = true end
+                        end
                       end
+                    end
+
+                    -- try fix but for double stock on first server init
+
+                    if not objectFound then
+                      inventoryHelper.addItem(currentInventory, itemData.refId, itemData["count"], itemData[3] or -1, itemData[4] or -1, itemData[5] or "")
+                      if not reloadInventory then reloadInventory = true end
                     end
                   end
 
-                  -- try fix but for double stock on first server init
-
-                  if not objectFound then
-                    inventoryHelper.addItem(currentInventory, itemData.refId, itemData["count"], itemData[3] or -1, itemData[4] or -1, itemData[5] or "")
-                    if not reloadInventory then reloadInventory = true end
-                  end
-                end
-
-                if reloadInventory then
-                  for i = 0, #Players do
-                    if Players[i] ~= nil and Players[i]:IsLoggedIn() then
-                      if Players[i].data.location.cell == cellDescription then
-                        cell:LoadContainers(i, cell.data.objectData, {uniqueIndex})
+                  if reloadInventory then
+                    for i = 0, #Players do
+                      if Players[i] ~= nil and Players[i]:IsLoggedIn() then
+                        if Players[i].data.location.cell == cellDescription then
+                          cell:LoadContainers(i, cell.data.objectData, {uniqueIndex})
+                        end
                       end
                     end
                   end
